@@ -1,0 +1,64 @@
+.column-selector {
+  &__input {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  &__checkbox {
+    width: 24px;
+    height: 24px;
+    border: 2px solid var(--blue);
+    border-radius: 6px;
+    background-color: var(--white);
+    position: relative;
+    flex-shrink: 0;
+  }
+
+  &__input:checked + &__checkbox {
+    background-color: var(--blue);
+    border-color: var(--blue);
+  }
+
+  &__input:checked + &__checkbox::after {
+    content: '';
+    position: absolute;
+    left: 7px;
+    top: 3px;
+    width: 6px;
+    height: 12px;
+    border: solid var(--white);
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
+
+  &__input:focus-visible + &__checkbox {
+    outline: 2px solid var(--blue);
+    outline-offset: 2px;
+  }
+}
+
+.sales-table {
+  background-color: var(--white);
+
+  thead {
+    background-color: var(--gray);
+  }
+
+  tbody {
+    tr {
+      &.odd {
+        background-color: var(--white);
+      }
+
+      &.even {
+        background-color: var(--light-gray);
+      }
+
+      &:hover {
+        color: white;
+        background: var(--blue);
+      }
+    }
+  }
+}

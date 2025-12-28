@@ -1,0 +1,18 @@
+.panel {
+  position: relative;
+  background: linear-gradient(135deg, #5b21b6, #6d28d9, #9333ea);
+  border-radius: 0.75rem;
+  box-shadow: 0 8px 24px rgba(88, 28, 135, 0.25);
+
+  transform: translateY(0);
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    filter 0.25s ease;
+}
+
+.panel:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(88, 28, 135, 0.35);
+  filter: brightness(1.1);
+}

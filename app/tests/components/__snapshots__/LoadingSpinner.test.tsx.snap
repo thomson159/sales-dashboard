@@ -1,0 +1,13 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Spinner > matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="flex justify-center items-center"
+  >
+    <div
+      class="spinner"
+    />
+  </div>
+</DocumentFragment>
+`;

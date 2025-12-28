@@ -1,0 +1,101 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Navbar > matches snapshot when collapsed 1`] = `
+<div>
+  <div
+    class="navbar sticky top-0 z-50 bg-white pt-0 p-4 pb-0 md:px-12 lg:px-24"
+  >
+    <div
+      aria-label="Expand dashboard"
+      class="pt-4 pb-4 cursor-pointer select-none relative"
+      role="button"
+      tabindex="0"
+    >
+      <h2
+        class="
+            text-3xl font-bold text-left
+            text-transparent bg-clip-text
+            bg-gradient-to-r from-purple-500 via-pink-500 to-red-500
+            animate-pulse
+          "
+      >
+        Dashboard
+      </h2>
+    </div>
+    <div
+      class="filters-wrapper filters-closed"
+    >
+      <div
+        class="pb-2"
+      >
+        Child
+        <div
+          class="flex justify-center"
+        >
+          <button
+            aria-label="Expand dashboard"
+            class="text-sm flex items-center gap-1 cursor-pointer mt-4"
+            type="button"
+          >
+            <span
+              aria-hidden="true"
+            >
+              ▲
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Navbar > matches snapshot when expanded 1`] = `
+<div>
+  <div
+    class="navbar sticky top-0 z-50 bg-white pt-0 p-4 pb-0 md:px-12 lg:px-24"
+  >
+    <div
+      aria-label="Collapse dashboard"
+      class="pt-4 pb-4 cursor-pointer select-none relative"
+      role="button"
+      tabindex="0"
+    >
+      <h2
+        class="
+            text-3xl font-bold text-left
+            text-transparent bg-clip-text
+            bg-gradient-to-r from-purple-500 via-pink-500 to-red-500
+            animate-pulse
+          "
+      >
+        Dashboard
+      </h2>
+    </div>
+    <div
+      class="filters-wrapper filters-open"
+    >
+      <div
+        class="pb-2"
+      >
+        Child
+        <div
+          class="flex justify-center"
+        >
+          <button
+            aria-label="Expand dashboard"
+            class="text-sm flex items-center gap-1 cursor-pointer mt-4"
+            type="button"
+          >
+            <span
+              aria-hidden="true"
+            >
+              ▲
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

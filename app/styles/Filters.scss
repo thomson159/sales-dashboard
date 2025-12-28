@@ -1,0 +1,12 @@
+.filter-input {
+  height: 36px;
+  padding: 0 0.75rem;
+  border-radius: 6px;
+  border: 1px solid var(--gray);
+  background: var(--white);
+  font-size: 0.9rem;
+
+  &:focus {
+    outline: none;
+  }
+}

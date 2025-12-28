@@ -1,0 +1,87 @@
+import { type ReactNode } from 'react';
+import type {
+  Column,
+  ColumnKey,
+  Filters,
+  SaleArray,
+  Sort,
+  SortKey,
+  SortOrder,
+} from '~/types/types';
+import type { UseFiltersStateResult } from './hooks.types';
+
+export interface PageSizeFilterProps {
+  readonly pageSize: number;
+  readonly onPageSizeChange: (size: number) => void;
+  readonly totalItems: number;
+  readonly min?: number;
+  readonly disabled?: boolean;
+}
+
+export interface PaginationProps {
+  readonly page: number;
+  readonly totalPages: number;
+  readonly onPageChange: (page: number) => void;
+  readonly windowSize?: number;
+}
+
+export interface SalesTableProps {
+  readonly data: SaleArray;
+  readonly visibleColumns: readonly ColumnKey[];
+  readonly toggleColumn: (key: ColumnKey) => void;
+}
+
+export interface FiltersProps extends Filters {
+  readonly onChange: (value: Filters) => void;
+  readonly data: SaleArray;
+}
+
+export interface SortProps {
+  readonly sort?: Sort;
+  readonly onChange: (sort?: Sort) => void;
+}
+
+//
+
+export type ContainerProps = {
+  readonly children: ReactNode;
+};
+
+export type NavbarProps = {
+  readonly expanded: boolean;
+  readonly onToggle: () => void;
+  readonly children: ReactNode;
+  readonly loading?: boolean;
+  readonly title?: string;
+};
+
+export type FiltersViewProps = UseFiltersStateResult & {
+  readonly availableChannels: readonly string[];
+};
+
+export type VisibleColumns = {
+  readonly visibleColumns: readonly ColumnKey[];
+};
+
+export type Columns = VisibleColumns & {
+  readonly columns: readonly Column[];
+};
+
+export type ColumnSelectorProps = Columns & {
+  readonly toggleColumn: (key: ColumnKey) => void;
+};
+
+export type TableBodyProps = VisibleColumns & {
+  readonly data: SaleArray;
+};
+
+export type TableHeaderProps = Columns & {
+  readonly sortKey: SortKey | null;
+  readonly sortOrder: SortOrder | null;
+  readonly onSort: (key: SortKey | null, order?: SortOrder) => void;
+};
+
+export interface SummaryItemProps {
+  readonly label: string;
+  readonly value: string | number;
+}

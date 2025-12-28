@@ -1,0 +1,69 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Button > accepts id prop 1`] = `
+<div>
+  <button
+    class="own-button "
+    id="my-button"
+    type="button"
+  >
+    ID Test
+  </button>
+</div>
+`;
+
+exports[`Button > accepts type prop 1`] = `
+<div>
+  <button
+    class="own-button "
+    type="submit"
+  >
+    Submit
+  </button>
+</div>
+`;
+
+exports[`Button > applies additional className 1`] = `
+<div>
+  <button
+    class="own-button extra-class"
+    type="button"
+  >
+    Test
+  </button>
+</div>
+`;
+
+exports[`Button > handles multiple classNames correctly 1`] = `
+<div>
+  <button
+    class="own-button first second"
+    type="button"
+  >
+    Classes
+  </button>
+</div>
+`;
+
+exports[`Button > is disabled when disabled prop is true 1`] = `
+<div>
+  <button
+    class="own-button "
+    disabled=""
+    type="button"
+  >
+    Disabled
+  </button>
+</div>
+`;
+
+exports[`Button > renders children 1`] = `
+<div>
+  <button
+    class="own-button "
+    type="button"
+  >
+    Click me
+  </button>
+</div>
+`;

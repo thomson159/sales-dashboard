@@ -1,0 +1,13 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Footer > matches snapshot 1`] = `
+<div>
+  <footer
+    class="mt-8 text-center"
+  >
+    © 
+    2026
+     All rights reserved.
+  </footer>
+</div>
+`;

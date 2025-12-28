@@ -1,0 +1,134 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Table > matches snapshot 1`] = `
+<div>
+  <div>
+    <div
+      class="column-selector mb-2 flex flex-wrap p-3 gap-4"
+    >
+      <div
+        class="flex items-center justify-center"
+      >
+        <label
+          class="flex items-center gap-2 cursor-pointer select-none"
+          for="column-date"
+        >
+          <input
+            checked=""
+            class="column-selector__input"
+            id="column-date"
+            name="date"
+            type="checkbox"
+          />
+          <span
+            class="column-selector__checkbox"
+          />
+          <span>
+            Date
+          </span>
+        </label>
+      </div>
+      <div
+        class="flex items-center justify-center"
+      >
+        <label
+          class="flex items-center gap-2 cursor-pointer select-none"
+          for="column-channel_name"
+        >
+          <input
+            checked=""
+            class="column-selector__input"
+            id="column-channel_name"
+            name="channel_name"
+            type="checkbox"
+          />
+          <span
+            class="column-selector__checkbox"
+          />
+          <span>
+            Channel
+          </span>
+        </label>
+      </div>
+    </div>
+    <div
+      class="relative w-full overflow-x-auto"
+    >
+      <table
+        class="w-full sales-table border-collapse font-inter text-sm rounded-lg"
+      >
+        <thead
+          class="sticky top-0 bg-white z-20"
+        >
+          <tr>
+            <th
+              class="
+                  px-3 py-2
+                  whitespace-nowrap
+                  text-left
+                  font-semibold
+                  select-none
+                  cursor-pointer
+                "
+            >
+              Date
+            </th>
+            <th
+              class="
+                  px-3 py-2
+                  whitespace-nowrap
+                  text-left
+                  font-semibold
+                  select-none
+                  cursor-pointer
+                "
+            >
+              Channel
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr
+            class="odd"
+          >
+            <td
+              class="px-3 py-2 whitespace-nowrap text-left"
+            >
+              2025-01-01
+            </td>
+            <td
+              class="px-3 py-2 whitespace-nowrap text-left"
+            >
+              chan1
+            </td>
+          </tr>
+          <tr
+            class="even"
+          >
+            <td
+              class="px-3 py-2 whitespace-nowrap text-left"
+            >
+              2025-01-02
+            </td>
+            <td
+              class="px-3 py-2 whitespace-nowrap text-left"
+            >
+              chan2
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div
+      class="flex pt-5"
+    >
+      <button
+        class="own-button mx-auto"
+        type="button"
+      >
+        More
+      </button>
+    </div>
+  </div>
+</div>
+`;

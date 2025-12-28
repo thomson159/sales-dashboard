@@ -1,0 +1,38 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`PageSizeFilter > matches snapshot 1`] = `
+<div>
+  <div
+    class="w-full mx-auto"
+  >
+    <div
+      class="flex flex-wrap gap-4 items-end justify-center"
+    >
+      <div
+        class="flex flex-col"
+      >
+        <label
+          for="page-size"
+        >
+          Per Page
+        </label>
+        <input
+          class="filter-input"
+          id="page-size"
+          max="100"
+          min="1"
+          style="width: 90px;"
+          type="number"
+          value="10"
+        />
+      </div>
+      <button
+        class="own-button "
+        type="button"
+      >
+        Apply
+      </button>
+    </div>
+  </div>
+</div>
+`;

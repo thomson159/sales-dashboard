@@ -1,0 +1,235 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Sort memo > matches snapshot for memoized Sort 1`] = `
+<DocumentFragment>
+  <div>
+    <div
+      class="flex mt-5 "
+    >
+      Sort By
+    </div>
+    <div
+      class="sortContainer"
+    >
+      <button
+        class="sortButton sortButtonInActive"
+        type="button"
+      >
+        <span>
+          Date
+        </span>
+      </button>
+      <button
+        class="sortButton sortButtonInActive"
+        type="button"
+      >
+        <span>
+          Name
+        </span>
+      </button>
+      <button
+        class="sortButton sortButtonInActive"
+        type="button"
+      >
+        <span>
+          Status
+        </span>
+      </button>
+      <button
+        class="sortButton sortButtonInActive"
+        type="button"
+      >
+        <span>
+          Sales
+        </span>
+      </button>
+      <button
+        class="sortButton sortButtonInActive"
+        type="button"
+      >
+        <span>
+          Orders
+        </span>
+      </button>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`SortComponent > matches snapshot with active asc sort 1`] = `
+<DocumentFragment>
+  <div>
+    <div
+      class="flex mt-5 "
+    >
+      Sort By
+    </div>
+    <div
+      class="sortContainer"
+    >
+      <button
+        class="sortButton sortButtonActive"
+        type="button"
+      >
+        <span>
+          Date
+        </span>
+        <span
+          class="sortArrow"
+        >
+          ↑
+        </span>
+      </button>
+      <button
+        class="sortButton sortButtonInActive"
+        type="button"
+      >
+        <span>
+          Name
+        </span>
+      </button>
+      <button
+        class="sortButton sortButtonInActive"
+        type="button"
+      >
+        <span>
+          Status
+        </span>
+      </button>
+      <button
+        class="sortButton sortButtonInActive"
+        type="button"
+      >
+        <span>
+          Sales
+        </span>
+      </button>
+      <button
+        class="sortButton sortButtonInActive"
+        type="button"
+      >
+        <span>
+          Orders
+        </span>
+      </button>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`SortComponent > matches snapshot with active desc sort 1`] = `
+<DocumentFragment>
+  <div>
+    <div
+      class="flex mt-5 "
+    >
+      Sort By
+    </div>
+    <div
+      class="sortContainer"
+    >
+      <button
+        class="sortButton sortButtonActive"
+        type="button"
+      >
+        <span>
+          Date
+        </span>
+        <span
+          class="sortArrow"
+        >
+          ↓
+        </span>
+      </button>
+      <button
+        class="sortButton sortButtonInActive"
+        type="button"
+      >
+        <span>
+          Name
+        </span>
+      </button>
+      <button
+        class="sortButton sortButtonInActive"
+        type="button"
+      >
+        <span>
+          Status
+        </span>
+      </button>
+      <button
+        class="sortButton sortButtonInActive"
+        type="button"
+      >
+        <span>
+          Sales
+        </span>
+      </button>
+      <button
+        class="sortButton sortButtonInActive"
+        type="button"
+      >
+        <span>
+          Orders
+        </span>
+      </button>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`SortComponent > matches snapshot with no sort 1`] = `
+<DocumentFragment>
+  <div>
+    <div
+      class="flex mt-5 "
+    >
+      Sort By
+    </div>
+    <div
+      class="sortContainer"
+    >
+      <button
+        class="sortButton sortButtonInActive"
+        type="button"
+      >
+        <span>
+          Date
+        </span>
+      </button>
+      <button
+        class="sortButton sortButtonInActive"
+        type="button"
+      >
+        <span>
+          Name
+        </span>
+      </button>
+      <button
+        class="sortButton sortButtonInActive"
+        type="button"
+      >
+        <span>
+          Status
+        </span>
+      </button>
+      <button
+        class="sortButton sortButtonInActive"
+        type="button"
+      >
+        <span>
+          Sales
+        </span>
+      </button>
+      <button
+        class="sortButton sortButtonInActive"
+        type="button"
+      >
+        <span>
+          Orders
+        </span>
+      </button>
+    </div>
+  </div>
+</DocumentFragment>
+`;

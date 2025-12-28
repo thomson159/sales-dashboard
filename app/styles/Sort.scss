@@ -1,0 +1,31 @@
+.sortContainer {
+  display: flex;
+  gap: 0.25rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.sortButton {
+  height: 36px;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0px 12px;
+  border: 1px solid var(--gray);
+  border-radius: 6px;
+  background-color: var(--white);
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.sortButtonActive {
+  background-color: var(--blue);
+  border-color: var(--blue);
+  color: var(--white);
+  font-weight: bold;
+}
+
+.sortArrow {
+  font-size: 0.8rem;
+  line-height: 1;
+}
