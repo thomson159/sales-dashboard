@@ -1,4 +1,4 @@
-# React + TypeScript + Vite + React Router + Tailwind
+# React 19 + TypeScript + Vite + React Router + Tailwind
 
 A modern, production-ready template for building full-stack React applications using React Router.
 
