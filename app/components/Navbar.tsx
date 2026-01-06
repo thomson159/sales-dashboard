@@ -1,6 +1,7 @@
 import { useCallback, useMemo, memo, type MouseEventHandler } from 'react';
 import type { NavbarProps } from '../types/components.types';
 import { Spinner } from './small/Spinner';
+// import { useTheme } from './ThemeContext';
 
 const NavbarComponent = ({
   expanded,
@@ -9,12 +10,15 @@ const NavbarComponent = ({
   title = 'Dashboard',
   children,
 }: NavbarProps) => {
+  // const { theme, toggleTheme } = useTheme();
+
   const containerClassName: string = useMemo(
     () => `filters-wrapper ${expanded ? 'filters-open' : 'filters-closed'}`,
     [expanded],
   );
 
   const handleToggle = useCallback(() => onToggle(), [onToggle]);
+
   const handleButtonClick: MouseEventHandler<HTMLButtonElement> = useCallback(
     (event) => {
       event.stopPropagation();
@@ -25,6 +29,13 @@ const NavbarComponent = ({
 
   return (
     <div className="navbar sticky top-0 z-50 bg-white pt-0 p-4 pb-0 md:px-12 lg:px-24">
+      {/* <button
+        onClick={toggleTheme}
+        className="px-4 py-2 rounded-lg border border-gray-300 dark:border-gray-700 transition-colors"
+      >
+        {theme === "light" ? "🌞" : "🌙"}
+      </button> */}
+
       <div
         role="button"
         aria-label={expanded ? 'Collapse dashboard' : 'Expand dashboard'}

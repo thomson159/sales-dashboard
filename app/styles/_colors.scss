@@ -5,8 +5,15 @@
   --white: #ffffff;
 
   --text: #374151;
+  --bg: #ffffff;
+}
+
+[data-theme='dark'] {
+  --text: #ffffff;
+  --bg: #374151;
 }
 
 body {
   color: var(--text);
+  background-color: var(--bg);
 }

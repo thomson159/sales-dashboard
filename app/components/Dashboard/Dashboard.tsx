@@ -14,6 +14,7 @@ import Sort from '../Sort';
 import Charts from '../Charts/Recharts/Charts';
 import { Button } from '../small/Button';
 import Filters from '../Filters/Filters';
+import { ThemeProvider } from '../ThemeContext';
 
 const Table = lazy(() => import('../Table/Table'));
 
@@ -58,7 +59,7 @@ export const Dashboard = ({ chartsAreVisible = false }: Props) => {
   const [showCharts, setShowCharts] = useState<boolean>(false);
 
   return (
-    <div>
+    <ThemeProvider>
       <Navbar expanded={navbarToggle} onToggle={onToggleNavbar} loading={loading}>
         <Filters data={chartData} {...filters} onChange={handleFiltersChange} />
         <Sort sort={sort} onChange={handleSortChange} />
@@ -83,6 +84,6 @@ export const Dashboard = ({ chartsAreVisible = false }: Props) => {
         </Suspense>
         <Footer />
       </Container>
-    </div>
+    </ThemeProvider>
   );
 };
