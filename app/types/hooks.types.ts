@@ -1,10 +1,9 @@
 import type { ChangeEvent } from 'react';
 import type { VisibleColumns } from './components.types';
 import type { Action, State } from './state.types';
-import type { SortKey, SortOrder, ColumnKey, SaleArray } from './types';
+import type { SortKey, SortOrder, ColumnKey, SaleArray, SaleData } from './types';
 
-export type UseSourceResult = Readonly<{
-  data: SaleArray;
+export type UseSourceResult = Readonly<SaleData & {
   loading: boolean;
 }>;
 

@@ -3,7 +3,9 @@ import type {
   Column,
   ColumnKey,
   Filters,
+  RevenuePerChannelItem,
   SaleArray,
+  SalesOverTimeItem,
   Sort,
   SortKey,
   SortOrder,
@@ -39,6 +41,11 @@ export interface FiltersProps extends Filters {
 export interface SortProps {
   readonly sort?: Sort;
   readonly onChange: (sort?: Sort) => void;
+}
+
+export interface SummaryItemProps {
+  readonly label: string;
+  readonly value: string | number;
 }
 
 //
@@ -81,7 +88,10 @@ export type TableHeaderProps = Columns & {
   readonly onSort: (key: SortKey | null, order?: SortOrder) => void;
 };
 
-export interface SummaryItemProps {
-  readonly label: string;
-  readonly value: string | number;
-}
+export type RevenueProps = {
+  data: RevenuePerChannelItem[];
+};
+
+export type SalesProps = {
+  data: SalesOverTimeItem[];
+};

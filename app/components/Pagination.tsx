@@ -1,5 +1,6 @@
-import { memo, useCallback, useMemo, type MouseEvent } from 'react';
+import { memo, useCallback, useMemo } from 'react';
 import type { PaginationProps } from '~/types/components.types';
+import type { Mouse } from '~/types/types';
 
 export const PaginationComponent = ({
   page,
@@ -8,7 +9,7 @@ export const PaginationComponent = ({
   windowSize = 1,
 }: PaginationProps) => {
   const handlePageClick = useCallback(
-    (p: number) => (e: MouseEvent<HTMLButtonElement>) => {
+    (p: number) => (e: Mouse) => {
       e.preventDefault();
       if (p !== page) onPageChange(p);
     },
@@ -16,7 +17,7 @@ export const PaginationComponent = ({
   );
 
   const handlePrevClick = useCallback(
-    (e: MouseEvent<HTMLButtonElement>) => {
+    (e: Mouse) => {
       e.preventDefault();
       if (page > 1) onPageChange(page - 1);
     },
@@ -24,14 +25,14 @@ export const PaginationComponent = ({
   );
 
   const handleNextClick = useCallback(
-    (e: MouseEvent<HTMLButtonElement>) => {
+    (e: Mouse) => {
       e.preventDefault();
       if (page < totalPages) onPageChange(page + 1);
     },
     [page, totalPages, onPageChange],
   );
 
-  const visiblePages = useMemo(() => {
+  const visiblePages: number[] = useMemo(() => {
     const pages: number[] = [];
     const start = Math.max(1, page - windowSize);
     const end = Math.min(totalPages, page + windowSize);

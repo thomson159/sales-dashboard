@@ -14,9 +14,9 @@ const NavbarComponent = ({
     [expanded],
   );
 
-  const handleToggle = useCallback((): void => onToggle(), [onToggle]);
+  const handleToggle = useCallback(() => onToggle(), [onToggle]);
   const handleButtonClick: MouseEventHandler<HTMLButtonElement> = useCallback(
-    (event): void => {
+    (event) => {
       event.stopPropagation();
       onToggle();
     },

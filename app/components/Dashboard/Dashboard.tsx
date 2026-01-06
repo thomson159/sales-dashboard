@@ -11,13 +11,14 @@ import { Spinner } from '../small/Spinner';
 import { PageSizeFilter } from '../PageSizeFilter';
 import Pagination from '../Pagination';
 import Sort from '../Sort';
-import Filters from '../Filters/Filters';
 import Charts from '../Charts/Recharts/Charts';
 import { Button } from '../small/Button';
+import Filters from '../Filters/Filters';
 
 const Table = lazy(() => import('../Table/Table'));
 
 type Props = { chartsAreVisible?: boolean };
+
 export const Dashboard = ({ chartsAreVisible = false }: Props) => {
   const {
     data,

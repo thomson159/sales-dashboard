@@ -18,7 +18,7 @@ export const useTableColumns = (): UseTableColumnsResult => {
     localStorage.setItem(STORAGE_KEY, JSON.stringify(visibleColumns));
   }, [visibleColumns]);
 
-  const toggleColumn = useCallback((key: ColumnKey): void => {
+  const toggleColumn = useCallback((key: ColumnKey) => {
     setVisibleColumns((prev) =>
       prev.includes(key) ? prev.filter((k) => k !== key) : [...prev, key],
     );

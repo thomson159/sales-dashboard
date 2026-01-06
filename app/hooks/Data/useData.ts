@@ -31,7 +31,7 @@ export const useData = (): UseData => {
     setSortState(next);
     setPageState(1);
   }, []);
-  const setFilters = useCallback((next: Partial<Filters>) => {
+  const setFilters = useCallback((next: Filters) => {
     setFiltersState((prev) => ({ ...prev, ...next }));
     setPageState(1);
   }, []);

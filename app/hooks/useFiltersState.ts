@@ -19,7 +19,7 @@ export const useFiltersState = ({
   });
 
   const [lastApplied, setLastApplied] = useState<Filters>(toFiltersValue(state));
-  const hasChanges = computeHasChanges(state, lastApplied);
+  const hasChanges: boolean = computeHasChanges(state, lastApplied);
 
   const apply = useCallback(() => {
     const value: Filters = toFiltersValue(state);

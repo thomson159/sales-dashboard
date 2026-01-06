@@ -2,12 +2,9 @@ import { memo } from 'react';
 import { ResponsiveContainer, BarChart, XAxis, YAxis, Tooltip, Bar, Cell } from 'recharts';
 import { CHARTS_COLORS as COLORS } from '~/consts';
 import { useIsMobileCharts } from '~/hooks/useIsMobile';
+import type { RevenueProps } from '~/types/components.types';
 
-type Props = {
-  data: { channel: string; revenue: number }[];
-};
-
-const RevenuePerChannel = ({ data }: Props) => {
+const RevenuePerChannel = ({ data }: RevenueProps) => {
   const isMobile: boolean = useIsMobileCharts();
 
   return (

@@ -1,7 +1,9 @@
 import type { index } from '../consts';
 import type { State } from './state.types';
+import { type MouseEvent } from 'react';
 
 export type SaleArray = readonly Sale[];
+export type SaleData = { data: SaleArray };
 
 export type Sale = Readonly<{
   date: string;
@@ -17,8 +19,6 @@ export type SaleJson = Readonly<{
   Sale;
 
 export type Filters = Partial<State>;
-
-export type SortOrder = 'asc' | 'desc';
 
 export type Sort = Readonly<{
   field: keyof Sale;
@@ -41,7 +41,7 @@ export type UseData = Readonly<{
   totalPages: number;
   filters: Filters;
   sort?: Sort;
-  setFilters: (next: Partial<Filters>) => void;
+  setFilters: (next: Filters) => void;
   setSort: (next?: Sort) => void;
   setPage: (page: number) => void;
   setPageSize: (size: number) => void;
@@ -49,6 +49,19 @@ export type UseData = Readonly<{
   Metrics;
 
 export type Column = Readonly<{ key: ColumnKey; label: string; sortable?: boolean }>;
+export type Fields = Readonly<{ label: string; value: keyof Sale }>;
+
 export type ColumnKey = keyof Sale | typeof index;
 export type SortKey = keyof Sale | null;
-export type Fields = Readonly<{ label: string; value: keyof Sale }>;
+export type SortOrder = 'asc' | 'desc';
+export type Mouse = MouseEvent<HTMLButtonElement>;
+
+export type SalesOverTimeItem = {
+  date: string;
+  revenue: number;
+};
+
+export type RevenuePerChannelItem = {
+  channel: string;
+  revenue: number;
+};

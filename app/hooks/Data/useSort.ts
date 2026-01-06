@@ -18,6 +18,7 @@ export const useSort = (data: SaleArray, sort?: Sort): SaleArray => {
 
       if (typeof aValue === 'number' && typeof bValue === 'number') {
         const diff = aValue - bValue;
+
         return diff !== 0 ? diff * direction : a.index - b.index;
       }
 

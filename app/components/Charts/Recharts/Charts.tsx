@@ -1,9 +1,7 @@
-import type { SaleArray } from '~/types/types';
+import type { RevenuePerChannelItem, SaleData, SalesOverTimeItem } from '~/types/types';
 import {
   getRevenuePerChannel,
   getSalesOverTime,
-  type RevenuePerChannelItem,
-  type SalesOverTimeItem,
 } from './charts.utils';
 import { lazy, Suspense, useMemo } from 'react';
 import { Spinner } from '~/components/small/Spinner';
@@ -13,11 +11,7 @@ const RevenuePerChannel = lazy(() => import('./RevenuePerChannel'));
 const SalesOverTime = lazy(() => import('./SalesOverTime'));
 const Legend = lazy(() => import('./Legend'));
 
-type Props = {
-  data: SaleArray;
-};
-
-export const Chart = ({ data }: Props) => {
+export const Chart = ({ data }: SaleData) => {
   const salesOverTimeArray: SalesOverTimeItem[] = useMemo(() => getSalesOverTime(data), [data]);
   const channelArray: RevenuePerChannelItem[] = useMemo(() => getRevenuePerChannel(data), [data]);
   const isMobile: boolean = useIsMobileCharts();
