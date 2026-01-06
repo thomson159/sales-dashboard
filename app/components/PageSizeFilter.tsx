@@ -9,7 +9,6 @@ const PageSizeFilterComponent = ({
   onPageSizeChange,
   totalItems,
   min = 1,
-  disabled = false,
 }: PageSizeFilterProps) => {
   const { localPageSize, handleChange, applyPageSize }: UsePageSizeResult = usePageSize({
     pageSize,
@@ -34,9 +33,7 @@ const PageSizeFilterComponent = ({
             style={{ width: 90 }}
           />
         </div>
-        <Button onClick={applyPageSize} disabled={disabled}>
-          Apply
-        </Button>
+        <Button onClick={applyPageSize}>Apply</Button>
       </div>
     </div>
   );

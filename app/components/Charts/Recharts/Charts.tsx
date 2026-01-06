@@ -1,8 +1,5 @@
 import type { RevenuePerChannelItem, SaleData, SalesOverTimeItem } from '~/types/types';
-import {
-  getRevenuePerChannel,
-  getSalesOverTime,
-} from './charts.utils';
+import { getRevenuePerChannel, getSalesOverTime } from './charts.utils';
 import { lazy, Suspense, useMemo } from 'react';
 import { Spinner } from '~/components/small/Spinner';
 import { useIsMobileCharts } from '~/hooks/useIsMobile';

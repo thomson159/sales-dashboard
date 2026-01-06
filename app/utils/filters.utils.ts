@@ -53,8 +53,9 @@ export const sanitizePageSizeInput = (value: string, maxLength: number = 3): num
   }
 
   const numberValue: number = Number(value);
+  const response = Number.isNaN(numberValue) ? null : numberValue;
 
-  return Number.isNaN(numberValue) ? null : numberValue;
+  return response;
 };
 
 export const validatePageSize = (value: number, min: number, max: number): number => {

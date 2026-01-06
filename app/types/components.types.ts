@@ -17,7 +17,6 @@ export interface PageSizeFilterProps {
   readonly onPageSizeChange: (size: number) => void;
   readonly totalItems: number;
   readonly min?: number;
-  readonly disabled?: boolean;
 }
 
 export interface PaginationProps {

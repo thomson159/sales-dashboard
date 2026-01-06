@@ -71,12 +71,7 @@ export const Dashboard = ({ chartsAreVisible = false }: Props) => {
             <Button onClick={() => setShowCharts((prev) => !prev)}>Show Charts</Button>
           </div>
         )}
-        <PageSizeFilter
-          pageSize={pageSize}
-          onPageSizeChange={setPageSize}
-          totalItems={total}
-          disabled={false}
-        />
+        <PageSizeFilter pageSize={pageSize} onPageSizeChange={setPageSize} totalItems={total} />
         <Pagination
           page={page}
           totalPages={totalPages > 1 ? totalPages : 1}

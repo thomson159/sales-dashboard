@@ -2,9 +2,11 @@ import type { VisibleColumns } from './components.types';
 import type { Action, State } from './state.types';
 import type { SortKey, SortOrder, ColumnKey, SaleArray, SaleData, Change } from './types';
 
-export type UseSourceResult = Readonly<SaleData & {
-  loading: boolean;
-}>;
+export type UseSourceResult = Readonly<
+  SaleData & {
+    loading: boolean;
+  }
+>;
 
 export type UsePaginationResult = Readonly<{
   pagedData: SaleArray;

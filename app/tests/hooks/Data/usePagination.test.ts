@@ -60,6 +60,24 @@ describe('usePagination', () => {
     expect(result.current.totalPages).toBe(3);
   });
 
+  it('calls applyPagination with correct arguments for different page and pageSize', () => {
+    const data: Sale[] = Array.from({ length: 15 }, (_, i) => ({
+      date: `2025-01-${i + 1}`,
+      channel_name: `A`,
+      order_status_id: 1,
+      sum_sales: i * 10,
+      count_orders: i,
+    }));
+    mockedApplyPagination.mockReturnValue(data.slice(5, 10));
+
+    const { result } = renderHook(() => usePagination(data, 2, 5));
+
+    expect(result.current.pagedData).toHaveLength(5);
+    expect(result.current.total).toBe(15);
+    expect(result.current.totalPages).toBe(3);
+    expect(mockedApplyPagination).toHaveBeenCalledWith(data, 2, 5);
+  });
+
   it('returns empty pagedData if page is greater than totalPages', () => {
     const data: Sale[] = Array.from({ length: 5 }, (_, i) => ({
       date: `2025-01-${i + 1}`,
@@ -77,21 +95,64 @@ describe('usePagination', () => {
     expect(result.current.totalPages).toBe(1);
   });
 
-  it('calls applyPagination with correct arguments for different page and pageSize', () => {
-    const data: Sale[] = Array.from({ length: 15 }, (_, i) => ({
+  it('returns totalPages = 0 when pageSize is 0', () => {
+    const data: Sale[] = Array.from({ length: 10 }, (_, i) => ({
       date: `2025-01-${i + 1}`,
       channel_name: `A`,
       order_status_id: 1,
       sum_sales: i * 10,
       count_orders: i,
     }));
-    mockedApplyPagination.mockReturnValue(data.slice(5, 10));
+    mockedApplyPagination.mockReturnValue([]);
 
-    const { result } = renderHook(() => usePagination(data, 2, 5));
+    const { result } = renderHook(() => usePagination(data, 1, 0));
 
-    expect(result.current.pagedData).toHaveLength(5);
-    expect(result.current.total).toBe(15);
+    expect(result.current.totalPages).toBe(0);
+    expect(result.current.pagedData).toEqual([]);
+    expect(result.current.total).toBe(10);
+    expect(mockedApplyPagination).toHaveBeenCalledWith(data, 1, 0);
+  });
+
+  it('handles page < 1 by using page = 1', () => {
+    const data: Sale[] = Array.from({ length: 5 }, (_, i) => ({
+      date: `2025-01-${i + 1}`,
+      channel_name: `A`,
+      order_status_id: 1,
+      sum_sales: i * 10,
+      count_orders: i,
+    }));
+    mockedApplyPagination.mockReturnValue(data.slice(0, 2));
+
+    const { result } = renderHook(() => usePagination(data, 0, 2));
+
     expect(result.current.totalPages).toBe(3);
-    expect(mockedApplyPagination).toHaveBeenCalledWith(data, 2, 5);
+    expect(result.current.pagedData).toHaveLength(2);
+    expect(mockedApplyPagination).toHaveBeenCalledWith(data, 1, 2);
+  });
+
+  it('handles empty data with non-zero pageSize', () => {
+    mockedApplyPagination.mockReturnValue([]);
+
+    const { result } = renderHook(() => usePagination([], 1, 5));
+
+    expect(result.current.totalPages).toBe(0);
+    expect(result.current.pagedData).toEqual([]);
+    expect(result.current.total).toBe(0);
+  });
+
+  it('handles page > totalPages correctly', () => {
+    const data: Sale[] = Array.from({ length: 4 }, (_, i) => ({
+      date: `2025-01-${i + 1}`,
+      channel_name: `A`,
+      order_status_id: 1,
+      sum_sales: i * 10,
+      count_orders: i,
+    }));
+    mockedApplyPagination.mockReturnValue([]);
+
+    const { result } = renderHook(() => usePagination(data, 3, 2));
+
+    expect(result.current.totalPages).toBe(2);
+    expect(result.current.pagedData).toEqual([]);
   });
 });

@@ -23,14 +23,17 @@ export const useData = (): UseData => {
   );
 
   const setPage = useCallback((p: number) => setPageState(p), []);
+
   const setPageSize = useCallback((s: number) => {
     setPageSizeState(s);
     setPageState(1);
   }, []);
+
   const setSort = useCallback((next?: Sort) => {
     setSortState(next);
     setPageState(1);
   }, []);
+
   const setFilters = useCallback((next: Filters) => {
     setFiltersState((prev) => ({ ...prev, ...next }));
     setPageState(1);

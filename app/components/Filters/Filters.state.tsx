@@ -30,13 +30,13 @@ export const reducer = (state: State, action: Action): State => {
     case 'TOGGLE_CHANNEL':
       return state.channelNames.includes(action.value)
         ? {
-          ...state,
-          channelNames: state.channelNames.filter((c) => c !== action.value),
-        }
+            ...state,
+            channelNames: state.channelNames.filter((c) => c !== action.value),
+          }
         : {
-          ...state,
-          channelNames: [...state.channelNames, action.value],
-        };
+            ...state,
+            channelNames: [...state.channelNames, action.value],
+          };
     default:
       return state;
   }

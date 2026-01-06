@@ -14,20 +14,20 @@
     transform 0.2s ease,
     box-shadow 0.2s ease,
     filter 0.2s ease;
-}
 
-.own-button:hover {
-  transform: translateY(-1px);
-  box-shadow: 0 8px 20px rgba(124, 58, 237, 0.35);
-  filter: brightness(1.15);
-}
+  &:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+  }
 
-.own-button:active {
-  transform: translateY(0);
-  filter: brightness(1.05);
-}
+  &:active {
+    transform: translateY(0);
+    filter: brightness(1.05);
+  }
 
-.own-button:disabled {
-  opacity: 0.4;
-  cursor: not-allowed;
+  &:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 8px 20px rgba(124, 58, 237, 0.35);
+    filter: brightness(1.15);
+  }
 }

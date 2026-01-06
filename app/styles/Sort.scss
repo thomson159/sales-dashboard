@@ -16,6 +16,11 @@
   background-color: var(--white);
   cursor: pointer;
   font-size: 0.9rem;
+
+  &:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+  }
 }
 
 .sortButtonActive {

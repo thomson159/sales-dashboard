@@ -8,13 +8,19 @@ export const usePagination = (
   page: number,
   pageSize: number,
 ): UsePaginationResult => {
-  const total = data.length;
+  const total: number = data.length;
+  const totalPages: number = useMemo(() => {
+    // VERY IMPORTANT TO HANDLE edge cases
+    if (pageSize <= 0 || total <= 0) return 0;
 
-  const totalPages = useMemo(() => Math.ceil(total / pageSize), [total, pageSize]);
+    return Math.ceil(total / pageSize);
+  }, [total, pageSize]);
+
+  const safePage: number = Math.max(1, page);
 
   const pagedData: SaleArray = useMemo(
-    () => applyPagination(data, page, pageSize),
-    [data, page, pageSize],
+    () => applyPagination(data, safePage, pageSize),
+    [data, safePage, pageSize],
   );
 
   return { pagedData, total, totalPages };

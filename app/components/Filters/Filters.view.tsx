@@ -16,6 +16,7 @@ export const FiltersView = ({
         <div className="flex flex-col relative w-full md:w-auto">
           <label htmlFor="channelName">Search</label>
           <input
+            autoComplete="off"
             id="channelName"
             value={state.channelName}
             onChange={(e) =>
