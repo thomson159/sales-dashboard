@@ -35,15 +35,15 @@ export type UseData = Readonly<{
   data: SaleArray;
   chartData: SaleArray;
   loading: boolean;
-  page: number;
+  currentPage: number;
   pageSize: number;
-  total: number;
+  dataLength: number;
   totalPages: number;
   filters: Filters;
   sort?: Sort;
   setFilters: (next: Filters) => void;
   setSort: (next?: Sort) => void;
-  setPage: (page: number) => void;
+  setCurrentPage: (page: number) => void;
   setPageSize: (size: number) => void;
 }> &
   Metrics;

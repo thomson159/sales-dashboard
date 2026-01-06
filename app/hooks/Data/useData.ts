@@ -9,50 +9,50 @@ import type { UseSourceResult, UsePaginationResult } from '~/types/hooks.types';
 
 export const useData = (): UseData => {
   const { data, loading }: UseSourceResult = useSource();
-  const [filters, setFiltersState] = useState<Filters>({});
-  const [sort, setSortState] = useState<Sort | undefined>(undefined);
-  const [page, setPageState] = useState<number>(1);
-  const [pageSize, setPageSizeState] = useState<number>(40);
+  const [filters, setFilters] = useState<Filters>({});
+  const [sort, setSort] = useState<Sort | undefined>(undefined);
+  const [currentPage, setCurrentPage] = useState<number>(1);
+  const [pageSize, setPageSize] = useState<number>(40);
   const filteredData: SaleArray = useFilters(data, filters);
   const sortedData: SaleArray = useSort(filteredData, sort);
   const metrics: Metrics = useMetrics(sortedData);
-  const { pagedData, total, totalPages }: UsePaginationResult = usePagination(
+  const { pagedData, dataLength, totalPages }: UsePaginationResult = usePagination(
     sortedData,
-    page,
+    currentPage,
     pageSize,
   );
 
-  const setPage = useCallback((p: number) => setPageState(p), []);
+  const setCurrentPageCB = useCallback((p: number) => setCurrentPage(p), []);
 
-  const setPageSize = useCallback((s: number) => {
-    setPageSizeState(s);
-    setPageState(1);
+  const setPageSizeCB = useCallback((s: number) => {
+    setPageSize(s);
+    setCurrentPage(1);
   }, []);
 
-  const setSort = useCallback((next?: Sort) => {
-    setSortState(next);
-    setPageState(1);
+  const setSortCB = useCallback((next?: Sort) => {
+    setSort(next);
+    setCurrentPage(1);
   }, []);
 
-  const setFilters = useCallback((next: Filters) => {
-    setFiltersState((prev) => ({ ...prev, ...next }));
-    setPageState(1);
+  const setFiltersCB = useCallback((next: Filters) => {
+    setFilters((prev) => ({ ...prev, ...next }));
+    setCurrentPage(1);
   }, []);
 
   return {
     data: pagedData,
     chartData: filteredData,
     loading,
-    page,
+    currentPage,
     pageSize,
-    total,
+    dataLength,
     totalPages,
     filters,
-    setFilters,
     sort,
-    setSort,
-    setPage,
-    setPageSize,
+    setFilters: setFiltersCB,
+    setSort: setSortCB,
+    setCurrentPage: setCurrentPageCB,
+    setPageSize: setPageSizeCB,
     ...metrics,
   };
 };

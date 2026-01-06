@@ -3,7 +3,7 @@ import type { PaginationProps } from '~/types/components.types';
 import type { Mouse } from '~/types/types';
 
 export const PaginationComponent = ({
-  page,
+  currentPage,
   totalPages,
   onPageChange,
   windowSize = 1,
@@ -11,31 +11,31 @@ export const PaginationComponent = ({
   const handlePageClick = useCallback(
     (p: number) => (e: Mouse) => {
       e.preventDefault();
-      if (p !== page) onPageChange(p);
+      if (p !== currentPage) onPageChange(p);
     },
-    [page, onPageChange],
+    [currentPage, onPageChange],
   );
 
   const handlePrevClick = useCallback(
     (e: Mouse) => {
       e.preventDefault();
-      if (page > 1) onPageChange(page - 1);
+      if (currentPage > 1) onPageChange(currentPage - 1);
     },
-    [page, onPageChange],
+    [currentPage, onPageChange],
   );
 
   const handleNextClick = useCallback(
     (e: Mouse) => {
       e.preventDefault();
-      if (page < totalPages) onPageChange(page + 1);
+      if (currentPage < totalPages) onPageChange(currentPage + 1);
     },
-    [page, totalPages, onPageChange],
+    [currentPage, totalPages, onPageChange],
   );
 
   const visiblePages: number[] = useMemo(() => {
     const pages: number[] = [];
-    const start = Math.max(1, page - windowSize);
-    const end = Math.min(totalPages, page + windowSize);
+    const start = Math.max(1, currentPage - windowSize);
+    const end = Math.min(totalPages, currentPage + windowSize);
 
     if (start > 1) pages.push(1);
     if (start > 2) pages.push(-1);
@@ -46,7 +46,7 @@ export const PaginationComponent = ({
     if (end < totalPages) pages.push(totalPages);
 
     return pages;
-  }, [page, totalPages, windowSize]);
+  }, [currentPage, totalPages, windowSize]);
 
   return (
     <div className="flex flex-col items-center gap-2">
@@ -59,7 +59,7 @@ export const PaginationComponent = ({
           ) : (
             <button
               key={p}
-              className={`sortButton ${p === page ? 'sortButtonActive' : ''}`}
+              className={`sortButton ${p === currentPage ? 'sortButtonActive' : ''}`}
               onClick={handlePageClick(p)}
             >
               {p}
@@ -68,10 +68,14 @@ export const PaginationComponent = ({
         )}
       </div>
       <div className="flex gap-2 mt-1">
-        <button disabled={page === 1} className="sortButton" onClick={handlePrevClick}>
+        <button disabled={currentPage === 1} className="sortButton" onClick={handlePrevClick}>
           Prev
         </button>
-        <button disabled={page === totalPages} className="sortButton" onClick={handleNextClick}>
+        <button
+          disabled={currentPage === totalPages}
+          className="sortButton"
+          onClick={handleNextClick}
+        >
           Next
         </button>
       </div>

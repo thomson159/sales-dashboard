@@ -20,7 +20,7 @@ export interface PageSizeFilterProps {
 }
 
 export interface PaginationProps {
-  readonly page: number;
+  readonly currentPage: number;
   readonly totalPages: number;
   readonly onPageChange: (page: number) => void;
   readonly windowSize?: number;
@@ -88,9 +88,9 @@ export type TableHeaderProps = Columns & {
 };
 
 export type RevenueProps = {
-  data: RevenuePerChannelItem[];
+  readonly data: RevenuePerChannelItem[];
 };
 
 export type SalesProps = {
-  data: SalesOverTimeItem[];
+  readonly data: SalesOverTimeItem[];
 };

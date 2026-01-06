@@ -10,7 +10,7 @@ export type UseSourceResult = Readonly<
 
 export type UsePaginationResult = Readonly<{
   pagedData: SaleArray;
-  total: number;
+  dataLength: number;
   totalPages: number;
 }>;
 

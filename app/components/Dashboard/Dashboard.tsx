@@ -24,19 +24,19 @@ export const Dashboard = ({ chartsAreVisible = false }: Props) => {
     data,
     chartData,
     loading,
-    page,
-    setPage,
+    currentPage,
     pageSize,
-    setPageSize,
-    total,
+    dataLength,
     totalPages,
     filters,
-    setFilters,
     sort,
-    setSort,
     totalRevenue,
     totalOrders,
     avgOrderValue,
+    setCurrentPage,
+    setPageSize,
+    setFilters,
+    setSort,
   }: UseData = useData();
 
   const { visibleColumns, toggleColumn }: UseTableColumnsResult = useTableColumns();
@@ -71,11 +71,15 @@ export const Dashboard = ({ chartsAreVisible = false }: Props) => {
             <Button onClick={() => setShowCharts((prev) => !prev)}>Show Charts</Button>
           </div>
         )}
-        <PageSizeFilter pageSize={pageSize} onPageSizeChange={setPageSize} totalItems={total} />
+        <PageSizeFilter
+          pageSize={pageSize}
+          onPageSizeChange={setPageSize}
+          totalItems={dataLength}
+        />
         <Pagination
-          page={page}
+          currentPage={currentPage}
           totalPages={totalPages > 1 ? totalPages : 1}
-          onPageChange={setPage}
+          onPageChange={setCurrentPage}
         />
         <Suspense fallback={<Spinner />}>
           <Table data={data} visibleColumns={visibleColumns} toggleColumn={toggleColumn} />

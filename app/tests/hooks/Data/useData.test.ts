@@ -72,13 +72,19 @@ describe('useData full coverage', () => {
       return { totalRevenue, totalOrders, avgOrderValue };
     });
 
-    vi.spyOn(PaginationHook, 'usePagination').mockImplementation((data, page, pageSize) => {
-      const start = (page - 1) * pageSize;
+    vi.spyOn(PaginationHook, 'usePagination').mockImplementation((data, currentPage, pageSize) => {
+      const start = (currentPage - 1) * pageSize;
       const end = start + pageSize;
+
       const pagedData = data.slice(start, end);
-      const total = data.length;
-      const totalPages = Math.ceil(total / pageSize);
-      return { pagedData, total, totalPages };
+      const dataLength = data.length;
+      const totalPages = pageSize <= 0 || dataLength <= 0 ? 0 : Math.ceil(dataLength / pageSize);
+
+      return {
+        pagedData,
+        dataLength,
+        totalPages,
+      };
     });
   });
 
@@ -87,11 +93,11 @@ describe('useData full coverage', () => {
     expect(result.current.data).toEqual(sampleData);
     expect(result.current.chartData).toEqual(sampleData);
     expect(result.current.loading).toBe(false);
-    expect(result.current.page).toBe(1);
+    expect(result.current.currentPage).toBe(1);
     expect(result.current.pageSize).toBe(40);
     expect(result.current.filters).toEqual({});
     expect(result.current.sort).toBeUndefined();
-    expect(result.current.total).toBe(3);
+    expect(result.current.dataLength).toBe(3);
     expect(result.current.totalPages).toBe(1);
     expect(result.current.totalRevenue).toBe(120);
     expect(result.current.totalOrders).toBe(10);
@@ -115,7 +121,7 @@ describe('useData full coverage', () => {
       channelNames: [],
     });
     expect(result.current.data).toEqual([{ ...sampleData[0] }]);
-    expect(result.current.page).toBe(1);
+    expect(result.current.currentPage).toBe(1);
     expect(result.current.totalRevenue).toBe(50);
   });
 
@@ -153,7 +159,7 @@ describe('useData full coverage', () => {
     expect(result.current.data.length).toBe(2);
     expect(result.current.totalPages).toBe(2);
 
-    act(() => result.current.setPage(2));
+    act(() => result.current.setCurrentPage(2));
     expect(result.current.data.length).toBe(1);
   });
 

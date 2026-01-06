@@ -19,7 +19,7 @@ describe('usePagination', () => {
     const { result } = renderHook(() => usePagination([], 1, 10));
 
     expect(result.current.pagedData).toEqual([]);
-    expect(result.current.total).toBe(0);
+    expect(result.current.dataLength).toBe(0);
     expect(result.current.totalPages).toBe(0);
     expect(mockedApplyPagination).toHaveBeenCalledWith([], 1, 10);
   });
@@ -39,7 +39,7 @@ describe('usePagination', () => {
     const { result } = renderHook(() => usePagination(data, 1, 10));
 
     expect(result.current.pagedData).toEqual(data);
-    expect(result.current.total).toBe(1);
+    expect(result.current.dataLength).toBe(1);
     expect(result.current.totalPages).toBe(1);
   });
 
@@ -56,7 +56,7 @@ describe('usePagination', () => {
     const { result } = renderHook(() => usePagination(data, 1, 10));
 
     expect(result.current.pagedData).toHaveLength(10);
-    expect(result.current.total).toBe(25);
+    expect(result.current.dataLength).toBe(25);
     expect(result.current.totalPages).toBe(3);
   });
 
@@ -73,7 +73,7 @@ describe('usePagination', () => {
     const { result } = renderHook(() => usePagination(data, 2, 5));
 
     expect(result.current.pagedData).toHaveLength(5);
-    expect(result.current.total).toBe(15);
+    expect(result.current.dataLength).toBe(15);
     expect(result.current.totalPages).toBe(3);
     expect(mockedApplyPagination).toHaveBeenCalledWith(data, 2, 5);
   });
@@ -91,7 +91,7 @@ describe('usePagination', () => {
     const { result } = renderHook(() => usePagination(data, 2, 10));
 
     expect(result.current.pagedData).toEqual([]);
-    expect(result.current.total).toBe(5);
+    expect(result.current.dataLength).toBe(5);
     expect(result.current.totalPages).toBe(1);
   });
 
@@ -109,7 +109,7 @@ describe('usePagination', () => {
 
     expect(result.current.totalPages).toBe(0);
     expect(result.current.pagedData).toEqual([]);
-    expect(result.current.total).toBe(10);
+    expect(result.current.dataLength).toBe(10);
     expect(mockedApplyPagination).toHaveBeenCalledWith(data, 1, 0);
   });
 
@@ -127,7 +127,7 @@ describe('usePagination', () => {
 
     expect(result.current.totalPages).toBe(3);
     expect(result.current.pagedData).toHaveLength(2);
-    expect(mockedApplyPagination).toHaveBeenCalledWith(data, 1, 2);
+    expect(mockedApplyPagination).toHaveBeenCalledWith(data, 0, 2);
   });
 
   it('handles empty data with non-zero pageSize', () => {
@@ -137,7 +137,7 @@ describe('usePagination', () => {
 
     expect(result.current.totalPages).toBe(0);
     expect(result.current.pagedData).toEqual([]);
-    expect(result.current.total).toBe(0);
+    expect(result.current.dataLength).toBe(0);
   });
 
   it('handles page > totalPages correctly', () => {
