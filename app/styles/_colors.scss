@@ -3,4 +3,10 @@
   --gray: #d1d1d1;
   --light-gray: #f1f1f1;
   --white: #ffffff;
+
+  --text: #374151;
+}
+
+body {
+  color: var(--text);
 }
