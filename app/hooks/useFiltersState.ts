@@ -18,14 +18,14 @@ export const useFiltersState = ({
     channelNames: channelNames ?? [],
   });
 
-  const [lastApplied, setLastApplied] = useState<Filters>(toFiltersValue(state));
+  const filtersValue: Filters = toFiltersValue(state);
+  const [lastApplied, setLastApplied] = useState<Filters>(filtersValue);
   const hasChanges: boolean = computeHasChanges(state, lastApplied);
 
   const apply = useCallback(() => {
-    const value: Filters = toFiltersValue(state);
-    onChange(value);
-    setLastApplied(value);
-  }, [state, onChange]);
+    onChange(filtersValue);
+    setLastApplied(filtersValue);
+  }, [filtersValue, onChange]);
 
   return {
     state,

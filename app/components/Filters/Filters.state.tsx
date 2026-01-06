@@ -1,6 +1,7 @@
 import type { Filters } from '~/types/types';
 import type { Action, State } from '../../types/state.types';
 
+// converts an empty string or empty array to undefined
 export const toFiltersValue = (state: State): Filters => ({
   channelName: state.channelName || undefined,
   channelNames: state.channelNames.length ? state.channelNames : undefined,
@@ -8,12 +9,33 @@ export const toFiltersValue = (state: State): Filters => ({
   maxDate: state.maxDate || undefined,
 });
 
-export const computeHasChanges = (state: State, lastApplied: Filters): boolean =>
-  !Object.is(state.channelName, lastApplied.channelName ?? '') ||
-  !Object.is(state.minDate, lastApplied.minDate ?? '') ||
-  !Object.is(state.maxDate, lastApplied.maxDate ?? '') ||
-  state.channelNames?.length !== (lastApplied.channelNames?.length ?? 0) ||
-  state.channelNames.some((c, i) => !Object.is(c, lastApplied.channelNames?.[i]));
+const toStateValue = (filters: Filters) => ({
+  channelName: filters.channelName ?? '',
+  minDate: filters.minDate ?? '',
+  maxDate: filters.maxDate ?? '',
+  channelNames: filters.channelNames ?? [],
+});
+
+const equalStringSets = (a: readonly string[], b: readonly string[]): boolean => {
+  if (a.length !== b.length) return false;
+
+  const setB = new Set(b);
+  return a.every((value) => setB.has(value));
+};
+
+export const computeHasChanges = (state: State, lastApplied: Filters): boolean => {
+  const normalized = toStateValue(lastApplied);
+
+  if (state.channelName !== normalized.channelName) return true;
+  if (state.minDate !== normalized.minDate) return true;
+  if (state.maxDate !== normalized.maxDate) return true;
+
+  if (!equalStringSets(state.channelNames, normalized.channelNames)) {
+    return true;
+  }
+
+  return false;
+};
 
 export const reducer = (state: State, action: Action): State => {
   switch (action.type) {
