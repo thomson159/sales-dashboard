@@ -17,6 +17,7 @@ exports[`Filters > matches snapshot 1`] = `
           Search
         </label>
         <input
+          autocomplete="off"
           class="filter-input w-full"
           id="channelName"
           value="Test"
