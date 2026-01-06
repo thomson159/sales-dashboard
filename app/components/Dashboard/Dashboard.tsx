@@ -38,10 +38,11 @@ export const Dashboard = ({ chartsAreVisible = false }: Props) => {
     setFilters,
     setSort,
   }: UseData = useData();
-
   const { visibleColumns, toggleColumn }: UseTableColumnsResult = useTableColumns();
-  const [filtersVisible, setFiltersVisible] = useState<boolean>(true);
-  const toggleFilters = useCallback(() => setFiltersVisible((prev: boolean) => !prev), []);
+
+  const [navbarToggle, setNavbarToggle] = useState<boolean>(true);
+  const onToggleNavbar = useCallback(() => setNavbarToggle((prev: boolean) => !prev), []);
+
   const handleSortChange = useCallback((nextSort?: SortType) => setSort(nextSort), [setSort]);
 
   const handleFiltersChange = useCallback(
@@ -58,7 +59,7 @@ export const Dashboard = ({ chartsAreVisible = false }: Props) => {
 
   return (
     <div>
-      <Navbar expanded={filtersVisible} onToggle={toggleFilters} loading={loading}>
+      <Navbar expanded={navbarToggle} onToggle={onToggleNavbar} loading={loading}>
         <Filters data={chartData} {...filters} onChange={handleFiltersChange} />
         <Sort sort={sort} onChange={handleSortChange} />
       </Navbar>
@@ -71,15 +72,11 @@ export const Dashboard = ({ chartsAreVisible = false }: Props) => {
             <Button onClick={() => setShowCharts((prev) => !prev)}>Show Charts</Button>
           </div>
         )}
-        <PageSizeFilter
-          pageSize={pageSize}
-          onPageSizeChange={setPageSize}
-          totalItems={dataLength}
-        />
+        <PageSizeFilter pageSize={pageSize} onChange={setPageSize} dataLength={dataLength} />
         <Pagination
           currentPage={currentPage}
           totalPages={totalPages > 1 ? totalPages : 1}
-          onPageChange={setCurrentPage}
+          onChange={setCurrentPage}
         />
         <Suspense fallback={<Spinner />}>
           <Table data={data} visibleColumns={visibleColumns} toggleColumn={toggleColumn} />

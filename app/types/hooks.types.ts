@@ -42,6 +42,6 @@ export type UsePageSizeResult = Readonly<{
 export type UsePageSizeParams = Readonly<{
   pageSize: number;
   min: number;
-  totalItems: number;
-  onPageSizeChange: (value: number) => void;
+  dataLength: number;
+  onChange: (value: number) => void;
 }>;

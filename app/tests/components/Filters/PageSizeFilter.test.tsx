@@ -31,13 +31,13 @@ describe('PageSizeFilter', () => {
   });
 
   it('renders input and apply button', () => {
-    render(<PageSizeFilter pageSize={10} totalItems={100} onPageSizeChange={vi.fn()} />);
+    render(<PageSizeFilter pageSize={10} dataLength={100} onChange={vi.fn()} />);
     expect(screen.getByLabelText('Per Page')).toBeDefined();
     expect(screen.getByText('Apply')).toBeDefined();
   });
 
   it('sets correct input attributes', () => {
-    render(<PageSizeFilter pageSize={10} totalItems={50} min={5} onPageSizeChange={vi.fn()} />);
+    render(<PageSizeFilter pageSize={10} dataLength={50} min={5} onChange={vi.fn()} />);
     const input = screen.getByLabelText('Per Page') as HTMLInputElement;
     expect(input.min).toBe('5');
     expect(input.max).toBe('50');
@@ -45,21 +45,21 @@ describe('PageSizeFilter', () => {
   });
 
   it('calls handleChange on input change', () => {
-    render(<PageSizeFilter pageSize={10} totalItems={100} onPageSizeChange={vi.fn()} />);
+    render(<PageSizeFilter pageSize={10} dataLength={100} onChange={vi.fn()} />);
     const input = screen.getByLabelText('Per Page');
     fireEvent.change(input, { target: { value: '20' } });
     expect(handleChangeMock).toHaveBeenCalled();
   });
 
   it('calls applyPageSize when Apply button is clicked', () => {
-    render(<PageSizeFilter pageSize={10} totalItems={100} onPageSizeChange={vi.fn()} />);
+    render(<PageSizeFilter pageSize={10} dataLength={100} onChange={vi.fn()} />);
     fireEvent.click(screen.getByText('Apply'));
     expect(applyPageSizeMock).toHaveBeenCalled();
   });
 
   it('matches snapshot', () => {
     const { container } = render(
-      <PageSizeFilter pageSize={10} totalItems={100} onPageSizeChange={vi.fn()} />,
+      <PageSizeFilter pageSize={10} dataLength={100} onChange={vi.fn()} />,
     );
     expect(container).toMatchSnapshot();
   });

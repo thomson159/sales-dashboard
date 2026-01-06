@@ -4,7 +4,7 @@ import type { Change } from '~/types/types';
 import * as filtersUtils from '~/utils/filters.utils';
 
 describe('usePageSize', () => {
-  const onPageSizeChange = vi.fn();
+  const onChange = vi.fn();
 
   beforeEach(() => {
     vi.clearAllMocks();
@@ -12,14 +12,14 @@ describe('usePageSize', () => {
 
   it('should initialize with pageSize', () => {
     const { result } = renderHook(() =>
-      usePageSize({ pageSize: 10, min: 1, totalItems: 100, onPageSizeChange }),
+      usePageSize({ pageSize: 10, min: 1, dataLength: 100, onChange }),
     );
     expect(result.current.localPageSize).toBe(10);
   });
 
   it('should update localPageSize when pageSize prop changes', () => {
     const { result, rerender } = renderHook(
-      ({ pageSize }) => usePageSize({ pageSize, min: 1, totalItems: 100, onPageSizeChange }),
+      ({ pageSize }) => usePageSize({ pageSize, min: 1, dataLength: 100, onChange }),
       {
         initialProps: { pageSize: 5 },
       },
@@ -32,7 +32,7 @@ describe('usePageSize', () => {
   it('should update localPageSize on handleChange with valid input', () => {
     vi.spyOn(filtersUtils, 'sanitizePageSizeInput').mockReturnValue(15);
     const { result } = renderHook(() =>
-      usePageSize({ pageSize: 10, min: 1, totalItems: 100, onPageSizeChange }),
+      usePageSize({ pageSize: 10, min: 1, dataLength: 100, onChange }),
     );
 
     act(() => {
@@ -45,7 +45,7 @@ describe('usePageSize', () => {
   it('should not update localPageSize on handleChange if input is invalid', () => {
     vi.spyOn(filtersUtils, 'sanitizePageSizeInput').mockReturnValue(null);
     const { result } = renderHook(() =>
-      usePageSize({ pageSize: 10, min: 1, totalItems: 100, onPageSizeChange }),
+      usePageSize({ pageSize: 10, min: 1, dataLength: 100, onChange }),
     );
 
     act(() => {
@@ -55,10 +55,10 @@ describe('usePageSize', () => {
     expect(result.current.localPageSize).toBe(10);
   });
 
-  it('should call onPageSizeChange with validated value when applyPageSize changes the size', () => {
+  it('should call onChange with validated value when applyPageSize changes the size', () => {
     vi.spyOn(filtersUtils, 'validatePageSize').mockReturnValue(20);
     const { result } = renderHook(() =>
-      usePageSize({ pageSize: 10, min: 1, totalItems: 100, onPageSizeChange }),
+      usePageSize({ pageSize: 10, min: 1, dataLength: 100, onChange }),
     );
 
     act(() => {
@@ -67,20 +67,20 @@ describe('usePageSize', () => {
 
     expect(filtersUtils.validatePageSize).toHaveBeenCalledWith(10, 1, 100);
     expect(result.current.localPageSize).toBe(20);
-    expect(onPageSizeChange).toHaveBeenCalledWith(20);
+    expect(onChange).toHaveBeenCalledWith(20);
   });
 
-  it('should not call onPageSizeChange if validated value equals current pageSize', () => {
+  it('should not call onChange if validated value equals current pageSize', () => {
     vi.spyOn(filtersUtils, 'validatePageSize').mockReturnValue(10);
     const { result } = renderHook(() =>
-      usePageSize({ pageSize: 10, min: 1, totalItems: 100, onPageSizeChange }),
+      usePageSize({ pageSize: 10, min: 1, dataLength: 100, onChange }),
     );
 
     act(() => {
       result.current.applyPageSize();
     });
 
-    expect(onPageSizeChange).not.toHaveBeenCalled();
+    expect(onChange).not.toHaveBeenCalled();
     expect(result.current.localPageSize).toBe(10);
   });
 });

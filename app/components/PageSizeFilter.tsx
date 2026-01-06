@@ -6,15 +6,15 @@ import type { UsePageSizeResult } from '~/types/hooks.types';
 
 const PageSizeFilterComponent = ({
   pageSize,
-  onPageSizeChange,
-  totalItems,
+  onChange,
+  dataLength,
   min = 1,
 }: PageSizeFilterProps) => {
   const { localPageSize, handleChange, applyPageSize }: UsePageSizeResult = usePageSize({
     pageSize,
     min,
-    totalItems,
-    onPageSizeChange,
+    dataLength,
+    onChange,
   });
 
   return (
@@ -26,7 +26,7 @@ const PageSizeFilterComponent = ({
             id="page-size"
             type="number"
             min={min}
-            max={totalItems}
+            max={dataLength}
             value={localPageSize}
             onChange={handleChange}
             className={'filter-input'}

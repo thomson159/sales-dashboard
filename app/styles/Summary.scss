@@ -9,10 +9,10 @@
     transform 0.25s ease,
     box-shadow 0.25s ease,
     filter 0.25s ease;
-}
 
-.panel:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 12px 32px rgba(88, 28, 135, 0.35);
-  filter: brightness(1.1);
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 32px rgba(88, 28, 135, 0.35);
+    filter: brightness(1.1);
+  }
 }

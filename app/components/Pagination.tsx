@@ -5,31 +5,31 @@ import type { Mouse } from '~/types/types';
 export const PaginationComponent = ({
   currentPage,
   totalPages,
-  onPageChange,
+  onChange,
   windowSize = 1,
 }: PaginationProps) => {
   const handlePageClick = useCallback(
     (p: number) => (e: Mouse) => {
       e.preventDefault();
-      if (p !== currentPage) onPageChange(p);
+      if (p !== currentPage) onChange(p);
     },
-    [currentPage, onPageChange],
+    [currentPage, onChange],
   );
 
   const handlePrevClick = useCallback(
     (e: Mouse) => {
       e.preventDefault();
-      if (currentPage > 1) onPageChange(currentPage - 1);
+      if (currentPage > 1) onChange(currentPage - 1);
     },
-    [currentPage, onPageChange],
+    [currentPage, onChange],
   );
 
   const handleNextClick = useCallback(
     (e: Mouse) => {
       e.preventDefault();
-      if (currentPage < totalPages) onPageChange(currentPage + 1);
+      if (currentPage < totalPages) onChange(currentPage + 1);
     },
-    [currentPage, totalPages, onPageChange],
+    [currentPage, totalPages, onChange],
   );
 
   const visiblePages: number[] = useMemo(() => {
@@ -72,7 +72,7 @@ export const PaginationComponent = ({
           Prev
         </button>
         <button
-          disabled={currentPage === totalPages}
+          disabled={currentPage === totalPages || totalPages < 2}
           className="sortButton"
           onClick={handleNextClick}
         >

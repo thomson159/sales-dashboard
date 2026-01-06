@@ -14,15 +14,15 @@ import type { UseFiltersStateResult } from './hooks.types';
 
 export interface PageSizeFilterProps {
   readonly pageSize: number;
-  readonly onPageSizeChange: (size: number) => void;
-  readonly totalItems: number;
+  readonly onChange: (size: number) => void;
+  readonly dataLength: number;
   readonly min?: number;
 }
 
 export interface PaginationProps {
   readonly currentPage: number;
   readonly totalPages: number;
-  readonly onPageChange: (page: number) => void;
+  readonly onChange: (page: number) => void;
   readonly windowSize?: number;
 }
 

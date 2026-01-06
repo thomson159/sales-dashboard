@@ -6,8 +6,8 @@ import { sanitizePageSizeInput, validatePageSize } from '~/utils/filters.utils';
 export const usePageSize = ({
   pageSize,
   min,
-  totalItems,
-  onPageSizeChange,
+  dataLength,
+  onChange,
 }: UsePageSizeParams): UsePageSizeResult => {
   const [localPageSize, setLocalPageSize] = useState<number>(pageSize);
 
@@ -23,13 +23,13 @@ export const usePageSize = ({
   }, []);
 
   const applyPageSize = useCallback(() => {
-    const validated: number = validatePageSize(localPageSize, min, totalItems);
+    const validated: number = validatePageSize(localPageSize, min, dataLength);
 
     if (validated !== pageSize) {
       setLocalPageSize(validated);
-      onPageSizeChange(validated);
+      onChange(validated);
     }
-  }, [localPageSize, min, totalItems, pageSize, onPageSizeChange]);
+  }, [localPageSize, min, dataLength, pageSize, onChange]);
 
   return {
     localPageSize,
