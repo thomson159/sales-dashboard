@@ -1,6 +1,6 @@
 import { renderHook, act } from '@testing-library/react';
-import type { ChangeEvent } from 'react';
 import { usePageSize } from '~/hooks/usePageSize';
+import type { Change } from '~/types/types';
 import * as filtersUtils from '~/utils/filters.utils';
 
 describe('usePageSize', () => {
@@ -36,7 +36,7 @@ describe('usePageSize', () => {
     );
 
     act(() => {
-      result.current.handleChange({ target: { value: '15' } } as ChangeEvent<HTMLInputElement>);
+      result.current.handleChange({ target: { value: '15' } } as Change);
     });
 
     expect(result.current.localPageSize).toBe(15);
@@ -49,7 +49,7 @@ describe('usePageSize', () => {
     );
 
     act(() => {
-      result.current.handleChange({ target: { value: 'abc' } } as ChangeEvent<HTMLInputElement>);
+      result.current.handleChange({ target: { value: 'abc' } } as Change);
     });
 
     expect(result.current.localPageSize).toBe(10);

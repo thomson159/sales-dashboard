@@ -1,6 +1,6 @@
 import type { index } from '../consts';
 import type { State } from './state.types';
-import { type MouseEvent } from 'react';
+import { type ChangeEvent, type MouseEvent } from 'react';
 
 export type SaleArray = readonly Sale[];
 export type SaleData = { data: SaleArray };
@@ -55,6 +55,7 @@ export type ColumnKey = keyof Sale | typeof index;
 export type SortKey = keyof Sale | null;
 export type SortOrder = 'asc' | 'desc';
 export type Mouse = MouseEvent<HTMLButtonElement>;
+export type Change = ChangeEvent<HTMLInputElement>;
 
 export type SalesOverTimeItem = {
   date: string;

@@ -1,5 +1,6 @@
-import { useState, useEffect, useCallback, type ChangeEvent } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import type { UsePageSizeParams, UsePageSizeResult } from '~/types/hooks.types';
+import type { Change } from '~/types/types';
 import { sanitizePageSizeInput, validatePageSize } from '~/utils/filters.utils';
 
 export const usePageSize = ({
@@ -14,7 +15,7 @@ export const usePageSize = ({
     setLocalPageSize(pageSize);
   }, [pageSize]);
 
-  const handleChange = useCallback((e: ChangeEvent<HTMLInputElement>) => {
+  const handleChange = useCallback((e: Change) => {
     const parsed: number | null = sanitizePageSizeInput(e.target.value);
     if (parsed === null) return;
 

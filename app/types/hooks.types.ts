@@ -1,7 +1,6 @@
-import type { ChangeEvent } from 'react';
 import type { VisibleColumns } from './components.types';
 import type { Action, State } from './state.types';
-import type { SortKey, SortOrder, ColumnKey, SaleArray, SaleData } from './types';
+import type { SortKey, SortOrder, ColumnKey, SaleArray, SaleData, Change } from './types';
 
 export type UseSourceResult = Readonly<SaleData & {
   loading: boolean;
@@ -34,7 +33,7 @@ export type UseTableColumnsResult = VisibleColumns &
 
 export type UsePageSizeResult = Readonly<{
   localPageSize: number;
-  handleChange: (e: ChangeEvent<HTMLInputElement>) => void;
+  handleChange: (e: Change) => void;
   applyPageSize: () => void;
 }>;
 
