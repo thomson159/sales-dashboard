@@ -60,7 +60,7 @@ export const Dashboard = ({ chartsAreVisible = false }: Props) => {
 
   return (
     // <ThemeProvider>
-    <>
+    <div>
       <Navbar expanded={navbarToggle} onToggle={onToggleNavbar} loading={loading}>
         <Filters data={chartData} {...filters} onChange={handleFiltersChange} />
         <Sort sort={sort} onChange={handleSortChange} />
@@ -85,7 +85,7 @@ export const Dashboard = ({ chartsAreVisible = false }: Props) => {
         </Suspense>
         <Footer />
       </Container>
-    </>
+    </div>
     // </ThemeProvider>
   );
 };
