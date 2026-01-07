@@ -17,7 +17,7 @@ export const SortComponent = ({ sort, onChange }: SortProps) => {
 
   return (
     <div>
-      <div className="flex mt-5 ">Sort By</div>
+      <div className="flex mt-5 ">↕️ Sort By</div>
       <div className={'sort-container'}>
         {FIELDS.map(({ label, value }) => {
           const isActive = sort?.field === value;

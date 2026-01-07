@@ -8,7 +8,7 @@ export const FiltersView = ({ state, channels, hasChanges, apply, dispatch }: Fi
     <div className="w-full flex flex-col md:flex-row md:items-end gap-4 flex-wrap">
       <div className="flex flex-wrap gap-4 w-full md:w-auto">
         <div className="flex flex-col relative w-full md:w-auto">
-          <label htmlFor="channelName">Search</label>
+          <label htmlFor="channelName">🔎 Search</label>
           <input
             autoComplete="off"
             id="channelName"
@@ -33,7 +33,7 @@ export const FiltersView = ({ state, channels, hasChanges, apply, dispatch }: Fi
           )}
         </div>
         <div className="flex flex-col w-full md:w-auto">
-          <label htmlFor="minDate">Date</label>
+          <label htmlFor="minDate">📅 Date</label>
           <div className="flex flex-wrap items-center">
             <DatePicker
               id="minDate"

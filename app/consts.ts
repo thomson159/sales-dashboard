@@ -19,11 +19,11 @@ export const COLUMNS: Column[] = [
 ];
 
 export const FIELDS: Fields[] = [
-  { label: '📅 Date', value: 'date' },
-  { label: '🏷️ Name', value: 'channel_name' },
-  { label: '📌 Status', value: 'order_status_id' },
-  { label: '💰 Sales', value: 'sum_sales' },
-  { label: '📦 Orders', value: 'count_orders' },
+  { label: 'Date', value: 'date' },
+  { label: 'Name', value: 'channel_name' },
+  { label: 'Status', value: 'order_status_id' },
+  { label: 'Sales', value: 'sum_sales' },
+  { label: 'Orders', value: 'count_orders' },
 ];
 
 export const CHANNEL_MAP: Record<string, string> = {
