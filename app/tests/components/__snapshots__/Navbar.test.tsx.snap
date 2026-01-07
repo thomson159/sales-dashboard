@@ -19,7 +19,7 @@ exports[`Navbar > matches snapshot when collapsed 1`] = `
       </h2>
     </div>
     <div
-      class="filters-wrapper filters-closed pl-4 md:px-10 lg:px-24"
+      class="filters-wrapper filters-closed pl-4 pr-4 md:px-10 lg:px-24"
     >
       <div
         class="pb-2"
@@ -65,7 +65,7 @@ exports[`Navbar > matches snapshot when expanded 1`] = `
       </h2>
     </div>
     <div
-      class="filters-wrapper filters-open pl-4 md:px-10 lg:px-24"
+      class="filters-wrapper filters-open pl-4 pr-4 md:px-10 lg:px-24"
     >
       <div
         class="pb-2"
