@@ -2,7 +2,7 @@
   position: relative;
   background: linear-gradient(135deg, #5b21b6, #6d28d9, #9333ea);
   border-radius: 0.75rem;
-  box-shadow: 0 8px 24px rgba(88, 28, 135, 0.25);
+  box-shadow: 0 8px 24px rgba(124, 58, 237, 0.25);
 
   transform: translateY(0);
   transition:
@@ -12,7 +12,7 @@
 
   &:hover {
     transform: translateY(-4px);
-    box-shadow: 0 12px 32px rgba(88, 28, 135, 0.35);
-    filter: brightness(1.1);
+    box-shadow: 0 8px 20px rgba(124, 58, 237, 0.35);
+    filter: brightness(1.15);
   }
 }

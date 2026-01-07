@@ -9,27 +9,28 @@ exports[`Pagination memo > matches snapshot for memoized Pagination 1`] = `
       class="flex flex-wrap justify-center gap-1 overflow-hidden"
     >
       <button
-        class="sortButton "
+        class="sort sort-in-active"
       >
         1
       </button>
       <button
-        class="sortButton "
+        class="sort sort-in-active"
       >
         2
       </button>
       <button
-        class="sortButton sortButtonActive"
+        class="sort sort-active"
+        disabled=""
       >
         3
       </button>
       <button
-        class="sortButton "
+        class="sort sort-in-active"
       >
         4
       </button>
       <button
-        class="sortButton "
+        class="sort sort-in-active"
       >
         5
       </button>
@@ -38,12 +39,12 @@ exports[`Pagination memo > matches snapshot for memoized Pagination 1`] = `
       class="flex gap-2 mt-1"
     >
       <button
-        class="sortButton"
+        class="sort-next"
       >
         Prev
       </button>
       <button
-        class="sortButton"
+        class="sort-next"
       >
         Next
       </button>
@@ -61,12 +62,13 @@ exports[`PaginationComponent > matches snapshot with first page 1`] = `
       class="flex flex-wrap justify-center gap-1 overflow-hidden"
     >
       <button
-        class="sortButton sortButtonActive"
+        class="sort sort-active"
+        disabled=""
       >
         1
       </button>
       <button
-        class="sortButton "
+        class="sort sort-in-active"
       >
         2
       </button>
@@ -76,7 +78,7 @@ exports[`PaginationComponent > matches snapshot with first page 1`] = `
         …
       </span>
       <button
-        class="sortButton "
+        class="sort sort-in-active"
       >
         5
       </button>
@@ -85,13 +87,13 @@ exports[`PaginationComponent > matches snapshot with first page 1`] = `
       class="flex gap-2 mt-1"
     >
       <button
-        class="sortButton"
+        class="sort-next"
         disabled=""
       >
         Prev
       </button>
       <button
-        class="sortButton"
+        class="sort-next"
       >
         Next
       </button>
@@ -109,7 +111,7 @@ exports[`PaginationComponent > matches snapshot with last page 1`] = `
       class="flex flex-wrap justify-center gap-1 overflow-hidden"
     >
       <button
-        class="sortButton "
+        class="sort sort-in-active"
       >
         1
       </button>
@@ -119,12 +121,13 @@ exports[`PaginationComponent > matches snapshot with last page 1`] = `
         …
       </span>
       <button
-        class="sortButton "
+        class="sort sort-in-active"
       >
         4
       </button>
       <button
-        class="sortButton sortButtonActive"
+        class="sort sort-active"
+        disabled=""
       >
         5
       </button>
@@ -133,12 +136,12 @@ exports[`PaginationComponent > matches snapshot with last page 1`] = `
       class="flex gap-2 mt-1"
     >
       <button
-        class="sortButton"
+        class="sort-next"
       >
         Prev
       </button>
       <button
-        class="sortButton"
+        class="sort-next"
         disabled=""
       >
         Next
@@ -157,27 +160,28 @@ exports[`PaginationComponent > matches snapshot with middle page 1`] = `
       class="flex flex-wrap justify-center gap-1 overflow-hidden"
     >
       <button
-        class="sortButton "
+        class="sort sort-in-active"
       >
         1
       </button>
       <button
-        class="sortButton "
+        class="sort sort-in-active"
       >
         2
       </button>
       <button
-        class="sortButton sortButtonActive"
+        class="sort sort-active"
+        disabled=""
       >
         3
       </button>
       <button
-        class="sortButton "
+        class="sort sort-in-active"
       >
         4
       </button>
       <button
-        class="sortButton "
+        class="sort sort-in-active"
       >
         5
       </button>
@@ -186,12 +190,12 @@ exports[`PaginationComponent > matches snapshot with middle page 1`] = `
       class="flex gap-2 mt-1"
     >
       <button
-        class="sortButton"
+        class="sort-next"
       >
         Prev
       </button>
       <button
-        class="sortButton"
+        class="sort-next"
       >
         Next
       </button>

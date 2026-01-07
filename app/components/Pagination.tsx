@@ -58,8 +58,9 @@ export const PaginationComponent = ({
             </span>
           ) : (
             <button
+              disabled={p === currentPage}
               key={p}
-              className={`sortButton ${p === currentPage ? 'sortButtonActive' : ''}`}
+              className={`sort ${p === currentPage ? 'sort-active' : 'sort-in-active'}`}
               onClick={handlePageClick(p)}
             >
               {p}
@@ -68,12 +69,12 @@ export const PaginationComponent = ({
         )}
       </div>
       <div className="flex gap-2 mt-1">
-        <button disabled={currentPage === 1} className="sortButton" onClick={handlePrevClick}>
+        <button disabled={currentPage === 1} className="sort-next" onClick={handlePrevClick}>
           Prev
         </button>
         <button
           disabled={currentPage === totalPages || totalPages < 2}
-          className="sortButton"
+          className="sort-next"
           onClick={handleNextClick}
         >
           Next

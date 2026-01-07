@@ -31,7 +31,7 @@ describe('PaginationComponent', () => {
   it('highlights active page', () => {
     render(<PaginationComponent currentPage={3} totalPages={5} onChange={onChangeMock} />);
     const activeBtn = screen.getByText('3');
-    expect(activeBtn).toHaveClass('sortButtonActive');
+    expect(activeBtn).toHaveClass('sort-active');
   });
 
   it('calls onChange when clicking a page number', () => {
@@ -105,7 +105,7 @@ describe('Pagination memo', () => {
     const onChangeMock = vi.fn();
     render(<Pagination currentPage={3} totalPages={5} onChange={onChangeMock} />);
     const btn = screen.getByText('3');
-    expect(btn).toHaveClass('sortButtonActive');
+    expect(btn).toHaveClass('sort-active');
   });
 
   it('matches snapshot for memoized Pagination', () => {
