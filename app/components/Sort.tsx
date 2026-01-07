@@ -26,7 +26,7 @@ export const SortComponent = ({ sort, onChange }: SortProps) => {
   return (
     <div>
       <div className="flex mt-5 ">Sort By</div>
-      <div className={'sortContainer'}>
+      <div className={'sort-container'}>
         {FIELDS.map(({ label, value }) => {
           const isActive = sort?.field === value;
 
@@ -35,10 +35,10 @@ export const SortComponent = ({ sort, onChange }: SortProps) => {
               key={value}
               type="button"
               onClick={() => handleClick(value)}
-              className={`${'sortButton'} ${isActive ? 'sortButtonActive' : 'sortButtonInActive'}`}
+              className={`${'sort'} ${isActive ? 'sort-active' : 'sort-in-active'}`}
             >
               <span>{label}</span>
-              {isActive && <span className={'sortArrow'}>{getArrow(value)}</span>}
+              {isActive && <span className={'sort-arrow'}>{getArrow(value)}</span>}
             </button>
           );
         })}

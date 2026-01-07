@@ -1,16 +1,9 @@
-.sortContainer {
-  display: flex;
-  gap: 0.25rem;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.sortButton {
+@mixin sort-button-base($withHover: true) {
   height: 36px;
   display: flex;
   align-items: center;
   gap: 0.25rem;
-  padding: 0px 12px;
+  padding: 0 12px;
   border: 1px solid var(--gray);
   border-radius: 6px;
   background-color: var(--white);
@@ -18,19 +11,53 @@
   font-size: 0.9rem;
 
   &:disabled {
-    opacity: 0.4;
     cursor: not-allowed;
+  }
+
+  @if $withHover {
+    &:hover {
+      background-color: var(--light-gray);
+    }
   }
 }
 
-.sortButtonActive {
-  background-color: var(--blue);
-  border-color: var(--blue);
-  color: var(--white);
-  font-weight: bold;
+.sort-container {
+  display: flex;
+  gap: 0.25rem;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
-.sortArrow {
+.sort {
+  @include sort-button-base(false);
+}
+
+.sort-next {
+  @include sort-button-base;
+
+  &:disabled {
+    opacity: 0.4;
+  }
+}
+
+.sort-active {
+  background-color: var(--main);
+  border-color: var(--main);
+  color: var(--white);
+  font-weight: bold;
+
+  &:hover {
+    filter: brightness(1.15);
+  }
+}
+
+.sort-in-active {
+  &:hover {
+    background-color: var(--light-gray);
+  }
+}
+
+.sort-arrow {
   font-size: 0.8rem;
   line-height: 1;
 }

@@ -75,7 +75,7 @@ export const FiltersView = ({
         </div>
       </div>
       <div className="flex flex-wrap gap-4 w-full md:w-auto items-end min-h-[84px] md:min-h-auto">
-        <div className={`${'sortContainer'} flex flex-wrap gap-2`}>
+        <div className={`${'sort-container'} flex flex-wrap gap-2`}>
           {availableChannels.map((name) => {
             const active = state.channelNames.includes(name);
 
@@ -83,8 +83,8 @@ export const FiltersView = ({
               <button
                 key={name}
                 onClick={() => dispatch({ type: 'TOGGLE_CHANNEL', value: name })}
-                className={`${'sortButton'} ${
-                  active ? `${'sortButtonActive'} bg-blue-600 text-white` : 'sortButtonInActive'
+                className={`${'sort'} ${
+                  active ? `${'sort-active'} bg-blue-600 text-white` : 'sort-in-active'
                 }`}
                 aria-pressed={active}
               >
