@@ -37,9 +37,9 @@ export const CHARTS_COLORS = [
   '#1e3a8a', // dark blue
   '#2563eb', // blue-600
   BLUE, // blue-500
-  '#6366f1', // indigo-500 / fiolet
-  '#ec4899', // pink-500 / róż
-  '#fbbf24', // amber-400 / jasny pomarańcz
+  '#6366f1', // indigo-500
+  '#ec4899', // pink-500
+  '#fbbf24', // amber-400
   '#60a5fa', // blue-400
-  '#93c5fd', // blue-300 / jasny niebieski
+  '#93c5fd', // blue-300
 ];

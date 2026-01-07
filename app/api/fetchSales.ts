@@ -12,7 +12,6 @@ const saleJsonSchema = z.object({
   count_orders: z.number(),
 });
 
-// Omit channel_type from the final Sale type
 const saleSchema = saleJsonSchema.omit({
   channel_type: true,
 });
