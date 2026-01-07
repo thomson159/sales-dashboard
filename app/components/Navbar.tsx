@@ -49,7 +49,7 @@ const NavbarComponent = ({
           </div>
         )}
       </div>
-      <div className={containerClassName + ' pl-4 md:px-10 lg:px-24'}>
+      <div className={containerClassName + ' pl-4 pr-4 md:px-10 lg:px-24'}>
         <div className="pb-2">
           {children}
           <div className="flex justify-center">
