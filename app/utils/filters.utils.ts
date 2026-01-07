@@ -1,21 +1,21 @@
 import type { Filters, Sale, SaleArray } from '~/types/types';
 
-// export const applyFilters = (data: SaleArray, filters: Filters): SaleArray => {
-//   const channelName = filters.channelName?.toLowerCase();
-//   const channelNames = filters.channelNames?.map((n) => n.toLowerCase()) ?? null;
-//   const minDate = filters.minDate;
-//   const maxDate = filters.maxDate;
+export const applyFiltersLazy = (data: SaleArray, filters: Filters): SaleArray => {
+  const channelName = filters.channelName?.toLowerCase();
+  const channelNames = filters.channelNames?.map((n) => n.toLowerCase()) ?? null;
+  const minDate = filters.minDate;
+  const maxDate = filters.maxDate;
 
-//   return data.filter((s) => {
-//     const name = s.channel_name.toLowerCase();
-//     if (channelName && !name.includes(channelName)) return false;
-//     if (channelNames && !channelNames.some((n) => name.includes(n))) return false;
-//     if (minDate && s.date < minDate) return false;
-//     if (maxDate && s.date > maxDate) return false;
+  return data.filter((s) => {
+    const name = s.channel_name.toLowerCase();
+    if (channelName && !name.includes(channelName)) return false;
+    if (channelNames && !channelNames.some((n) => name.includes(n))) return false;
+    if (minDate && s.date < minDate) return false;
+    if (maxDate && s.date > maxDate) return false;
 
-//     return true;
-//   });
-// };
+    return true;
+  });
+};
 
 export const applyFilters = (data: SaleArray, filters: Filters): SaleArray => {
   // Not sure if we need toLoverCase() right here
@@ -47,7 +47,6 @@ export const applyFilters = (data: SaleArray, filters: Filters): SaleArray => {
       if (!match) return false;
     }
 
-    // TODO
     if (minDate && s.date < minDate) return false;
 
     if (maxDate && s.date > maxDate) return false;

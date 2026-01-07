@@ -1,7 +1,6 @@
 import type { Filters } from '~/types/types';
 import type { Action, State } from '../../types/state.types';
 
-// converts an empty string or empty array to undefined
 export const toFiltersValue = (state: State): Filters => ({
   channelName: state.channelName || undefined,
   channelNames: state.channelNames.length ? state.channelNames : undefined,
