@@ -17,6 +17,7 @@ import './styles/Spinner.scss';
 import './styles/Summary.scss';
 import './styles/Charts.scss';
 import type { Route } from './+types/root';
+import type { Children } from './types/components.types';
 
 export const links: Route.LinksFunction = () => [
   { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
@@ -31,7 +32,7 @@ export const links: Route.LinksFunction = () => [
   },
 ];
 
-export function Layout({ children }: { children: React.ReactNode }) {
+export function Layout({ children }: Children) {
   return (
     <html lang="en">
       <head>

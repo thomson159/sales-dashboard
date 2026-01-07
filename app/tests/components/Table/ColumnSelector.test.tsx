@@ -1,31 +1,38 @@
 import { render, screen, fireEvent } from '@testing-library/react';
-import { describe, it, expect, vi } from 'vitest';
+import { describe, it, expect, vi, beforeEach } from 'vitest';
 import { ColumnSelector } from '~/components/Table/ColumnSelector';
 import type { ColumnKey } from '~/types/types';
 
-const columns = [
-  { key: 'name' as ColumnKey, label: 'Name' },
-  { key: 'age' as ColumnKey, label: 'Age' },
-  { key: 'email' as ColumnKey, label: 'Email' },
-];
+vi.mock('~/consts', () => ({
+  COLUMNS: [
+    { key: 'name' as ColumnKey, label: 'Name' },
+    { key: 'age' as ColumnKey, label: 'Age' },
+    { key: 'email' as ColumnKey, label: 'Email' },
+  ],
+}));
 
 describe('ColumnSelector', () => {
-  it('renders all columns', () => {
-    render(<ColumnSelector columns={columns} visibleColumns={[]} toggleColumn={vi.fn()} />);
+  const toggleColumn = vi.fn();
 
-    columns.forEach((col) => {
-      expect(screen.getByText(col.label)).toBeDefined();
-      const checkbox = screen.getByLabelText(col.label) as HTMLInputElement;
-      expect(checkbox.checked).toBe(false);
-    });
+  beforeEach(() => {
+    toggleColumn.mockClear();
   });
 
-  it('checks checkboxes for visible columns', () => {
+  it('renders all columns with unchecked checkboxes by default', () => {
+    render(<ColumnSelector visibleColumns={[]} toggleColumn={toggleColumn} />);
+
+    expect(screen.getAllByRole('checkbox')).toHaveLength(3);
+
+    expect((screen.getByLabelText('Name') as HTMLInputElement).checked).toBe(false);
+    expect((screen.getByLabelText('Age') as HTMLInputElement).checked).toBe(false);
+    expect((screen.getByLabelText('Email') as HTMLInputElement).checked).toBe(false);
+  });
+
+  it('marks only visible columns as checked', () => {
     render(
       <ColumnSelector
-        columns={columns}
         visibleColumns={['name' as ColumnKey, 'email' as ColumnKey]}
-        toggleColumn={vi.fn()}
+        toggleColumn={toggleColumn}
       />,
     );
 
@@ -34,32 +41,54 @@ describe('ColumnSelector', () => {
     expect((screen.getByLabelText('Email') as HTMLInputElement).checked).toBe(true);
   });
 
-  it('calls toggleColumn when a checkbox is clicked', () => {
-    const toggleColumn = vi.fn();
-    render(<ColumnSelector columns={columns} visibleColumns={[]} toggleColumn={toggleColumn} />);
+  it('calls toggleColumn with correct key on checkbox click', () => {
+    render(<ColumnSelector visibleColumns={[]} toggleColumn={toggleColumn} />);
 
     fireEvent.click(screen.getByLabelText('Name'));
     fireEvent.click(screen.getByLabelText('Email'));
 
-    expect(toggleColumn).toHaveBeenCalledWith('name');
-    expect(toggleColumn).toHaveBeenCalledWith('email');
+    expect(toggleColumn).toHaveBeenNthCalledWith(1, 'name');
+    expect(toggleColumn).toHaveBeenNthCalledWith(2, 'email');
     expect(toggleColumn).toHaveBeenCalledTimes(2);
   });
 
-  it('renders correctly with no columns', () => {
-    render(<ColumnSelector columns={[]} visibleColumns={[]} toggleColumn={vi.fn()} />);
+  it('allows toggling already selected column', () => {
+    render(<ColumnSelector visibleColumns={['age' as ColumnKey]} toggleColumn={toggleColumn} />);
 
-    expect(screen.queryByRole('checkbox')).toBeNull();
+    fireEvent.click(screen.getByLabelText('Age'));
+
+    expect(toggleColumn).toHaveBeenCalledTimes(1);
+    expect(toggleColumn).toHaveBeenCalledWith('age');
   });
 
-  it('matches snapshot with all columns visible', () => {
+  it('handles unknown visibleColumns keys gracefully', () => {
+    render(
+      <ColumnSelector visibleColumns={['unknown' as ColumnKey]} toggleColumn={toggleColumn} />,
+    );
+
+    expect((screen.getByLabelText('Name') as HTMLInputElement).checked).toBe(false);
+    expect((screen.getByLabelText('Age') as HTMLInputElement).checked).toBe(false);
+    expect((screen.getByLabelText('Email') as HTMLInputElement).checked).toBe(false);
+  });
+
+  it('has proper input attributes for accessibility', () => {
+    render(<ColumnSelector visibleColumns={[]} toggleColumn={toggleColumn} />);
+
+    const nameCheckbox = screen.getByLabelText('Name') as HTMLInputElement;
+
+    expect(nameCheckbox.type).toBe('checkbox');
+    expect(nameCheckbox.name).toBe('name');
+    expect(nameCheckbox.id).toBe('column-name');
+  });
+
+  it('matches snapshot when all columns are visible', () => {
     const { container } = render(
       <ColumnSelector
-        columns={columns}
         visibleColumns={['name' as ColumnKey, 'age' as ColumnKey, 'email' as ColumnKey]}
-        toggleColumn={vi.fn()}
+        toggleColumn={toggleColumn}
       />,
     );
+
     expect(container).toMatchSnapshot();
   });
 });

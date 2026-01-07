@@ -3,7 +3,6 @@ import type { State } from './state.types';
 import { type ChangeEvent, type MouseEvent } from 'react';
 
 export type SaleArray = readonly Sale[];
-export type SaleData = { data: SaleArray };
 
 export type Sale = Readonly<{
   date: string;
@@ -13,23 +12,15 @@ export type Sale = Readonly<{
   count_orders: number;
 }>;
 
-export type SaleJson = Readonly<{
-  channel_type: string;
-}> &
-  Sale;
-
-export type Filters = Partial<State>;
-
-export type Sort = Readonly<{
-  field: keyof Sale;
-  order: SortOrder;
-}>;
+export type SaleData = Readonly<{ data: SaleArray }>;
 
 export type Metrics = Readonly<{
   totalRevenue: number;
   totalOrders: number;
   avgOrderValue: number;
 }>;
+
+export type OnChange = (value: number) => void;
 
 export type UseData = Readonly<{
   data: SaleArray;
@@ -43,26 +34,30 @@ export type UseData = Readonly<{
   sort?: Sort;
   setFilters: (next: Filters) => void;
   setSort: (next?: Sort) => void;
-  setCurrentPage: (page: number) => void;
-  setPageSize: (size: number) => void;
+  setCurrentPage: OnChange;
+  setPageSize: OnChange;
 }> &
   Metrics;
 
-export type Column = Readonly<{ key: ColumnKey; label: string; sortable?: boolean }>;
-export type Fields = Readonly<{ label: string; value: keyof Sale }>;
+export type Filters = Partial<State>;
 
+export type Sort = Readonly<{
+  field: keyof Sale;
+  order: SortOrder;
+}>;
+
+export type StringArray = readonly string[];
+export type ColumnKeyArray = readonly ColumnKey[];
 export type ColumnKey = keyof Sale | typeof index;
 export type SortKey = keyof Sale | null;
 export type SortOrder = 'asc' | 'desc';
+
 export type Mouse = MouseEvent<HTMLButtonElement>;
 export type Change = ChangeEvent<HTMLInputElement>;
 
-export type SalesOverTimeItem = {
-  date: string;
-  revenue: number;
-};
+export type SalesOverTimeItem = Readonly<{ date: string }> & Revenue;
+export type RevenuePerChannelItem = Readonly<{ channel: string }> & Revenue;
+type Revenue = Readonly<{ revenue: number }>;
 
-export type RevenuePerChannelItem = {
-  channel: string;
-  revenue: number;
-};
+export type Column = Readonly<{ key: ColumnKey; label: string; sortable: boolean }>;
+export type Fields = Readonly<{ label: string; value: keyof Sale }>;

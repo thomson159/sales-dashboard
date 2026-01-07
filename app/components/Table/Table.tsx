@@ -1,7 +1,7 @@
 import { useState, useMemo, useCallback, memo } from 'react';
 import { ColumnSelector } from './ColumnSelector';
 import { Button } from '../small/Button';
-import { COLUMNS, ROWS_INCREMENT } from '~/consts';
+import { ROWS_INCREMENT } from '~/consts';
 import { useTableSorting } from '~/hooks/Table/useTableSorting';
 import type { SalesTableProps } from '~/types/components.types';
 import type { UseTableSortingResult } from '~/types/hooks.types';
@@ -10,7 +10,7 @@ import { TableBody } from './TableBody';
 import { TableHeader } from './TableHeader';
 
 const SalesTableComponent = ({ data, visibleColumns, toggleColumn }: SalesTableProps) => {
-  const { sortKey, sortOrder, sortedData, onSort }: UseTableSortingResult = useTableSorting(
+  const { key, order, sortedData, onSort }: UseTableSortingResult = useTableSorting(
     data,
     visibleColumns,
   );
@@ -30,18 +30,13 @@ const SalesTableComponent = ({ data, visibleColumns, toggleColumn }: SalesTableP
 
   return (
     <div>
-      <ColumnSelector
-        columns={COLUMNS}
-        visibleColumns={visibleColumns}
-        toggleColumn={toggleColumn}
-      />
+      <ColumnSelector visibleColumns={visibleColumns} toggleColumn={toggleColumn} />
       <div className="relative w-full overflow-x-auto">
         <table className={`w-full sales-table border-collapse font-inter text-sm rounded-lg`}>
           <TableHeader
-            columns={COLUMNS}
             visibleColumns={visibleColumns}
-            sortKey={sortKey}
-            sortOrder={sortOrder}
+            sortKey={key}
+            sortOrder={order}
             onSort={onSort}
           />
           <TableBody data={displayedData} visibleColumns={visibleColumns} />

@@ -47,7 +47,7 @@ export const Dashboard = ({ chartsAreVisible = false }: Props) => {
   const handleSortChange = useCallback((nextSort?: SortType) => setSort(nextSort), [setSort]);
 
   const handleFiltersChange = useCallback(
-    (nextFilters: FiltersType) => setFilters(nextFilters),
+    (value: FiltersType) => setFilters(value),
     [setFilters],
   );
 

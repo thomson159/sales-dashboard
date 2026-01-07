@@ -3,13 +3,7 @@ import type { FiltersViewProps } from '~/types/components.types';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 
-export const FiltersView = ({
-  state,
-  availableChannels,
-  hasChanges,
-  apply,
-  dispatch,
-}: FiltersViewProps) => {
+export const FiltersView = ({ state, channels, hasChanges, apply, dispatch }: FiltersViewProps) => {
   return (
     <div className="w-full flex flex-col md:flex-row md:items-end gap-4 flex-wrap">
       <div className="flex flex-wrap gap-4 w-full md:w-auto">
@@ -76,7 +70,7 @@ export const FiltersView = ({
       </div>
       <div className="flex flex-wrap gap-4 w-full md:w-auto items-end min-h-[84px] md:min-h-auto">
         <div className={`${'sortContainer'} flex flex-wrap gap-2`}>
-          {availableChannels.map((name) => {
+          {channels.map((name) => {
             const active = state.channelNames.includes(name);
 
             return (

@@ -10,7 +10,7 @@ const applyPageSizeMock = vi.fn();
 const mockUsePageSizeResult: UsePageSizeResult = {
   localPageSize: 10,
   handleChange: handleChangeMock,
-  applyPageSize: applyPageSizeMock,
+  apply: applyPageSizeMock,
 };
 
 vi.mock('~/hooks/usePageSize', () => ({

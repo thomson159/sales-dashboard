@@ -4,15 +4,16 @@ import { FiltersView } from './Filters.view';
 import { useFiltersState } from '~/hooks/useFiltersState';
 import type { FiltersProps } from '~/types/components.types';
 import type { UseFiltersStateResult } from '~/types/hooks.types';
+import type { StringArray } from '~/types/types';
 
 const FiltersComponent = (props: FiltersProps) => {
-  const availableChannels: readonly string[] = useAvailableChannelNames(props.data);
+  const channels: StringArray = useAvailableChannelNames(props.data);
   const { state, hasChanges, apply, dispatch }: UseFiltersStateResult = useFiltersState(props);
 
   return (
     <FiltersView
       state={state}
-      availableChannels={availableChannels}
+      channels={channels}
       hasChanges={hasChanges}
       apply={apply}
       dispatch={dispatch}

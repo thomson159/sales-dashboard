@@ -7,8 +7,8 @@ export const useSource = (): UseSourceResult => {
   const [data, setData] = useState<SaleArray>([]);
   const [loading, setLoading] = useState<boolean>(true);
 
-  const loadData = useCallback(async () => {
-    const result = await fetchSales();
+  const loadData: () => Promise<void> = useCallback(async () => {
+    const result: SaleArray = await fetchSales();
     setData(result);
     setLoading(false);
   }, []);
@@ -18,6 +18,7 @@ export const useSource = (): UseSourceResult => {
 
     const run = async () => {
       if (!active) return;
+
       await loadData();
     };
 

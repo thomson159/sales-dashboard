@@ -1,13 +1,10 @@
 import { memo } from 'react';
+import { COLUMNS } from '~/consts';
 import type { ColumnSelectorProps } from '~/types/components.types';
 
-const ColumnSelectorComponent = ({
-  columns,
-  visibleColumns,
-  toggleColumn,
-}: ColumnSelectorProps) => (
+const ColumnSelectorComponent = ({ visibleColumns, toggleColumn }: ColumnSelectorProps) => (
   <div className="column-selector mb-2 flex flex-wrap p-3 gap-4">
-    {columns.map((col) => {
+    {COLUMNS.map((col) => {
       const inputId = `column-${col.key}`;
 
       return (

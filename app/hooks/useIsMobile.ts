@@ -3,10 +3,10 @@ import { useEffect, useState } from 'react';
 const QUERY = '(max-width: 900px)';
 
 export const useIsMobileCharts = (): boolean => {
-  const [isMobile, setIsMobile] = useState(false);
+  const [isMobile, setIsMobile] = useState<boolean>(false);
 
   useEffect(() => {
-    const media = window.matchMedia(QUERY);
+    const media: MediaQueryList = window.matchMedia(QUERY);
 
     const update = () => setIsMobile(media.matches);
 

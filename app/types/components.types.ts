@@ -1,6 +1,7 @@
 import { type ReactNode } from 'react';
 import type {
   Column,
+  ColumnKeyArray,
   ColumnKey,
   Filters,
   RevenuePerChannelItem,
@@ -9,88 +10,101 @@ import type {
   Sort,
   SortKey,
   SortOrder,
+  StringArray,
+  OnChange,
 } from '~/types/types';
 import type { UseFiltersStateResult } from './hooks.types';
 
-export interface PageSizeFilterProps {
-  readonly pageSize: number;
-  readonly onChange: (size: number) => void;
-  readonly dataLength: number;
-  readonly min?: number;
-}
+export type SalesTableProps = Readonly<{
+  data: SaleArray;
+}> &
+  ToggleColumn &
+  VisibleColumns;
 
-export interface PaginationProps {
-  readonly currentPage: number;
-  readonly totalPages: number;
-  readonly onChange: (page: number) => void;
-  readonly windowSize?: number;
-}
+export type FiltersProps = Readonly<{
+  onChange: (value: Filters) => void;
+  data: SaleArray;
+}> &
+  Filters;
 
-export interface SalesTableProps {
-  readonly data: SaleArray;
-  readonly visibleColumns: readonly ColumnKey[];
-  readonly toggleColumn: (key: ColumnKey) => void;
-}
+export type Columns = Readonly<{
+  columns: readonly Column[];
+}> &
+  VisibleColumns;
 
-export interface FiltersProps extends Filters {
-  readonly onChange: (value: Filters) => void;
-  readonly data: SaleArray;
-}
+export type TableBodyProps = Readonly<{
+  data: SaleArray;
+}> &
+  VisibleColumns;
 
-export interface SortProps {
-  readonly sort?: Sort;
-  readonly onChange: (sort?: Sort) => void;
-}
-
-export interface SummaryItemProps {
-  readonly label: string;
-  readonly value: string | number;
-}
+export type TableHeaderProps = Readonly<{
+  sortKey: SortKey;
+  sortOrder: SortOrder | null;
+  onSort: (key: SortKey, order?: SortOrder) => void;
+}> &
+  VisibleColumns;
 
 //
 
-export type ContainerProps = {
-  readonly children: ReactNode;
-};
+export type ToggleColumn = Readonly<{
+  toggleColumn: (key: ColumnKey) => void;
+}>;
 
-export type NavbarProps = {
-  readonly expanded: boolean;
-  readonly onToggle: () => void;
-  readonly children: ReactNode;
-  readonly loading?: boolean;
-  readonly title?: string;
-};
+export type ColumnSelectorProps = VisibleColumns & ToggleColumn;
 
-export type FiltersViewProps = UseFiltersStateResult & {
-  readonly availableChannels: readonly string[];
-};
+//
 
-export type VisibleColumns = {
-  readonly visibleColumns: readonly ColumnKey[];
-};
+type OnChangeObject = Readonly<{
+  onChange: OnChange;
+}>;
 
-export type Columns = VisibleColumns & {
-  readonly columns: readonly Column[];
-};
+export type PaginationProps = Readonly<{
+  currentPage: number;
+  totalPages: number;
+  windowSize?: number;
+}> & OnChangeObject;
 
-export type ColumnSelectorProps = Columns & {
-  readonly toggleColumn: (key: ColumnKey) => void;
-};
+export type NavbarProps = Readonly<{
+  expanded: boolean;
+  onToggle: () => void;
+  loading?: boolean;
+  title?: string;
+}> &
+  Children;
 
-export type TableBodyProps = VisibleColumns & {
-  readonly data: SaleArray;
-};
+export type SortProps = Readonly<{
+  sort?: Sort;
+  onChange: (sort?: Sort) => void;
+}>;
 
-export type TableHeaderProps = Columns & {
-  readonly sortKey: SortKey | null;
-  readonly sortOrder: SortOrder | null;
-  readonly onSort: (key: SortKey | null, order?: SortOrder) => void;
-};
+export type PageSizeFilterProps = Readonly<{
+  pageSize: number;
+  dataLength: number;
+  min?: number;
+}> & OnChangeObject;
 
-export type RevenueProps = {
-  readonly data: RevenuePerChannelItem[];
-};
+export type SummaryItemProps = Readonly<{
+  label: string;
+  value: string | number;
+}>;
 
-export type SalesProps = {
-  readonly data: SalesOverTimeItem[];
-};
+export type FiltersViewProps = Readonly<{
+  channels: StringArray;
+}> &
+  UseFiltersStateResult;
+
+export type Children = Readonly<{
+  children: ReactNode;
+}>;
+
+export type VisibleColumns = Readonly<{
+  visibleColumns: ColumnKeyArray;
+}>;
+
+export type RevenueProps = Readonly<{
+  data: RevenuePerChannelItem[];
+}>;
+
+export type SalesProps = Readonly<{
+  data: SalesOverTimeItem[];
+}>;
