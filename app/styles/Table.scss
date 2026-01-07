@@ -8,7 +8,7 @@
   &__checkbox {
     width: 24px;
     height: 24px;
-    border: 2px solid var(--blue);
+    border: 2px solid var(--main);
     border-radius: 6px;
     background-color: var(--white);
     position: relative;
@@ -16,8 +16,8 @@
   }
 
   &__input:checked + &__checkbox {
-    background-color: var(--blue);
-    border-color: var(--blue);
+    background-color: var(--main);
+    border-color: var(--main);
   }
 
   &__input:checked + &__checkbox::after {
@@ -33,7 +33,7 @@
   }
 
   &__input:focus-visible + &__checkbox {
-    outline: 2px solid var(--blue);
+    outline: 2px solid var(--main);
     outline-offset: 2px;
   }
 }
@@ -57,7 +57,7 @@
 
       &:hover {
         color: var(--white);
-        background: var(--blue);
+        background: var(--main);
       }
     }
   }

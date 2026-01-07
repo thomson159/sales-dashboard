@@ -31,15 +31,15 @@ export const CHANNEL_MAP: Record<string, string> = {
   '[ebay de]': 'eBay',
 };
 
-export const BLUE = '#3b82f6';
+export const BLUE = '#2563eb';
 
 export const CHARTS_COLORS = [
-  '#1e3a8a', // dark blue
-  '#2563eb', // blue-600
-  BLUE, // blue-500
-  '#6366f1', // indigo-500 / fiolet
-  '#ec4899', // pink-500 / róż
-  '#fbbf24', // amber-400 / jasny pomarańcz
-  '#60a5fa', // blue-400
-  '#93c5fd', // blue-300 / jasny niebieski
+  '#ef4444',
+  '#f97316',
+  '#eab308',
+  '#22c55e',
+  '#06b6d4',
+  BLUE,
+  '#7c3aed',
+  '#db2777',
 ];

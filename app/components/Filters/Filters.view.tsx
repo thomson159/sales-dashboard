@@ -77,9 +77,8 @@ export const FiltersView = ({ state, channels, hasChanges, apply, dispatch }: Fi
               <button
                 key={name}
                 onClick={() => dispatch({ type: 'TOGGLE_CHANNEL', value: name })}
-                className={`${'sortButton'} ${
-                  active ? `${'sortButtonActive'} bg-blue-600 text-white` : 'sortButtonInActive'
-                }`}
+                className={`${'sort'} ${active ? `${'sort-active'} bg-blue-600 text-white` : 'sort-in-active'
+                  }`}
                 aria-pressed={active}
               >
                 {name}

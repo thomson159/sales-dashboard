@@ -2,6 +2,10 @@ import { useCallback, useMemo, memo, type MouseEventHandler } from 'react';
 import type { NavbarProps } from '../types/components.types';
 import { Spinner } from './small/Spinner';
 
+export const slogan =
+  'text-3xl font-bold text-left text-transparent bg-clip-text bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 animate-pulse';
+export type MouseEvent = MouseEventHandler<HTMLButtonElement>;
+
 const NavbarComponent = ({
   expanded,
   onToggle,
@@ -16,7 +20,7 @@ const NavbarComponent = ({
 
   const handleToggle = useCallback(() => onToggle(), [onToggle]);
 
-  const handleButtonClick: MouseEventHandler<HTMLButtonElement> = useCallback(
+  const handleButtonClick: MouseEvent = useCallback(
     (event) => {
       event.stopPropagation();
       onToggle();
@@ -25,7 +29,7 @@ const NavbarComponent = ({
   );
 
   return (
-    <div className="navbar sticky top-0 z-50 bg-white pt-0 p-4 pb-0 md:px-12 lg:px-24">
+    <div className="navbar sticky top-0 z-50 bg-white">
       <div
         role="button"
         aria-label={expanded ? 'Collapse dashboard' : 'Expand dashboard'}
@@ -34,25 +38,18 @@ const NavbarComponent = ({
         onKeyDown={(e) => {
           if (e.key === 'Enter' || e.key === ' ') handleToggle();
         }}
-        className="pt-4 pb-4 cursor-pointer select-none relative"
+        className="cursor-pointer select-none relative p-4 md:px-10 lg:px-24"
       >
-        <h2
-          className="
-            text-3xl font-bold text-left
-            text-transparent bg-clip-text
-            bg-gradient-to-r from-purple-500 via-pink-500 to-red-500
-            animate-pulse
-          "
-        >
+        <h2 className={slogan} style={{ display: 'inline-block' }}>
           {title}
         </h2>
         {loading && (
-          <div className="absolute right-0 top-0 pt-4">
+          <div className="absolute right-0 top-0 mt-4 mr-4">
             <Spinner />
           </div>
         )}
       </div>
-      <div className={containerClassName}>
+      <div className={containerClassName + ' pl-4 pr-4 md:px-10 lg:px-24'}>
         <div className="pb-2">
           {children}
           <div className="flex justify-center">

@@ -3,27 +3,23 @@
 exports[`Navbar > matches snapshot when collapsed 1`] = `
 <div>
   <div
-    class="navbar sticky top-0 z-50 bg-white pt-0 p-4 pb-0 md:px-12 lg:px-24"
+    class="navbar sticky top-0 z-50 bg-white"
   >
     <div
       aria-label="Expand dashboard"
-      class="pt-4 pb-4 cursor-pointer select-none relative"
+      class="cursor-pointer select-none relative p-4 md:px-10 lg:px-24"
       role="button"
       tabindex="0"
     >
       <h2
-        class="
-            text-3xl font-bold text-left
-            text-transparent bg-clip-text
-            bg-gradient-to-r from-purple-500 via-pink-500 to-red-500
-            animate-pulse
-          "
+        class="text-3xl font-bold text-left text-transparent bg-clip-text bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 animate-pulse"
+        style="display: inline-block;"
       >
         Dashboard
       </h2>
     </div>
     <div
-      class="filters-wrapper filters-closed"
+      class="filters-wrapper filters-closed pl-4 pr-4 md:px-10 lg:px-24"
     >
       <div
         class="pb-2"
@@ -53,27 +49,23 @@ exports[`Navbar > matches snapshot when collapsed 1`] = `
 exports[`Navbar > matches snapshot when expanded 1`] = `
 <div>
   <div
-    class="navbar sticky top-0 z-50 bg-white pt-0 p-4 pb-0 md:px-12 lg:px-24"
+    class="navbar sticky top-0 z-50 bg-white"
   >
     <div
       aria-label="Collapse dashboard"
-      class="pt-4 pb-4 cursor-pointer select-none relative"
+      class="cursor-pointer select-none relative p-4 md:px-10 lg:px-24"
       role="button"
       tabindex="0"
     >
       <h2
-        class="
-            text-3xl font-bold text-left
-            text-transparent bg-clip-text
-            bg-gradient-to-r from-purple-500 via-pink-500 to-red-500
-            animate-pulse
-          "
+        class="text-3xl font-bold text-left text-transparent bg-clip-text bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 animate-pulse"
+        style="display: inline-block;"
       >
         Dashboard
       </h2>
     </div>
     <div
-      class="filters-wrapper filters-open"
+      class="filters-wrapper filters-open pl-4 pr-4 md:px-10 lg:px-24"
     >
       <div
         class="pb-2"

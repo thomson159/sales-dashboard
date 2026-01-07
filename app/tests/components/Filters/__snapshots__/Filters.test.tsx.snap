@@ -90,14 +90,14 @@ exports[`Filters > matches snapshot 1`] = `
       >
         <button
           aria-pressed="true"
-          class="sortButton sortButtonActive bg-blue-600 text-white"
+          class="sort sort-active bg-blue-600 text-white"
         >
           Amazon
            ✓
         </button>
         <button
           aria-pressed="false"
-          class="sortButton sortButtonInActive"
+          class="sort sort-in-active"
         >
           Ebay
         </button>

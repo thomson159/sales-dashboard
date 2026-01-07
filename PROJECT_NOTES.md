@@ -113,7 +113,7 @@ In many places, the `readonly` modifier was intentionally used extensively:
 Two styling approaches were used in the project:
 
 - **TailwindCSS** – as the primary styling solution for fast, consistent, and performant UI development
-- **SCSS** – used selectively to demonstrate alternative styling approaches and integration with traditional stylesheets where appropriate
+- **SCSS** (`mixin, include, BEM`) – used selectively to demonstrate alternative styling approaches and integration with traditional stylesheets where appropriate
 
 ---
 
