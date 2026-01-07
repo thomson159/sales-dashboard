@@ -60,32 +60,30 @@ export const Dashboard = ({ chartsAreVisible = false }: Props) => {
 
   return (
     <ThemeProvider>
-      <>
-        <Navbar expanded={navbarToggle} onToggle={onToggleNavbar} loading={loading}>
-          <Filters data={chartData} {...filters} onChange={handleFiltersChange} />
-          <Sort sort={sort} onChange={handleSortChange} />
-        </Navbar>
-        <Container>
-          <Summary {...summaryProps} />
-          {showCharts || chartsAreVisible ? (
-            <Charts data={chartData} />
-          ) : (
-            <div className="flex justify-center mb-15 mt-5">
-              <Button onClick={() => setShowCharts((prev) => !prev)}>Show Charts</Button>
-            </div>
-          )}
-          <PageSizeFilter pageSize={pageSize} onChange={setPageSize} dataLength={dataLength} />
-          <Pagination
-            currentPage={currentPage}
-            totalPages={totalPages > 1 ? totalPages : 1}
-            onChange={setCurrentPage}
-          />
-          <Suspense fallback={<Spinner />}>
-            <Table data={data} visibleColumns={visibleColumns} toggleColumn={toggleColumn} />
-          </Suspense>
-          <Footer />
-        </Container>
-      </>
+      <Navbar expanded={navbarToggle} onToggle={onToggleNavbar} loading={loading}>
+        <Filters data={chartData} {...filters} onChange={handleFiltersChange} />
+        <Sort sort={sort} onChange={handleSortChange} />
+      </Navbar>
+      <Container>
+        <Summary {...summaryProps} />
+        {showCharts || chartsAreVisible ? (
+          <Charts data={chartData} />
+        ) : (
+          <div className="flex justify-center mb-15 mt-5">
+            <Button onClick={() => setShowCharts((prev) => !prev)}>Show Charts</Button>
+          </div>
+        )}
+        <PageSizeFilter pageSize={pageSize} onChange={setPageSize} dataLength={dataLength} />
+        <Pagination
+          currentPage={currentPage}
+          totalPages={totalPages > 1 ? totalPages : 1}
+          onChange={setCurrentPage}
+        />
+        <Suspense fallback={<Spinner />}>
+          <Table data={data} visibleColumns={visibleColumns} toggleColumn={toggleColumn} />
+        </Suspense>
+        <Footer />
+      </Container>
     </ThemeProvider>
   );
 };

@@ -35,7 +35,6 @@ const NavbarComponent = ({
       >
         {theme === "light" ? "🌞" : "🌙"}
       </button>
-
       <div
         role="button"
         aria-label={expanded ? 'Collapse dashboard' : 'Expand dashboard'}
