@@ -14,7 +14,7 @@ import Sort from '../Sort';
 import Charts from '../Charts/Recharts/Charts';
 import { Button } from '../small/Button';
 import Filters from '../Filters/Filters';
-// import { ThemeProvider } from '../ThemeContext';
+import { ThemeProvider } from '../ThemeContext';
 
 const Table = lazy(() => import('../Table/Table'));
 
@@ -59,33 +59,33 @@ export const Dashboard = ({ chartsAreVisible = false }: Props) => {
   const [showCharts, setShowCharts] = useState<boolean>(false);
 
   return (
-    // <ThemeProvider>
-    <>
-      <Navbar expanded={navbarToggle} onToggle={onToggleNavbar} loading={loading}>
-        <Filters data={chartData} {...filters} onChange={handleFiltersChange} />
-        <Sort sort={sort} onChange={handleSortChange} />
-      </Navbar>
-      <Container>
-        <Summary {...summaryProps} />
-        {showCharts || chartsAreVisible ? (
-          <Charts data={chartData} />
-        ) : (
-          <div className="flex justify-center mb-15 mt-5">
-            <Button onClick={() => setShowCharts((prev) => !prev)}>Show Charts</Button>
-          </div>
-        )}
-        <PageSizeFilter pageSize={pageSize} onChange={setPageSize} dataLength={dataLength} />
-        <Pagination
-          currentPage={currentPage}
-          totalPages={totalPages > 1 ? totalPages : 1}
-          onChange={setCurrentPage}
-        />
-        <Suspense fallback={<Spinner />}>
-          <Table data={data} visibleColumns={visibleColumns} toggleColumn={toggleColumn} />
-        </Suspense>
-        <Footer />
-      </Container>
-    </>
-    // </ThemeProvider>
+    <ThemeProvider>
+      <>
+        <Navbar expanded={navbarToggle} onToggle={onToggleNavbar} loading={loading}>
+          <Filters data={chartData} {...filters} onChange={handleFiltersChange} />
+          <Sort sort={sort} onChange={handleSortChange} />
+        </Navbar>
+        <Container>
+          <Summary {...summaryProps} />
+          {showCharts || chartsAreVisible ? (
+            <Charts data={chartData} />
+          ) : (
+            <div className="flex justify-center mb-15 mt-5">
+              <Button onClick={() => setShowCharts((prev) => !prev)}>Show Charts</Button>
+            </div>
+          )}
+          <PageSizeFilter pageSize={pageSize} onChange={setPageSize} dataLength={dataLength} />
+          <Pagination
+            currentPage={currentPage}
+            totalPages={totalPages > 1 ? totalPages : 1}
+            onChange={setCurrentPage}
+          />
+          <Suspense fallback={<Spinner />}>
+            <Table data={data} visibleColumns={visibleColumns} toggleColumn={toggleColumn} />
+          </Suspense>
+          <Footer />
+        </Container>
+      </>
+    </ThemeProvider>
   );
 };
