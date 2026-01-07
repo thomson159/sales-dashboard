@@ -5,7 +5,7 @@ import { isSortKey } from '~/utils/sort.utils';
 import type { TableHeaderProps } from '~/types/components.types';
 
 const TableHeaderComponent = ({ visibleColumns, field, order, onChange }: TableHeaderProps) => {
-  const getArrow = (k: KeyOfSale) => (field === k ? (order === asc ? ' ▲' : ' ▼') : null);
+  const getArrow = (k: KeyOfSale) => (field === k ? (order === asc ? '▲' : '▼') : null);
 
   return (
     <thead className="sticky top-0 bg-white z-20">
@@ -20,7 +20,9 @@ const TableHeaderComponent = ({ visibleColumns, field, order, onChange }: TableH
               className={`px-3 py-2 whitespace-nowrap text-left font-semibold select-none ${isSortable ? 'cursor-pointer' : ''}`}
             >
               {col.label}
-              {isSortable && getArrow(col.key as KeyOfSale)}
+              <span className='absolute'>
+                {isSortable && getArrow(col.key as KeyOfSale)}
+              </span>
             </th>
           );
         })}

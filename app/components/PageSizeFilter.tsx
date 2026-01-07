@@ -33,7 +33,7 @@ const PageSizeFilterComponent = ({
             style={{ width: 90 }}
           />
         </div>
-        <Button onClick={apply}>Apply</Button>
+        <Button disabled={dataLength < 2} onClick={apply}>Apply</Button>
       </div>
     </div>
   );
