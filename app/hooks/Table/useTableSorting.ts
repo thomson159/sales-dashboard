@@ -16,7 +16,7 @@ export const useTableSorting = (
     [data, key, order, visibleColumns],
   );
 
-  const onSort = useCallback(
+  const onChange = useCallback(
     (k: SortKey) => {
       if (key !== k) {
         setKey(k);
@@ -35,6 +35,6 @@ export const useTableSorting = (
     key,
     order,
     sortedData,
-    onSort,
+    onChange,
   };
 };

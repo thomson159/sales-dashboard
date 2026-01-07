@@ -31,7 +31,7 @@ export type UseTableSortingResult = Readonly<{
   key: SortKey;
   order: SortOrder;
   sortedData: SaleArray;
-  onSort: (key: SortKey) => void;
+  onChange: (key: SortKey) => void;
 }>;
 
 export type UseFiltersStateResult = Readonly<{

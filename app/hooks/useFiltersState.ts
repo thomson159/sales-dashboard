@@ -1,6 +1,6 @@
 import { useReducer, useState, useCallback } from 'react';
 import { reducer, toFiltersValue, computeHasChanges } from '~/components/Filters/Filters.state';
-import type { FiltersProps } from '~/types/components.types';
+import type { FiltersParams } from '~/types/components.types';
 import type { UseFiltersStateResult } from '~/types/hooks.types';
 import type { Filters } from '~/types/types';
 
@@ -10,7 +10,7 @@ export const useFiltersState = ({
   minDate,
   maxDate,
   onChange,
-}: FiltersProps): UseFiltersStateResult => {
+}: FiltersParams): UseFiltersStateResult => {
   const [state, dispatch] = useReducer(reducer, {
     channelName: channelName ?? '',
     minDate: minDate ?? '2024-09-01',

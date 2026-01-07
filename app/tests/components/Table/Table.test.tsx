@@ -78,7 +78,7 @@ describe('Table', () => {
       <Table
         data={mockData}
         visibleColumns={['date', 'channel_name']}
-        toggleColumn={toggleColumnMock}
+        onToggle={toggleColumnMock}
       />,
     );
 

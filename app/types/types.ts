@@ -55,9 +55,9 @@ export type SortOrder = 'asc' | 'desc';
 export type Mouse = MouseEvent<HTMLButtonElement>;
 export type Change = ChangeEvent<HTMLInputElement>;
 
+type Revenue = Readonly<{ revenue: number }>;
 export type SalesOverTimeItem = Readonly<{ date: string }> & Revenue;
 export type RevenuePerChannelItem = Readonly<{ channel: string }> & Revenue;
-type Revenue = Readonly<{ revenue: number }>;
 
 export type Column = Readonly<{ key: ColumnKey; label: string; sortable: boolean }>;
 export type Fields = Readonly<{ label: string; value: keyof Sale }>;

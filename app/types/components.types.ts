@@ -5,54 +5,44 @@ import type {
   ColumnKey,
   Filters,
   RevenuePerChannelItem,
-  SaleArray,
   SalesOverTimeItem,
   Sort,
   SortKey,
   SortOrder,
   StringArray,
   OnChange,
+  SaleData,
 } from '~/types/types';
-import type { UseFiltersStateResult } from './hooks.types';
+import type { UseFiltersStateResult, UseTableColumnsResult } from './hooks.types';
 
-export type SalesTableProps = Readonly<{
-  data: SaleArray;
+export type TableBodyProps = SaleData & VisibleColumns;
+export type SalesTableProps = SaleData & UseTableColumnsResult;
+export type FiltersProps = SaleData & FiltersParams;
+
+export type TableHeaderProps = Readonly<{
+  sortKey: SortKey;
+  sortOrder: SortOrder | null;
+  onChange: (key: SortKey, order?: SortOrder) => void;
 }> &
-  ToggleColumn &
   VisibleColumns;
-
-export type FiltersProps = Readonly<{
-  onChange: (value: Filters) => void;
-  data: SaleArray;
-}> &
-  Filters;
 
 export type Columns = Readonly<{
   columns: readonly Column[];
 }> &
   VisibleColumns;
 
-export type TableBodyProps = Readonly<{
-  data: SaleArray;
-}> &
-  VisibleColumns;
-
-export type TableHeaderProps = Readonly<{
-  sortKey: SortKey;
-  sortOrder: SortOrder | null;
-  onSort: (key: SortKey, order?: SortOrder) => void;
-}> &
-  VisibleColumns;
-
-//
-
-export type ToggleColumn = Readonly<{
-  toggleColumn: (key: ColumnKey) => void;
+export type VisibleColumns = Readonly<{
+  visibleColumns: ColumnKeyArray;
 }>;
 
-export type ColumnSelectorProps = VisibleColumns & ToggleColumn;
+export type ToggleColumn = Readonly<{
+  onToggle: (key: ColumnKey) => void;
+}>;
 
-//
+export type FiltersParams = Readonly<{
+  onChange: (value: Filters) => void;
+}> &
+  Filters;
 
 type OnChangeObject = Readonly<{
   onChange: OnChange;
@@ -62,7 +52,8 @@ export type PaginationProps = Readonly<{
   currentPage: number;
   totalPages: number;
   windowSize?: number;
-}> & OnChangeObject;
+}> &
+  OnChangeObject;
 
 export type NavbarProps = Readonly<{
   expanded: boolean;
@@ -81,7 +72,8 @@ export type PageSizeFilterProps = Readonly<{
   pageSize: number;
   dataLength: number;
   min?: number;
-}> & OnChangeObject;
+}> &
+  OnChangeObject;
 
 export type SummaryItemProps = Readonly<{
   label: string;
@@ -95,10 +87,6 @@ export type FiltersViewProps = Readonly<{
 
 export type Children = Readonly<{
   children: ReactNode;
-}>;
-
-export type VisibleColumns = Readonly<{
-  visibleColumns: ColumnKeyArray;
 }>;
 
 export type RevenueProps = Readonly<{

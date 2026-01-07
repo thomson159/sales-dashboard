@@ -9,8 +9,8 @@ import type { SaleArray } from '~/types/types';
 import { TableBody } from './TableBody';
 import { TableHeader } from './TableHeader';
 
-const SalesTableComponent = ({ data, visibleColumns, toggleColumn }: SalesTableProps) => {
-  const { key, order, sortedData, onSort }: UseTableSortingResult = useTableSorting(
+const SalesTableComponent = ({ data, visibleColumns, onToggle }: SalesTableProps) => {
+  const { key, order, sortedData, onChange }: UseTableSortingResult = useTableSorting(
     data,
     visibleColumns,
   );
@@ -30,14 +30,14 @@ const SalesTableComponent = ({ data, visibleColumns, toggleColumn }: SalesTableP
 
   return (
     <div>
-      <ColumnSelector visibleColumns={visibleColumns} toggleColumn={toggleColumn} />
+      <ColumnSelector visibleColumns={visibleColumns} onToggle={onToggle} />
       <div className="relative w-full overflow-x-auto">
         <table className={`w-full sales-table border-collapse font-inter text-sm rounded-lg`}>
           <TableHeader
             visibleColumns={visibleColumns}
             sortKey={key}
             sortOrder={order}
-            onSort={onSort}
+            onChange={onChange}
           />
           <TableBody data={displayedData} visibleColumns={visibleColumns} />
         </table>

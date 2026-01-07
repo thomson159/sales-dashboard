@@ -37,7 +37,7 @@ describe('TableHeader', () => {
           visibleColumns={['date', 'sum_sales', 'index']}
           sortKey={null}
           sortOrder={null}
-          onSort={onSort}
+          onChange={onSort}
         />
       </table>,
     );
@@ -55,7 +55,7 @@ describe('TableHeader', () => {
           visibleColumns={visibleColumns}
           sortKey={null}
           sortOrder={null}
-          onSort={onSort}
+          onChange={onSort}
         />
       </table>,
     );
@@ -74,7 +74,7 @@ describe('TableHeader', () => {
           visibleColumns={visibleColumns}
           sortKey="date"
           sortOrder="asc"
-          onSort={onSort}
+          onChange={onSort}
         />
       </table>,
     );
@@ -87,7 +87,7 @@ describe('TableHeader', () => {
           visibleColumns={visibleColumns}
           sortKey="date"
           sortOrder="desc"
-          onSort={onSort}
+          onChange={onSort}
         />
       </table>,
     );
@@ -102,7 +102,7 @@ describe('TableHeader', () => {
           visibleColumns={visibleColumns}
           sortKey="channel_name"
           sortOrder="asc"
-          onSort={onSort}
+          onChange={onSort}
         />
       </table>,
     );
@@ -119,7 +119,7 @@ describe('TableHeader', () => {
           visibleColumns={visibleColumns}
           sortKey={null}
           sortOrder="asc"
-          onSort={onSort}
+          onChange={onSort}
         />
       </table>,
     );
@@ -137,7 +137,7 @@ describe('TableHeader', () => {
           visibleColumns={visibleColumns}
           sortKey={null}
           sortOrder="asc"
-          onSort={onSort}
+          onChange={onSort}
         />
       </table>,
     );
@@ -150,7 +150,7 @@ describe('TableHeader', () => {
   it('handles empty visibleColumns without rendering headers', () => {
     render(
       <table>
-        <TableHeader visibleColumns={[]} sortKey={null} sortOrder="asc" onSort={onSort} />
+        <TableHeader visibleColumns={[]} sortKey={null} sortOrder="asc" onChange={onSort} />
       </table>,
     );
 
@@ -164,7 +164,7 @@ describe('TableHeader', () => {
           visibleColumns={visibleColumns}
           sortKey="date"
           sortOrder="asc"
-          onSort={onSort}
+          onChange={onSort}
         />
       </table>,
     );

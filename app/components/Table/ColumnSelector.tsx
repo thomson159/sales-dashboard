@@ -1,8 +1,8 @@
 import { memo } from 'react';
 import { COLUMNS } from '~/consts';
-import type { ColumnSelectorProps } from '~/types/components.types';
+import type { UseTableColumnsResult } from '~/types/hooks.types';
 
-const ColumnSelectorComponent = ({ visibleColumns, toggleColumn }: ColumnSelectorProps) => (
+const ColumnSelectorComponent = ({ visibleColumns, onToggle }: UseTableColumnsResult) => (
   <div className="column-selector mb-2 flex flex-wrap p-3 gap-4">
     {COLUMNS.map((col) => {
       const inputId = `column-${col.key}`;
@@ -15,7 +15,7 @@ const ColumnSelectorComponent = ({ visibleColumns, toggleColumn }: ColumnSelecto
               name={col.key}
               type="checkbox"
               checked={visibleColumns.includes(col.key)}
-              onChange={() => toggleColumn(col.key)}
+              onChange={() => onToggle(col.key)}
               className="column-selector__input"
             />
             <span className="column-selector__checkbox" />

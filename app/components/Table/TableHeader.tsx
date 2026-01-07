@@ -4,7 +4,12 @@ import type { SortKey, Sale } from '~/types/types';
 import { isSortKey } from '~/utils/sort.utils';
 import type { TableHeaderProps } from '~/types/components.types';
 
-const TableHeaderComponent = ({ visibleColumns, sortKey, sortOrder, onSort }: TableHeaderProps) => {
+const TableHeaderComponent = ({
+  visibleColumns,
+  sortKey,
+  sortOrder,
+  onChange,
+}: TableHeaderProps) => {
   const getSortArrow = (key: keyof Sale) =>
     sortKey === key ? (sortOrder === 'asc' ? ' ▲' : ' ▼') : '';
 
@@ -16,7 +21,7 @@ const TableHeaderComponent = ({ visibleColumns, sortKey, sortOrder, onSort }: Ta
           return (
             <th
               key={col.key}
-              onClick={isSortable ? () => onSort(col.key as SortKey) : undefined}
+              onClick={isSortable ? () => onChange(col.key as SortKey) : undefined}
               className={`
                   px-3 py-2
                   whitespace-nowrap

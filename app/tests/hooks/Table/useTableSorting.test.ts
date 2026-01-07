@@ -34,7 +34,7 @@ describe('useTableSorting', () => {
   it('sorts data by a new key ascending', () => {
     const { result } = renderHook(() => useTableSorting(data, visibleColumns));
     const key: SortKey = 'sum_sales';
-    act(() => result.current.onSort(key));
+    act(() => result.current.onChange(key));
     expect(result.current.key).toBe(key);
     expect(result.current.order).toBe(asc);
     expect(result.current.sortedData.map((d) => d.sum_sales)).toEqual([30, 40, 50]);
@@ -43,8 +43,8 @@ describe('useTableSorting', () => {
   it('toggles sortOrder when same key is clicked again', () => {
     const { result } = renderHook(() => useTableSorting(data, visibleColumns));
     const key: SortKey = 'sum_sales';
-    act(() => result.current.onSort(key));
-    act(() => result.current.onSort(key));
+    act(() => result.current.onChange(key));
+    act(() => result.current.onChange(key));
     expect(result.current.order).toBe(desc);
     expect(result.current.sortedData.map((d) => d.sum_sales)).toEqual([50, 40, 30]);
   });
@@ -53,17 +53,17 @@ describe('useTableSorting', () => {
     const { result } = renderHook(() => useTableSorting(data, visibleColumns));
     const key: SortKey = 'sum_sales';
 
-    act(() => result.current.onSort(key));
+    act(() => result.current.onChange(key));
     expect(result.current.key).toBe(key);
     expect(result.current.order).toBe('asc');
     expect(result.current.sortedData).toEqual([...data].sort((a, b) => a.sum_sales - b.sum_sales));
 
-    act(() => result.current.onSort(key));
+    act(() => result.current.onChange(key));
     expect(result.current.key).toBe(key);
     expect(result.current.order).toBe('desc');
     expect(result.current.sortedData).toEqual([...data].sort((a, b) => b.sum_sales - a.sum_sales));
 
-    act(() => result.current.onSort(key));
+    act(() => result.current.onChange(key));
     expect(result.current.key).toBeNull();
     expect(result.current.order).toBe('asc');
     expect(result.current.sortedData).toEqual(data);
@@ -73,9 +73,9 @@ describe('useTableSorting', () => {
     const { result } = renderHook(() => useTableSorting(data, visibleColumns));
     const key1: SortKey = 'sum_sales';
     const key2: SortKey = 'count_orders';
-    act(() => result.current.onSort(key1));
-    act(() => result.current.onSort(key1));
-    act(() => result.current.onSort(key2));
+    act(() => result.current.onChange(key1));
+    act(() => result.current.onChange(key1));
+    act(() => result.current.onChange(key2));
     expect(result.current.key).toBe(key2);
     expect(result.current.order).toBe(asc);
   });
@@ -85,7 +85,7 @@ describe('useTableSorting', () => {
       initialProps: { d: data, cols: visibleColumns },
     });
     const key: SortKey = 'sum_sales';
-    act(() => result.current.onSort(key));
+    act(() => result.current.onChange(key));
     rerender({ d: data, cols: visibleColumns });
     expect(result.current.sortedData).toBeDefined();
   });

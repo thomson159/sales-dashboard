@@ -38,17 +38,13 @@ export const Dashboard = ({ chartsAreVisible = false }: Props) => {
     setFilters,
     setSort,
   }: UseData = useData();
-  const { visibleColumns, toggleColumn }: UseTableColumnsResult = useTableColumns();
+  const { visibleColumns, onToggle }: UseTableColumnsResult = useTableColumns();
 
   const [navbarToggle, setNavbarToggle] = useState<boolean>(true);
-  const onToggleNavbar = useCallback(() => setNavbarToggle((prev: boolean) => !prev), []);
 
-  const handleSortChange = useCallback((nextSort?: SortType) => setSort(nextSort), [setSort]);
-
-  const handleFiltersChange = useCallback(
-    (value: FiltersType) => setFilters(value),
-    [setFilters],
-  );
+  const onNavbarToggle = useCallback(() => setNavbarToggle((prev: boolean) => !prev), []);
+  const handleSort = useCallback((nextSort?: SortType) => setSort(nextSort), [setSort]);
+  const handleFilters = useCallback((value: FiltersType) => setFilters(value), [setFilters]);
 
   const summaryProps: Metrics = useMemo(
     () => ({ totalRevenue, totalOrders, avgOrderValue }),
@@ -59,9 +55,9 @@ export const Dashboard = ({ chartsAreVisible = false }: Props) => {
 
   return (
     <>
-      <Navbar expanded={navbarToggle} onToggle={onToggleNavbar} loading={loading}>
-        <Filters data={chartData} {...filters} onChange={handleFiltersChange} />
-        <Sort sort={sort} onChange={handleSortChange} />
+      <Navbar expanded={navbarToggle} onToggle={onNavbarToggle} loading={loading}>
+        <Filters data={chartData} {...filters} onChange={handleFilters} />
+        <Sort sort={sort} onChange={handleSort} />
       </Navbar>
       <Container>
         <Summary {...summaryProps} />
@@ -79,7 +75,7 @@ export const Dashboard = ({ chartsAreVisible = false }: Props) => {
           onChange={setCurrentPage}
         />
         <Suspense fallback={<Spinner />}>
-          <Table data={data} visibleColumns={visibleColumns} toggleColumn={toggleColumn} />
+          <Table data={data} visibleColumns={visibleColumns} onToggle={onToggle} />
         </Suspense>
         <Footer />
       </Container>
