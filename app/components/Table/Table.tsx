@@ -2,31 +2,35 @@ import { useState, useMemo, useCallback, memo } from 'react';
 import { ColumnSelector } from './ColumnSelector';
 import { Button } from '../small/Button';
 import { ROWS_INCREMENT } from '~/consts';
-import { useTableSorting } from '~/hooks/Table/useTableSorting';
-import type { UseTableColumnsResult, UseTableSortingResult } from '~/types/hooks.types';
-import type { SaleArray, SaleData } from '~/types/types';
+import type { UseTableColumnsResult } from '~/types/hooks.types';
+import type { KeyOfSale, SaleArray, SaleData, SortOr } from '~/types/types';
 import { TableBody } from './TableBody';
 import { TableHeader } from './TableHeader';
 import { useTableColumns } from '~/hooks/Table/useTableColumns';
+import { useSort } from '~/hooks/Data/useSort';
+import { getNextSortState } from '~/utils/sort.utils';
 
 const SalesTableComponent = ({ data }: SaleData) => {
-  const { visibleColumns, onToggle }: UseTableColumnsResult = useTableColumns();
-  const { key, order, sortedData, onChange }: UseTableSortingResult = useTableSorting(
-    data,
-    visibleColumns,
-  );
-
+  const [sort, setSort] = useState<SortOr>(undefined);
   const [visibleRowsCount, setVisibleRowsCount] = useState<number>(ROWS_INCREMENT);
+  const { visibleColumns, onToggle }: UseTableColumnsResult = useTableColumns();
+  const sortedData: SaleArray = useSort(data, sort);
 
   const displayedData: SaleArray = useMemo(
     () => sortedData.slice(0, visibleRowsCount),
     [sortedData, visibleRowsCount],
   );
 
-  const loadMore = useCallback(() => setVisibleRowsCount((prev) => prev + ROWS_INCREMENT), []);
+  const loadMore = useCallback(
+    () => setVisibleRowsCount((prev: number) => prev + ROWS_INCREMENT),
+    [],
+  );
+  const handleClick = useCallback((field: KeyOfSale) => {
+    setSort((prev: SortOr) => getNextSortState(prev, field));
+  }, []);
 
   if (data.length === 0) {
-    return <div></div>;
+    return null;
   }
 
   return (
@@ -36,9 +40,9 @@ const SalesTableComponent = ({ data }: SaleData) => {
         <table className={`w-full sales-table border-collapse font-inter text-sm rounded-lg`}>
           <TableHeader
             visibleColumns={visibleColumns}
-            sortKey={key}
-            sortOrder={order}
-            onChange={onChange}
+            field={sort?.field}
+            order={sort?.order}
+            onChange={handleClick}
           />
           <TableBody data={displayedData} visibleColumns={visibleColumns} />
         </table>

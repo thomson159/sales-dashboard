@@ -1,5 +1,5 @@
 import { useCallback, useState } from 'react';
-import type { Filters, Metrics, SaleArray, Sort, UseData } from '~/types/types';
+import type { Filters, Metrics, SaleArray, Sort, SortOr, UseData } from '~/types/types';
 import { useSource } from './useSource';
 import { useFilters } from './useFilters';
 import { useMetrics } from './useMetrics';
@@ -10,7 +10,7 @@ import type { UseSourceResult, UsePaginationResult } from '~/types/hooks.types';
 export const useData = (): UseData => {
   const { data, loading }: UseSourceResult = useSource();
   const [filters, setFilters] = useState<Filters>({});
-  const [sort, setSort] = useState<Sort | undefined>(undefined);
+  const [sort, setSort] = useState<SortOr>(undefined);
   const [currentPage, setCurrentPage] = useState<number>(1);
   const [pageSize, setPageSize] = useState<number>(40);
   const filteredData: SaleArray = useFilters(data, filters);

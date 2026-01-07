@@ -7,11 +7,11 @@ import type {
   RevenuePerChannelItem,
   SalesOverTimeItem,
   Sort,
-  SortKey,
   SortOrder,
   StringArray,
   OnChange,
   SaleData,
+  KeyOfSale,
 } from '~/types/types';
 import type { UseFiltersStateResult } from './hooks.types';
 
@@ -20,9 +20,9 @@ export type TableBodyProps = SaleData & VisibleColumns;
 export type FiltersProps = SaleData & FiltersParams;
 
 export type TableHeaderProps = Readonly<{
-  sortKey: SortKey;
-  sortOrder: SortOrder | null;
-  onChange: (key: SortKey, order?: SortOrder) => void;
+  field?: KeyOfSale;
+  order?: SortOrder;
+  onChange: (field: KeyOfSale) => void;
 }> &
   VisibleColumns;
 

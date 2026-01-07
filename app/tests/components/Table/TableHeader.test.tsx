@@ -35,8 +35,8 @@ describe('TableHeader', () => {
       <table>
         <TableHeader
           visibleColumns={['date', 'sum_sales', 'index']}
-          sortKey={null}
-          sortOrder={null}
+          field={undefined}
+          order={undefined}
           onChange={onSort}
         />
       </table>,
@@ -53,8 +53,8 @@ describe('TableHeader', () => {
       <table>
         <TableHeader
           visibleColumns={visibleColumns}
-          sortKey={null}
-          sortOrder={null}
+          field={undefined}
+          order={undefined}
           onChange={onSort}
         />
       </table>,
@@ -70,12 +70,7 @@ describe('TableHeader', () => {
   it('renders ascending and descending sort arrows for active column', () => {
     const { rerender } = render(
       <table>
-        <TableHeader
-          visibleColumns={visibleColumns}
-          sortKey="date"
-          sortOrder="asc"
-          onChange={onSort}
-        />
+        <TableHeader visibleColumns={visibleColumns} field="date" order="asc" onChange={onSort} />
       </table>,
     );
 
@@ -83,12 +78,7 @@ describe('TableHeader', () => {
 
     rerender(
       <table>
-        <TableHeader
-          visibleColumns={visibleColumns}
-          sortKey="date"
-          sortOrder="desc"
-          onChange={onSort}
-        />
+        <TableHeader visibleColumns={visibleColumns} field="date" order="desc" onChange={onSort} />
       </table>,
     );
 
@@ -100,8 +90,8 @@ describe('TableHeader', () => {
       <table>
         <TableHeader
           visibleColumns={visibleColumns}
-          sortKey="channel_name"
-          sortOrder="asc"
+          field="channel_name"
+          order="asc"
           onChange={onSort}
         />
       </table>,
@@ -117,8 +107,8 @@ describe('TableHeader', () => {
       <table>
         <TableHeader
           visibleColumns={visibleColumns}
-          sortKey={null}
-          sortOrder="asc"
+          field={undefined}
+          order="asc"
           onChange={onSort}
         />
       </table>,
@@ -135,8 +125,8 @@ describe('TableHeader', () => {
       <table>
         <TableHeader
           visibleColumns={visibleColumns}
-          sortKey={null}
-          sortOrder="asc"
+          field={undefined}
+          order="asc"
           onChange={onSort}
         />
       </table>,
@@ -150,7 +140,7 @@ describe('TableHeader', () => {
   it('handles empty visibleColumns without rendering headers', () => {
     render(
       <table>
-        <TableHeader visibleColumns={[]} sortKey={null} sortOrder="asc" onChange={onSort} />
+        <TableHeader visibleColumns={[]} field={undefined} order="asc" onChange={onSort} />
       </table>,
     );
 
@@ -160,12 +150,7 @@ describe('TableHeader', () => {
   it('matches snapshot for sorted state', () => {
     const { container } = render(
       <table>
-        <TableHeader
-          visibleColumns={visibleColumns}
-          sortKey="date"
-          sortOrder="asc"
-          onChange={onSort}
-        />
+        <TableHeader visibleColumns={visibleColumns} field="date" order="asc" onChange={onSort} />
       </table>,
     );
 

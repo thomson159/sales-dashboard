@@ -8,51 +8,23 @@ exports[`TableHeader > matches snapshot for sorted state 1`] = `
     >
       <tr>
         <th
-          class="
-                  px-3 py-2
-                  whitespace-nowrap
-                  text-left
-                  font-semibold
-                  select-none
-                  
-                "
+          class="px-3 py-2 whitespace-nowrap text-left font-semibold select-none "
         >
           Index
         </th>
         <th
-          class="
-                  px-3 py-2
-                  whitespace-nowrap
-                  text-left
-                  font-semibold
-                  select-none
-                  cursor-pointer
-                "
+          class="px-3 py-2 whitespace-nowrap text-left font-semibold select-none cursor-pointer"
         >
           Date
            ▲
         </th>
         <th
-          class="
-                  px-3 py-2
-                  whitespace-nowrap
-                  text-left
-                  font-semibold
-                  select-none
-                  cursor-pointer
-                "
+          class="px-3 py-2 whitespace-nowrap text-left font-semibold select-none cursor-pointer"
         >
           Channel
         </th>
         <th
-          class="
-                  px-3 py-2
-                  whitespace-nowrap
-                  text-left
-                  font-semibold
-                  select-none
-                  cursor-pointer
-                "
+          class="px-3 py-2 whitespace-nowrap text-left font-semibold select-none cursor-pointer"
         >
           Sales
         </th>

@@ -1,38 +1,26 @@
 import { memo } from 'react';
-import { COLUMNS, index as indexKey } from '~/consts';
-import type { SortKey, Sale } from '~/types/types';
+import { asc, COLUMNS } from '~/consts';
+import type { Column, KeyOfSale } from '~/types/types';
 import { isSortKey } from '~/utils/sort.utils';
 import type { TableHeaderProps } from '~/types/components.types';
 
-const TableHeaderComponent = ({
-  visibleColumns,
-  sortKey,
-  sortOrder,
-  onChange,
-}: TableHeaderProps) => {
-  const getSortArrow = (key: keyof Sale) =>
-    sortKey === key ? (sortOrder === 'asc' ? ' ▲' : ' ▼') : '';
+const TableHeaderComponent = ({ visibleColumns, field, order, onChange }: TableHeaderProps) => {
+  const getArrow = (k: KeyOfSale) => (field === k ? (order === asc ? ' ▲' : ' ▼') : null);
 
   return (
     <thead className="sticky top-0 bg-white z-20">
       <tr>
-        {COLUMNS.filter((c) => visibleColumns.includes(c.key)).map((col) => {
-          const isSortable = col.sortable && col.key !== indexKey && isSortKey(col.key);
+        {COLUMNS.filter((c) => visibleColumns.includes(c.key)).map((col: Column) => {
+          const isSortable: boolean = col.sortable && isSortKey(col.key);
+
           return (
             <th
               key={col.key}
-              onClick={isSortable ? () => onChange(col.key as SortKey) : undefined}
-              className={`
-                  px-3 py-2
-                  whitespace-nowrap
-                  text-left
-                  font-semibold
-                  select-none
-                  ${isSortable ? 'cursor-pointer' : ''}
-                `}
+              onClick={isSortable ? () => onChange(col.key as KeyOfSale) : undefined}
+              className={`px-3 py-2 whitespace-nowrap text-left font-semibold select-none ${isSortable ? 'cursor-pointer' : ''}`}
             >
               {col.label}
-              {isSortable && getSortArrow(col.key as keyof Sale)}
+              {isSortable && getArrow(col.key as KeyOfSale)}
             </th>
           );
         })}
