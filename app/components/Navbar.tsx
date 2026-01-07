@@ -1,31 +1,23 @@
-import { useCallback, useMemo, memo, type MouseEventHandler } from 'react';
-import type { NavbarProps } from '../types/components.types';
+import { useCallback, useMemo, memo, useState } from 'react';
+import type { NavbarProps, MouseEvent } from '../types/components.types';
 import { Spinner } from './small/Spinner';
+import { slogan } from '~/consts';
 
-export const slogan =
-  'text-3xl font-bold text-left text-transparent bg-clip-text bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 animate-pulse';
-export type MouseEvent = MouseEventHandler<HTMLButtonElement>;
+const NavbarComponent = ({ loading = false, title = 'Dashboard', children }: NavbarProps) => {
+  const [expanded, setToggle] = useState<boolean>(true);
 
-const NavbarComponent = ({
-  expanded,
-  onToggle,
-  loading = false,
-  title = 'Dashboard',
-  children,
-}: NavbarProps) => {
   const containerClassName: string = useMemo(
     () => `filters-wrapper ${expanded ? 'filters-open' : 'filters-closed'}`,
     [expanded],
   );
 
-  const handleToggle = useCallback(() => onToggle(), [onToggle]);
-
+  const handleToggle = useCallback(() => setToggle((prev: boolean) => !prev), [setToggle]);
   const handleButtonClick: MouseEvent = useCallback(
     (event) => {
       event.stopPropagation();
-      onToggle();
+      setToggle((prev: boolean) => !prev);
     },
-    [onToggle],
+    [setToggle],
   );
 
   return (

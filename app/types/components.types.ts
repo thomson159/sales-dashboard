@@ -1,4 +1,4 @@
-import { type ReactNode } from 'react';
+import { type MouseEventHandler, type ReactNode } from 'react';
 import type {
   Column,
   ColumnKeyArray,
@@ -13,10 +13,10 @@ import type {
   OnChange,
   SaleData,
 } from '~/types/types';
-import type { UseFiltersStateResult, UseTableColumnsResult } from './hooks.types';
+import type { UseFiltersStateResult } from './hooks.types';
 
+export type MouseEvent = MouseEventHandler<HTMLButtonElement>;
 export type TableBodyProps = SaleData & VisibleColumns;
-export type SalesTableProps = SaleData & UseTableColumnsResult;
 export type FiltersProps = SaleData & FiltersParams;
 
 export type TableHeaderProps = Readonly<{
@@ -56,8 +56,6 @@ export type PaginationProps = Readonly<{
   OnChangeObject;
 
 export type NavbarProps = Readonly<{
-  expanded: boolean;
-  onToggle: () => void;
   loading?: boolean;
   title?: string;
 }> &

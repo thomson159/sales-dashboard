@@ -1,8 +1,6 @@
 import { lazy, Suspense, useCallback, useMemo, useState } from 'react';
 import { useData } from '~/hooks/Data/useData';
-import { useTableColumns } from '~/hooks/Table/useTableColumns';
 import type { Filters as FiltersType, Metrics, Sort as SortType, UseData } from '~/types/types';
-import type { UseTableColumnsResult } from '~/types/hooks.types';
 import { Navbar } from '../Navbar';
 import { Footer } from '../small/Footer';
 import { Container } from '../small/Container';
@@ -38,11 +36,9 @@ export const Dashboard = ({ chartsAreVisible = false }: Props) => {
     setFilters,
     setSort,
   }: UseData = useData();
-  const { visibleColumns, onToggle }: UseTableColumnsResult = useTableColumns();
 
-  const [navbarToggle, setNavbarToggle] = useState<boolean>(true);
+  const [showCharts, setShowCharts] = useState<boolean>(false);
 
-  const onNavbarToggle = useCallback(() => setNavbarToggle((prev: boolean) => !prev), []);
   const handleSort = useCallback((nextSort?: SortType) => setSort(nextSort), [setSort]);
   const handleFilters = useCallback((value: FiltersType) => setFilters(value), [setFilters]);
 
@@ -51,11 +47,9 @@ export const Dashboard = ({ chartsAreVisible = false }: Props) => {
     [totalRevenue, totalOrders, avgOrderValue],
   );
 
-  const [showCharts, setShowCharts] = useState<boolean>(false);
-
   return (
     <>
-      <Navbar expanded={navbarToggle} onToggle={onNavbarToggle} loading={loading}>
+      <Navbar loading={loading}>
         <Filters data={chartData} {...filters} onChange={handleFilters} />
         <Sort sort={sort} onChange={handleSort} />
       </Navbar>
@@ -75,7 +69,7 @@ export const Dashboard = ({ chartsAreVisible = false }: Props) => {
           onChange={setCurrentPage}
         />
         <Suspense fallback={<Spinner />}>
-          <Table data={data} visibleColumns={visibleColumns} onToggle={onToggle} />
+          <Table data={data} />
         </Suspense>
         <Footer />
       </Container>

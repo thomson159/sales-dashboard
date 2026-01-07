@@ -1,5 +1,8 @@
 import type { Column, Fields } from './types/types';
 
+export const slogan =
+  'text-3xl font-bold text-left text-transparent bg-clip-text bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 animate-pulse';
+
 export const STORAGE_KEY = 'sales-table-columns';
 export const ROWS_INCREMENT = 10;
 export const asc = 'asc';

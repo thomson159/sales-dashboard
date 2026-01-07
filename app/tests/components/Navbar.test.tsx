@@ -1,80 +1,78 @@
 import { render, screen, fireEvent } from '@testing-library/react';
-import { describe, it, expect, vi } from 'vitest';
+import { describe, it, expect } from 'vitest';
 import { Navbar } from '~/components/Navbar';
 
 describe('Navbar', () => {
-  const onToggleMock = vi.fn();
-
-  beforeEach(() => {
-    vi.clearAllMocks();
-  });
-
-  it('renders title and arrow when collapsed', () => {
+  const setup = (props = {}) =>
     render(
-      <Navbar expanded={false} onToggle={onToggleMock}>
-        Child
+      <Navbar {...props}>
+        <div data-testid="child">Child</div>
       </Navbar>,
     );
-    expect(screen.getByText('Dashboard')).toBeDefined();
-    expect(screen.getByText('Child')).toBeDefined();
-    const container = screen.getByText('Child').closest('.filters-wrapper');
-    expect(container).toHaveClass('filters-closed');
+
+  const getExpandedHeader = () => screen.getByRole('button', { name: 'Collapse dashboard' });
+
+  it('renders default title and children', () => {
+    setup();
+    expect(screen.getByText('Dashboard')).toBeInTheDocument();
+    expect(screen.getByTestId('child')).toBeInTheDocument();
   });
 
-  it('does not show arrow when expanded', () => {
-    render(
-      <Navbar expanded={true} onToggle={onToggleMock}>
-        Child
-      </Navbar>,
-    );
-    expect(screen.queryByText('▼')).toBeNull();
-    const container = screen.getByText('Child').closest('.filters-wrapper');
+  it('is expanded by default', () => {
+    setup();
+    const container = screen.getByTestId('child').closest('.filters-wrapper');
     expect(container).toHaveClass('filters-open');
   });
 
-  it('calls onToggle when header is clicked', () => {
-    render(
-      <Navbar expanded={false} onToggle={onToggleMock}>
-        Child
-      </Navbar>,
-    );
-    const header = screen.getByText('Dashboard').closest('div');
-    if (!header) throw new Error('Header div not found');
+  it('collapses on header click', () => {
+    setup();
+    fireEvent.click(getExpandedHeader());
+    const container = screen.getByTestId('child').closest('.filters-wrapper');
+    expect(container).toHaveClass('filters-closed');
+  });
+
+  it('toggles on Enter key', () => {
+    setup();
+    fireEvent.keyDown(getExpandedHeader(), { key: 'Enter' });
+    const container = screen.getByTestId('child').closest('.filters-wrapper');
+    expect(container).toHaveClass('filters-closed');
+  });
+
+  it('toggles on Space key', () => {
+    setup();
+    fireEvent.keyDown(getExpandedHeader(), { key: ' ' });
+    const container = screen.getByTestId('child').closest('.filters-wrapper');
+    expect(container).toHaveClass('filters-closed');
+  });
+
+  it('toggles when inner button is clicked', () => {
+    setup();
+    fireEvent.click(screen.getByRole('button', { name: 'Expand dashboard' }));
+    const container = screen.getByTestId('child').closest('.filters-wrapper');
+    expect(container).toHaveClass('filters-closed');
+  });
+
+  it('shows spinner when loading is true', () => {
+    const { container } = setup({ loading: true });
+    expect(container.querySelector('.spinner')).toBeTruthy();
+  });
+
+  it('updates aria-label when toggled', () => {
+    setup();
+    const header = document.querySelector('[role="button"][tabindex="0"]') as HTMLElement;
+    expect(header).toHaveAttribute('aria-label', 'Collapse dashboard');
     fireEvent.click(header);
-    expect(onToggleMock).toHaveBeenCalledTimes(1);
-  });
-
-  it('calls onToggle and stops propagation when button is clicked', () => {
-    const stopPropagationMock = vi.fn();
-    render(
-      <Navbar expanded={true} onToggle={onToggleMock}>
-        Child
-      </Navbar>,
-    );
-
-    const buttons = screen.getAllByRole('button');
-    const button = buttons[1];
-
-    fireEvent.click(button, { stopPropagation: stopPropagationMock });
-
-    expect(onToggleMock).toHaveBeenCalledTimes(1);
-  });
-
-  it('matches snapshot when collapsed', () => {
-    const { container } = render(
-      <Navbar expanded={false} onToggle={onToggleMock}>
-        Child
-      </Navbar>,
-    );
-    expect(container).toMatchSnapshot();
+    expect(header).toHaveAttribute('aria-label', 'Expand dashboard');
   });
 
   it('matches snapshot when expanded', () => {
-    const { container } = render(
-      <Navbar expanded={true} onToggle={onToggleMock}>
-        Child
-      </Navbar>,
-    );
+    const { container } = setup();
+    expect(container).toMatchSnapshot();
+  });
+
+  it('matches snapshot when collapsed', () => {
+    const { container } = setup();
+    fireEvent.click(getExpandedHeader());
     expect(container).toMatchSnapshot();
   });
 });

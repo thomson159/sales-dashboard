@@ -3,13 +3,14 @@ import { ColumnSelector } from './ColumnSelector';
 import { Button } from '../small/Button';
 import { ROWS_INCREMENT } from '~/consts';
 import { useTableSorting } from '~/hooks/Table/useTableSorting';
-import type { SalesTableProps } from '~/types/components.types';
-import type { UseTableSortingResult } from '~/types/hooks.types';
-import type { SaleArray } from '~/types/types';
+import type { UseTableColumnsResult, UseTableSortingResult } from '~/types/hooks.types';
+import type { SaleArray, SaleData } from '~/types/types';
 import { TableBody } from './TableBody';
 import { TableHeader } from './TableHeader';
+import { useTableColumns } from '~/hooks/Table/useTableColumns';
 
-const SalesTableComponent = ({ data, visibleColumns, onToggle }: SalesTableProps) => {
+const SalesTableComponent = ({ data }: SaleData) => {
+  const { visibleColumns, onToggle }: UseTableColumnsResult = useTableColumns();
   const { key, order, sortedData, onChange }: UseTableSortingResult = useTableSorting(
     data,
     visibleColumns,

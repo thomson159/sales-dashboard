@@ -73,14 +73,7 @@ describe('Table', () => {
     });
   });
 
-  const renderTable = () =>
-    render(
-      <Table
-        data={mockData}
-        visibleColumns={['date', 'channel_name']}
-        onToggle={toggleColumnMock}
-      />,
-    );
+  const renderTable = () => render(<Table data={mockData} />);
 
   it('renders table headers', () => {
     renderTable();
