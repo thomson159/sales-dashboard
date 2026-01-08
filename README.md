@@ -4,6 +4,12 @@ As of **08.01.2026**, Node.js 22 may cause intermittent issues with `react-route
 
 In some cases, the project may not start correctly after running `npm run dev`.
 
+`
+Failed to load resource: the server responded with a status of 504 (Outdated Optimize Dep)
+Uncaught (in promise) TypeError: Failed to fetch dynamically imported module: 
+Failed to load resource: the server responded with a status of 504 (Outdated Optimize Dep)
+`
+
 Temporary workaround:
 
 - Refresh the browser using `Ctrl + Shift + R` (usually works on the second load)
