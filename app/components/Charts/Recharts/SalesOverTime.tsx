@@ -5,7 +5,6 @@ import { memo } from 'react';
 import type { SalesProps } from '~/types/components.types';
 
 const SalesOverTime = ({ data }: SalesProps) => {
-  // VERY IMPORTANT TO HANDLE edge cases
   const interval = data.length > 0 ? Math.ceil(data.length / 5) : 0;
 
   return (

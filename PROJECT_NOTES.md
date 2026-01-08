@@ -189,3 +189,9 @@ This project was built with a strong focus on:
 - scalability and future-proof design.
 
 It applies best practices for **React + TypeScript**, along with multiple performance-oriented techniques, resulting in a fast, stable, and maintainable application.
+
+## Not used code
+
+- /app/components/Charts/Nivo
+- /app/utils/filters.utils.ts -> applyFiltersLazy
+- /app/store/ThemeContext.tsx

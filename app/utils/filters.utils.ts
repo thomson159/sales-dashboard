@@ -52,7 +52,6 @@ export const validatePageSize = (value: number, min: number, max: number): numbe
   return Math.min(Math.max(value, min), max);
 };
 
-// Not used anywhere, I don't want to delete it for now
 export const applyFiltersLazy = (data: SaleArray, filters: Filters): SaleArray => {
   const channelName = filters.channelName?.toLowerCase();
   const channelNames = filters.channelNames?.map((n) => n.toLowerCase()) ?? null;
