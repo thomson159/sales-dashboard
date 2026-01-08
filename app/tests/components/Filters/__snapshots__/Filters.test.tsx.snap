@@ -14,7 +14,7 @@ exports[`Filters > matches snapshot 1`] = `
         <label
           for="channelName"
         >
-          Search
+          🔎 Search
         </label>
         <input
           autocomplete="off"
@@ -36,7 +36,7 @@ exports[`Filters > matches snapshot 1`] = `
         <label
           for="minDate"
         >
-          Date
+          📅 Date
         </label>
         <div
           class="flex flex-wrap items-center"

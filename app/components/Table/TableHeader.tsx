@@ -20,9 +20,7 @@ const TableHeaderComponent = ({ visibleColumns, field, order, onChange }: TableH
               className={`px-3 py-2 whitespace-nowrap text-left font-semibold select-none ${isSortable ? 'cursor-pointer' : ''}`}
             >
               {col.label}
-              <span className='absolute'>
-                {isSortable && getArrow(col.key as KeyOfSale)}
-              </span>
+              <span className="absolute">{isSortable && getArrow(col.key as KeyOfSale)}</span>
             </th>
           );
         })}

@@ -12,13 +12,13 @@ describe('SalesSummaryComponent', () => {
   it('renders all summary items correctly', () => {
     render(<SalesSummaryComponent {...mockMetrics} />);
 
-    expect(screen.getByText('Total Revenue')).toBeInTheDocument();
+    expect(screen.getByText('🏆 Total Revenue')).toBeInTheDocument();
     expect(screen.getByText('1234.56 $')).toBeInTheDocument();
 
-    expect(screen.getByText('Total Orders')).toBeInTheDocument();
+    expect(screen.getByText('📊 Total Orders')).toBeInTheDocument();
     expect(screen.getByText('78')).toBeInTheDocument();
 
-    expect(screen.getByText('Average Order Value')).toBeInTheDocument();
+    expect(screen.getByText('💰 Average Order Value')).toBeInTheDocument();
     expect(screen.getByText('15.87 $')).toBeInTheDocument();
   });
 
@@ -38,9 +38,9 @@ describe('SalesSummary memo', () => {
   it('renders memoized component correctly', () => {
     render(<Summary {...mockMetrics} />);
 
-    expect(screen.getByText('Total Revenue')).toBeInTheDocument();
-    expect(screen.getByText('Total Orders')).toBeInTheDocument();
-    expect(screen.getByText('Average Order Value')).toBeInTheDocument();
+    expect(screen.getByText('🏆 Total Revenue')).toBeInTheDocument();
+    expect(screen.getByText('📊 Total Orders')).toBeInTheDocument();
+    expect(screen.getByText('💰 Average Order Value')).toBeInTheDocument();
   });
 
   it('matches snapshot', () => {
