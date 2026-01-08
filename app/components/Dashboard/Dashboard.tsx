@@ -1,8 +1,6 @@
 import { lazy, Suspense, useCallback, useMemo, useState } from 'react';
 import { useData } from '~/hooks/Data/useData';
-import { useTableColumns } from '~/hooks/Table/useTableColumns';
 import type { Filters as FiltersType, Metrics, Sort as SortType, UseData } from '~/types/types';
-import type { UseTableColumnsResult } from '~/types/hooks.types';
 import { Navbar } from '../Navbar';
 import { Footer } from '../small/Footer';
 import { Container } from '../small/Container';
@@ -38,30 +36,21 @@ export const Dashboard = ({ chartsAreVisible = false }: Props) => {
     setFilters,
     setSort,
   }: UseData = useData();
-  const { visibleColumns, toggleColumn }: UseTableColumnsResult = useTableColumns();
 
-  const [navbarToggle, setNavbarToggle] = useState<boolean>(true);
-  const onToggleNavbar = useCallback(() => setNavbarToggle((prev: boolean) => !prev), []);
-
-  const handleSortChange = useCallback((nextSort?: SortType) => setSort(nextSort), [setSort]);
-
-  const handleFiltersChange = useCallback(
-    (nextFilters: FiltersType) => setFilters(nextFilters),
-    [setFilters],
-  );
+  const [showCharts, setShowCharts] = useState<boolean>(false);
+  const handleSort = useCallback((nextSort?: SortType) => setSort(nextSort), [setSort]);
+  const handleFilters = useCallback((value: FiltersType) => setFilters(value), [setFilters]);
 
   const summaryProps: Metrics = useMemo(
     () => ({ totalRevenue, totalOrders, avgOrderValue }),
     [totalRevenue, totalOrders, avgOrderValue],
   );
 
-  const [showCharts, setShowCharts] = useState<boolean>(false);
-
   return (
     <>
-      <Navbar expanded={navbarToggle} onToggle={onToggleNavbar} loading={loading}>
-        <Filters data={chartData} {...filters} onChange={handleFiltersChange} />
-        <Sort sort={sort} onChange={handleSortChange} />
+      <Navbar loading={loading}>
+        <Filters data={chartData} {...filters} onChange={handleFilters} />
+        <Sort sort={sort} onChange={handleSort} />
       </Navbar>
       <Container>
         <Summary {...summaryProps} />
@@ -79,7 +68,7 @@ export const Dashboard = ({ chartsAreVisible = false }: Props) => {
           onChange={setCurrentPage}
         />
         <Suspense fallback={<Spinner />}>
-          <Table data={data} visibleColumns={visibleColumns} toggleColumn={toggleColumn} />
+          <Table data={data} />
         </Suspense>
         <Footer />
       </Container>

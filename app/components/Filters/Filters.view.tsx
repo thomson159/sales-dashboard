@@ -3,18 +3,12 @@ import type { FiltersViewProps } from '~/types/components.types';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 
-export const FiltersView = ({
-  state,
-  availableChannels,
-  hasChanges,
-  apply,
-  dispatch,
-}: FiltersViewProps) => {
+export const FiltersView = ({ state, channels, hasChanges, apply, dispatch }: FiltersViewProps) => {
   return (
     <div className="w-full flex flex-col md:flex-row md:items-end gap-4 flex-wrap">
       <div className="flex flex-wrap gap-4 w-full md:w-auto">
         <div className="flex flex-col relative w-full md:w-auto">
-          <label htmlFor="channelName">Search</label>
+          <label htmlFor="channelName">🔎 Search</label>
           <input
             autoComplete="off"
             id="channelName"
@@ -39,7 +33,7 @@ export const FiltersView = ({
           )}
         </div>
         <div className="flex flex-col w-full md:w-auto">
-          <label htmlFor="minDate">Date</label>
+          <label htmlFor="minDate">📅 Date</label>
           <div className="flex flex-wrap items-center">
             <DatePicker
               id="minDate"
@@ -75,17 +69,15 @@ export const FiltersView = ({
         </div>
       </div>
       <div className="flex flex-wrap gap-4 w-full md:w-auto items-end min-h-[84px] md:min-h-auto">
-        <div className={`${'sort-container'} flex flex-wrap gap-2`}>
-          {availableChannels.map((name) => {
+        <div className={`${'sortContainer'} flex flex-wrap gap-1`}>
+          {channels.map((name) => {
             const active = state.channelNames.includes(name);
 
             return (
               <button
                 key={name}
                 onClick={() => dispatch({ type: 'TOGGLE_CHANNEL', value: name })}
-                className={`${'sort'} ${
-                  active ? `${'sort-active'} bg-blue-600 text-white` : 'sort-in-active'
-                }`}
+                className={`${'sort'} ${active ? `${'sort-active'} bg-blue-600 text-white` : 'sort-in-active'}`}
                 aria-pressed={active}
               >
                 {name}

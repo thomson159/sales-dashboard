@@ -35,17 +35,17 @@ describe('useTableColumns', () => {
     const { result } = renderHook(() => useTableColumns());
     const key = COLUMNS[0].key;
 
-    act(() => result.current.toggleColumn(key));
+    act(() => result.current.onToggle(key));
     expect(result.current.visibleColumns).not.toContain(key);
 
-    act(() => result.current.toggleColumn(key));
+    act(() => result.current.onToggle(key));
     expect(result.current.visibleColumns).toContain(key);
   });
 
   it('adds a column if not present', () => {
     const { result } = renderHook(() => useTableColumns());
     const key = 'newColumn' as ColumnKey;
-    act(() => result.current.toggleColumn(key));
+    act(() => result.current.onToggle(key));
     expect(result.current.visibleColumns).toContain(key);
   });
 
@@ -54,14 +54,14 @@ describe('useTableColumns', () => {
     localStorage.setItem(STORAGE_KEY, JSON.stringify(initialKeys));
     const { result } = renderHook(() => useTableColumns());
     const key = COLUMNS[0].key;
-    act(() => result.current.toggleColumn(key));
+    act(() => result.current.onToggle(key));
     expect(result.current.visibleColumns).not.toContain(key);
   });
 
   it('persists changes to localStorage', () => {
     const { result } = renderHook(() => useTableColumns());
     const key = COLUMNS[0].key;
-    act(() => result.current.toggleColumn(key));
+    act(() => result.current.onToggle(key));
     const stored = JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]');
     expect(stored).toEqual(result.current.visibleColumns);
   });
@@ -69,7 +69,7 @@ describe('useTableColumns', () => {
   it('updates localStorage on multiple toggles', () => {
     const { result } = renderHook(() => useTableColumns());
     const keys = [COLUMNS[0].key, COLUMNS[1].key];
-    keys.forEach((key) => act(() => result.current.toggleColumn(key)));
+    keys.forEach((key) => act(() => result.current.onToggle(key)));
     const stored = JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]');
     expect(stored).toEqual(result.current.visibleColumns);
   });

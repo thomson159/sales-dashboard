@@ -6,11 +6,11 @@ import type { UsePageSizeResult } from '~/types/hooks.types';
 
 const PageSizeFilterComponent = ({
   pageSize,
-  onChange,
-  dataLength,
   min = 1,
+  dataLength,
+  onChange,
 }: PageSizeFilterProps) => {
-  const { localPageSize, handleChange, applyPageSize }: UsePageSizeResult = usePageSize({
+  const { localPageSize, handleChange, apply }: UsePageSizeResult = usePageSize({
     pageSize,
     min,
     dataLength,
@@ -33,7 +33,9 @@ const PageSizeFilterComponent = ({
             style={{ width: 90 }}
           />
         </div>
-        <Button onClick={applyPageSize}>Apply</Button>
+        <Button disabled={dataLength < 2} onClick={apply}>
+          Apply
+        </Button>
       </div>
     </div>
   );

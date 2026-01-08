@@ -1,198 +1,159 @@
 import { render, screen, fireEvent } from '@testing-library/react';
-import { describe, it, expect, vi } from 'vitest';
+import { describe, it, expect, vi, beforeEach } from 'vitest';
 import { TableHeader } from '~/components/Table/TableHeader';
-import { asc, COLUMNS, desc, index as indexKey } from '~/consts';
-import type { Column, ColumnKey } from '~/types/types';
+import type { ColumnKey } from '~/types/types';
 
-const columns: Column[] = [
-  { key: indexKey, label: 'Index', sortable: false },
-  { key: 'date', label: 'Date', sortable: true },
-  { key: 'channel_name', label: 'Channel', sortable: true },
-  { key: 'sum_sales', label: 'Sales', sortable: true },
-];
+vi.mock('~/utils/sort.utils', () => ({
+  isSortKey: () => true,
+}));
 
-const visibleColumns: ColumnKey[] = ['date', 'channel_name', 'sum_sales', indexKey];
+vi.mock('~/consts', () => ({
+  asc: 'asc',
+  desc: 'desc',
+  index: 'index',
+  COLUMNS: [
+    { key: 'index', label: 'Index', sortable: false },
+    { key: 'date', label: 'Date', sortable: true },
+    { key: 'channel_name', label: 'Channel', sortable: true },
+    { key: 'sum_sales', label: 'Sales', sortable: true },
+  ],
+}));
 
 describe('TableHeader', () => {
+  const onSort = vi.fn();
+  const visibleColumns: ColumnKey[] = ['index', 'date', 'channel_name', 'sum_sales'];
+
+  beforeEach(() => {
+    onSort.mockClear();
+  });
+
+  const getHeaderByLabel = (label: string) =>
+    screen.getAllByRole('columnheader').find((th) => th.textContent?.includes(label));
+
   it('renders only visible columns', () => {
     render(
       <table>
         <TableHeader
-          columns={columns}
-          visibleColumns={['date', 'sum_sales', indexKey]}
-          sortKey={null}
-          sortOrder={null}
-          onSort={vi.fn()}
+          visibleColumns={['date', 'sum_sales', 'index']}
+          field={undefined}
+          order={undefined}
+          onChange={onSort}
         />
       </table>,
     );
 
-    expect(screen.getByText('Date')).toBeDefined();
-    expect(screen.getByText('Sales')).toBeDefined();
-    expect(screen.queryByText('Channel')).toBeNull();
-    expect(screen.getByText('Index')).toBeDefined();
+    expect(getHeaderByLabel('Date')).toBeDefined();
+    expect(getHeaderByLabel('Sales')).toBeDefined();
+    expect(getHeaderByLabel('Index')).toBeDefined();
+    expect(getHeaderByLabel('Channel')).toBeUndefined();
   });
 
-  it('adds cursor-pointer class for sortable columns except index', () => {
+  it('adds cursor-pointer class only to sortable columns', () => {
     render(
       <table>
         <TableHeader
-          columns={columns}
           visibleColumns={visibleColumns}
-          sortKey={null}
-          sortOrder={null}
-          onSort={vi.fn()}
+          field={undefined}
+          order={undefined}
+          onChange={onSort}
         />
       </table>,
     );
-    const dateHeader = screen.getByText((content) => content.includes('Date')).closest('th');
-    const indexHeader = screen.getByText((content) => content.includes('Index')).closest('th');
+
+    const dateHeader = getHeaderByLabel('Date');
+    const indexHeader = getHeaderByLabel('Index');
+
     expect(dateHeader?.className).toContain('cursor-pointer');
     expect(indexHeader?.className).not.toContain('cursor-pointer');
   });
 
-  it('renders sort arrow for active sorted column', () => {
+  it('renders ascending and descending sort arrows for active column', () => {
     const { rerender } = render(
       <table>
-        <TableHeader
-          columns={columns}
-          visibleColumns={visibleColumns}
-          sortKey="date"
-          sortOrder={asc}
-          onSort={vi.fn()}
-        />
+        <TableHeader visibleColumns={visibleColumns} field="date" order="asc" onChange={onSort} />
       </table>,
     );
-    expect(screen.getByText((content) => content.includes('Date'))?.textContent).toContain('▲');
+
+    expect(getHeaderByLabel('Date')?.textContent).toContain('▲');
 
     rerender(
       <table>
-        <TableHeader
-          columns={columns}
-          visibleColumns={visibleColumns}
-          sortKey="date"
-          sortOrder={desc}
-          onSort={vi.fn()}
-        />
+        <TableHeader visibleColumns={visibleColumns} field="date" order="desc" onChange={onSort} />
       </table>,
     );
-    expect(screen.getByText((content) => content.includes('Date'))?.textContent).toContain('▼');
+
+    expect(getHeaderByLabel('Date')?.textContent).toContain('▼');
   });
 
-  it('does not render sort arrow for non-sorted columns', () => {
+  it('does not render sort arrow for non-active columns', () => {
     render(
       <table>
         <TableHeader
-          columns={columns}
           visibleColumns={visibleColumns}
-          sortKey="channel_name"
-          sortOrder={asc}
-          onSort={vi.fn()}
+          field="channel_name"
+          order="asc"
+          onChange={onSort}
         />
       </table>,
     );
-    expect(screen.getByText((content) => content.includes('Date'))?.textContent).not.toContain('▲');
-    expect(screen.getByText((content) => content.includes('Date'))?.textContent).not.toContain('▼');
+
+    const dateText = getHeaderByLabel('Date')?.textContent ?? '';
+    expect(dateText.includes('▲')).toBe(false);
+    expect(dateText.includes('▼')).toBe(false);
   });
 
-  it('calls onSort correctly on successive clicks', () => {
-    const onSortMock = vi.fn();
-    const visibleColumns = COLUMNS.map((c) => c.key);
-    const { getByText, rerender } = render(
-      <table>
-        <TableHeader
-          columns={COLUMNS}
-          visibleColumns={visibleColumns}
-          sortKey={null}
-          sortOrder="asc"
-          onSort={onSortMock}
-        />
-      </table>,
-    );
-
-    const dateHeader = getByText('Date');
-
-    fireEvent.click(dateHeader);
-    expect(onSortMock).toHaveBeenLastCalledWith('date');
-
-    rerender(
-      <table>
-        <TableHeader
-          columns={COLUMNS}
-          visibleColumns={visibleColumns}
-          sortKey="date"
-          sortOrder="asc"
-          onSort={onSortMock}
-        />
-      </table>,
-    );
-    fireEvent.click(dateHeader);
-    expect(onSortMock).toHaveBeenLastCalledWith('date');
-
-    rerender(
-      <table>
-        <TableHeader
-          columns={COLUMNS}
-          visibleColumns={visibleColumns}
-          sortKey="date"
-          sortOrder="desc"
-          onSort={onSortMock}
-        />
-      </table>,
-    );
-    fireEvent.click(dateHeader);
-    expect(onSortMock).toHaveBeenLastCalledWith('date');
-  });
-
-  it('does nothing when clicking non-sortable column', () => {
-    const onSortMock = vi.fn();
+  it('calls onSort when clicking sortable column', () => {
     render(
       <table>
         <TableHeader
-          columns={columns}
           visibleColumns={visibleColumns}
-          sortKey={null}
-          sortOrder={asc}
-          onSort={onSortMock}
+          field={undefined}
+          order="asc"
+          onChange={onSort}
         />
       </table>,
     );
-    const indexHeader = screen.getByText((content) => content.includes('Index')).closest('th');
-    if (!indexHeader) throw new Error('Index header not found');
 
-    fireEvent.click(indexHeader);
-    expect(onSortMock).not.toHaveBeenCalled();
+    fireEvent.click(getHeaderByLabel('Date')!);
+
+    expect(onSort).toHaveBeenCalledTimes(1);
+    expect(onSort).toHaveBeenCalledWith('date');
   });
 
-  it('handles empty visibleColumns gracefully', () => {
+  it('does not call onSort when clicking non-sortable column', () => {
     render(
       <table>
         <TableHeader
-          columns={columns}
-          visibleColumns={[]}
-          sortKey={null}
-          sortOrder={asc}
-          onSort={vi.fn()}
+          visibleColumns={visibleColumns}
+          field={undefined}
+          order="asc"
+          onChange={onSort}
         />
       </table>,
     );
-    columns.forEach((col) => {
-      expect(screen.queryByText(col.label)).toBeNull();
-    });
+
+    fireEvent.click(getHeaderByLabel('Index')!);
+
+    expect(onSort).not.toHaveBeenCalled();
   });
 
-  it('matches snapshot', () => {
+  it('handles empty visibleColumns without rendering headers', () => {
+    render(
+      <table>
+        <TableHeader visibleColumns={[]} field={undefined} order="asc" onChange={onSort} />
+      </table>,
+    );
+
+    expect(screen.queryAllByRole('columnheader')).toHaveLength(0);
+  });
+
+  it('matches snapshot for sorted state', () => {
     const { container } = render(
       <table>
-        <TableHeader
-          columns={columns}
-          visibleColumns={visibleColumns}
-          sortKey="date"
-          sortOrder={asc}
-          onSort={vi.fn()}
-        />
+        <TableHeader visibleColumns={visibleColumns} field="date" order="asc" onChange={onSort} />
       </table>,
     );
+
     expect(container).toMatchSnapshot();
   });
 });

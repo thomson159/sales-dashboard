@@ -6,7 +6,7 @@ exports[`Sort memo > matches snapshot for memoized Sort 1`] = `
     <div
       class="flex mt-5 "
     >
-      Sort By
+      ↕️ Sort By
     </div>
     <div
       class="sort-container"
@@ -62,7 +62,7 @@ exports[`SortComponent > matches snapshot with active asc sort 1`] = `
     <div
       class="flex mt-5 "
     >
-      Sort By
+      ↕️ Sort By
     </div>
     <div
       class="sort-container"
@@ -123,7 +123,7 @@ exports[`SortComponent > matches snapshot with active desc sort 1`] = `
     <div
       class="flex mt-5 "
     >
-      Sort By
+      ↕️ Sort By
     </div>
     <div
       class="sort-container"
@@ -184,7 +184,7 @@ exports[`SortComponent > matches snapshot with no sort 1`] = `
     <div
       class="flex mt-5 "
     >
-      Sort By
+      ↕️ Sort By
     </div>
     <div
       class="sort-container"

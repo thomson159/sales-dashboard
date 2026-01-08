@@ -22,7 +22,7 @@ const baseState: State = {
 
 type SetupOverrides = Partial<{
   state: Partial<State>;
-  availableChannels: readonly string[];
+  channels: readonly string[];
   hasChanges: boolean;
 }>;
 
@@ -32,7 +32,7 @@ const setup = (overrides: SetupOverrides = {}) => {
 
   const props: FiltersViewProps = {
     state: { ...baseState, ...overrides.state },
-    availableChannels: overrides.availableChannels ?? ['Amazon', 'Ebay'],
+    channels: overrides.channels ?? ['Amazon', 'Ebay'],
     hasChanges: overrides.hasChanges ?? false,
     apply,
     dispatch,
@@ -106,7 +106,7 @@ describe('FiltersView', () => {
 
   it('toggles channel selection', () => {
     const { dispatch } = setup({
-      availableChannels: ['Amazon'],
+      channels: ['Amazon'],
     });
 
     fireEvent.click(screen.getByText(/amazon/i));
@@ -120,7 +120,7 @@ describe('FiltersView', () => {
   it('marks active channel with checkmark', () => {
     setup({
       state: { channelNames: ['Amazon'] },
-      availableChannels: ['Amazon'],
+      channels: ['Amazon'],
     });
 
     expect(screen.getByText('Amazon ✓')).toBeInTheDocument();
@@ -149,7 +149,7 @@ describe('FiltersView', () => {
           maxDate: '2024-01-31',
           channelNames: ['Amazon'],
         }}
-        availableChannels={['Amazon', 'Ebay']}
+        channels={['Amazon', 'Ebay']}
         hasChanges
         apply={vi.fn()}
         dispatch={vi.fn()}

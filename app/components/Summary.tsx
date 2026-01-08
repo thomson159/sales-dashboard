@@ -13,9 +13,9 @@ const SummaryItem = ({ label, value }: SummaryItemProps) => (
 
 export const SalesSummaryComponent = ({ totalRevenue, totalOrders, avgOrderValue }: Metrics) => {
   const summaryData = [
-    { label: 'Total Revenue', value: `${totalRevenue.toFixed(2)} $` },
-    { label: 'Total Orders', value: totalOrders },
-    { label: 'Average Order Value', value: `${avgOrderValue.toFixed(2)} $` },
+    { label: '🏆 Total Revenue', value: `${totalRevenue.toFixed(2)} $` },
+    { label: '📊 Total Orders', value: totalOrders },
+    { label: '💰 Average Order Value', value: `${avgOrderValue.toFixed(2)} $` },
   ];
 
   return (

@@ -62,7 +62,7 @@ describe('usePageSize', () => {
     );
 
     act(() => {
-      result.current.applyPageSize();
+      result.current.apply();
     });
 
     expect(filtersUtils.validatePageSize).toHaveBeenCalledWith(10, 1, 100);
@@ -77,7 +77,7 @@ describe('usePageSize', () => {
     );
 
     act(() => {
-      result.current.applyPageSize();
+      result.current.apply();
     });
 
     expect(onChange).not.toHaveBeenCalled();

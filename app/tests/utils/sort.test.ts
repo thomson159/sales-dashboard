@@ -1,5 +1,5 @@
 import { index } from '~/consts';
-import type { Sale } from '~/types/types';
+import type { KeyOfSale } from '~/types/types';
 import { isSortKey } from '~/utils/sort.utils';
 
 describe('isSortKey', () => {
@@ -8,7 +8,7 @@ describe('isSortKey', () => {
   });
 
   it('should return true for other keys', () => {
-    const otherKeys: (keyof Sale)[] = ['sum_sales', 'count_orders'];
+    const otherKeys: KeyOfSale[] = ['sum_sales', 'count_orders'];
     otherKeys.forEach((key) => {
       expect(isSortKey(key)).toBe(true);
     });
@@ -16,7 +16,7 @@ describe('isSortKey', () => {
 
   it('should narrow type correctly', () => {
     const key: string = 'sum_sales';
-    if (isSortKey(key as keyof Sale | typeof index)) {
+    if (isSortKey(key as KeyOfSale | typeof index)) {
       const _narrowed: string = key;
       expect(_narrowed).toBe('sum_sales');
     }

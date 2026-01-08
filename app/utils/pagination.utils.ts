@@ -1,6 +1,10 @@
-import type { Sale, SaleArray } from '~/types/types';
+import type { SaleArray } from '~/types/types';
 
-export const applyPagination = (data: SaleArray, currentPage: number, pageSize: number): Sale[] => {
+export const applyPagination = (
+  data: SaleArray,
+  currentPage: number,
+  pageSize: number,
+): SaleArray => {
   const safePage: number = Math.max(1, currentPage);
   const safePageSize: number = Math.max(1, pageSize);
   const start: number = (safePage - 1) * safePageSize;

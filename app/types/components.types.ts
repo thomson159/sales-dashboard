@@ -1,96 +1,96 @@
-import { type ReactNode } from 'react';
+import { type MouseEventHandler, type ReactNode } from 'react';
 import type {
   Column,
+  ColumnKeyArray,
   ColumnKey,
   Filters,
   RevenuePerChannelItem,
-  SaleArray,
   SalesOverTimeItem,
   Sort,
-  SortKey,
   SortOrder,
+  StringArray,
+  OnChange,
+  SaleData,
+  KeyOfSale,
 } from '~/types/types';
 import type { UseFiltersStateResult } from './hooks.types';
 
-export interface PageSizeFilterProps {
-  readonly pageSize: number;
-  readonly onChange: (size: number) => void;
-  readonly dataLength: number;
-  readonly min?: number;
-}
+export type MouseEvent = MouseEventHandler<HTMLButtonElement>;
+export type TableBodyProps = SaleData & VisibleColumns;
+export type FiltersProps = SaleData & FiltersParams;
 
-export interface PaginationProps {
-  readonly currentPage: number;
-  readonly totalPages: number;
-  readonly onChange: (page: number) => void;
-  readonly windowSize?: number;
-}
+export type TableHeaderProps = Readonly<{
+  field?: KeyOfSale;
+  order?: SortOrder;
+  onChange: (field: KeyOfSale) => void;
+}> &
+  VisibleColumns;
 
-export interface SalesTableProps {
-  readonly data: SaleArray;
-  readonly visibleColumns: readonly ColumnKey[];
-  readonly toggleColumn: (key: ColumnKey) => void;
-}
+export type Columns = Readonly<{
+  columns: readonly Column[];
+}> &
+  VisibleColumns;
 
-export interface FiltersProps extends Filters {
-  readonly onChange: (value: Filters) => void;
-  readonly data: SaleArray;
-}
+export type VisibleColumns = Readonly<{
+  visibleColumns: ColumnKeyArray;
+}>;
 
-export interface SortProps {
-  readonly sort?: Sort;
-  readonly onChange: (sort?: Sort) => void;
-}
+export type ToggleColumn = Readonly<{
+  onToggle: (key: ColumnKey) => void;
+}>;
 
-export interface SummaryItemProps {
-  readonly label: string;
-  readonly value: string | number;
-}
+export type FiltersParams = Readonly<{
+  onChange: (value: Filters) => void;
+}> &
+  Filters;
 
-//
+type OnChangeObject = Readonly<{
+  onChange: OnChange;
+}>;
 
-export type ContainerProps = {
-  readonly children: ReactNode;
-};
+export type PaginationProps = Readonly<{
+  currentPage: number;
+  totalPages: number;
+  windowSize?: number;
+}> &
+  OnChangeObject;
 
-export type NavbarProps = {
-  readonly expanded: boolean;
-  readonly onToggle: () => void;
-  readonly children: ReactNode;
-  readonly loading?: boolean;
-  readonly title?: string;
-};
+export type NavbarProps = Readonly<{
+  loading?: boolean;
+  title?: string;
+}> &
+  Children;
 
-export type FiltersViewProps = UseFiltersStateResult & {
-  readonly availableChannels: readonly string[];
-};
+export type SortProps = Readonly<{
+  sort?: Sort;
+  onChange: (sort?: Sort) => void;
+}>;
 
-export type VisibleColumns = {
-  readonly visibleColumns: readonly ColumnKey[];
-};
+export type PageSizeFilterProps = Readonly<{
+  pageSize: number;
+  dataLength: number;
+  min?: number;
+}> &
+  OnChangeObject;
 
-export type Columns = VisibleColumns & {
-  readonly columns: readonly Column[];
-};
+export type SummaryItemProps = Readonly<{
+  label: string;
+  value: string | number;
+}>;
 
-export type ColumnSelectorProps = Columns & {
-  readonly toggleColumn: (key: ColumnKey) => void;
-};
+export type FiltersViewProps = Readonly<{
+  channels: StringArray;
+}> &
+  UseFiltersStateResult;
 
-export type TableBodyProps = VisibleColumns & {
-  readonly data: SaleArray;
-};
+export type Children = Readonly<{
+  children: ReactNode;
+}>;
 
-export type TableHeaderProps = Columns & {
-  readonly sortKey: SortKey | null;
-  readonly sortOrder: SortOrder | null;
-  readonly onSort: (key: SortKey | null, order?: SortOrder) => void;
-};
+export type RevenueProps = Readonly<{
+  data: RevenuePerChannelItem[];
+}>;
 
-export type RevenueProps = {
-  readonly data: RevenuePerChannelItem[];
-};
-
-export type SalesProps = {
-  readonly data: SalesOverTimeItem[];
-};
+export type SalesProps = Readonly<{
+  data: SalesOverTimeItem[];
+}>;

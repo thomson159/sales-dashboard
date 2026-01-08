@@ -62,28 +62,20 @@ exports[`Table > matches snapshot 1`] = `
         >
           <tr>
             <th
-              class="
-                  px-3 py-2
-                  whitespace-nowrap
-                  text-left
-                  font-semibold
-                  select-none
-                  cursor-pointer
-                "
+              class="px-3 py-2 whitespace-nowrap text-left font-semibold select-none cursor-pointer"
             >
               Date
+              <span
+                class="absolute"
+              />
             </th>
             <th
-              class="
-                  px-3 py-2
-                  whitespace-nowrap
-                  text-left
-                  font-semibold
-                  select-none
-                  cursor-pointer
-                "
+              class="px-3 py-2 whitespace-nowrap text-left font-semibold select-none cursor-pointer"
             >
               Channel
+              <span
+                class="absolute"
+              />
             </th>
           </tr>
         </thead>

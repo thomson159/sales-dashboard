@@ -24,7 +24,11 @@ exports[`Navbar > matches snapshot when collapsed 1`] = `
       <div
         class="pb-2"
       >
-        Child
+        <div
+          data-testid="child"
+        >
+          Child
+        </div>
         <div
           class="flex justify-center"
         >
@@ -70,7 +74,11 @@ exports[`Navbar > matches snapshot when expanded 1`] = `
       <div
         class="pb-2"
       >
-        Child
+        <div
+          data-testid="child"
+        >
+          Child
+        </div>
         <div
           class="flex justify-center"
         >

@@ -1,5 +1,8 @@
 import type { Column, Fields } from './types/types';
 
+export const slogan =
+  'text-3xl font-bold text-left text-transparent bg-clip-text bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 animate-pulse';
+
 export const STORAGE_KEY = 'sales-table-columns';
 export const ROWS_INCREMENT = 10;
 export const asc = 'asc';
@@ -8,11 +11,11 @@ export const index = 'index';
 
 export const COLUMNS: Column[] = [
   { key: index, label: 'Nr', sortable: false },
-  { key: 'date', label: 'Date', sortable: true },
-  { key: 'channel_name', label: 'Name', sortable: true },
-  { key: 'order_status_id', label: 'Status', sortable: true },
-  { key: 'sum_sales', label: 'Sales', sortable: true },
-  { key: 'count_orders', label: 'Orders', sortable: true },
+  { key: 'date', label: '📅 Date', sortable: true },
+  { key: 'channel_name', label: '🏷️ Name', sortable: true },
+  { key: 'order_status_id', label: '📌 Status', sortable: true },
+  { key: 'sum_sales', label: '💰 Sales', sortable: true },
+  { key: 'count_orders', label: '📦 Orders', sortable: true },
 ];
 
 export const FIELDS: Fields[] = [

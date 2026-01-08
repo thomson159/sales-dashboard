@@ -11,7 +11,7 @@ exports[`SalesSummary memo > matches snapshot 1`] = `
       <p
         class="text-sm text-white/80"
       >
-        Total Revenue
+        🏆 Total Revenue
       </p>
       <div
         class="text-xl font-semibold text-white flex items-center justify-center h-[38px]"
@@ -25,7 +25,7 @@ exports[`SalesSummary memo > matches snapshot 1`] = `
       <p
         class="text-sm text-white/80"
       >
-        Total Orders
+        📊 Total Orders
       </p>
       <div
         class="text-xl font-semibold text-white flex items-center justify-center h-[38px]"
@@ -39,7 +39,7 @@ exports[`SalesSummary memo > matches snapshot 1`] = `
       <p
         class="text-sm text-white/80"
       >
-        Average Order Value
+        💰 Average Order Value
       </p>
       <div
         class="text-xl font-semibold text-white flex items-center justify-center h-[38px]"
@@ -62,7 +62,7 @@ exports[`SalesSummaryComponent > matches snapshot 1`] = `
       <p
         class="text-sm text-white/80"
       >
-        Total Revenue
+        🏆 Total Revenue
       </p>
       <div
         class="text-xl font-semibold text-white flex items-center justify-center h-[38px]"
@@ -76,7 +76,7 @@ exports[`SalesSummaryComponent > matches snapshot 1`] = `
       <p
         class="text-sm text-white/80"
       >
-        Total Orders
+        📊 Total Orders
       </p>
       <div
         class="text-xl font-semibold text-white flex items-center justify-center h-[38px]"
@@ -90,7 +90,7 @@ exports[`SalesSummaryComponent > matches snapshot 1`] = `
       <p
         class="text-sm text-white/80"
       >
-        Average Order Value
+        💰 Average Order Value
       </p>
       <div
         class="text-xl font-semibold text-white flex items-center justify-center h-[38px]"

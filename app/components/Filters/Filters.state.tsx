@@ -1,7 +1,6 @@
 import type { Filters } from '~/types/types';
 import type { Action, State } from '../../types/state.types';
 
-// converts an empty string or empty array to undefined
 export const toFiltersValue = (state: State): Filters => ({
   channelName: state.channelName || undefined,
   channelNames: state.channelNames.length ? state.channelNames : undefined,
@@ -9,7 +8,7 @@ export const toFiltersValue = (state: State): Filters => ({
   maxDate: state.maxDate || undefined,
 });
 
-const toStateValue = (filters: Filters) => ({
+const toStateValue = (filters: Filters): State => ({
   channelName: filters.channelName ?? '',
   minDate: filters.minDate ?? '',
   maxDate: filters.maxDate ?? '',
@@ -20,6 +19,7 @@ const equalStringSets = (a: readonly string[], b: readonly string[]): boolean =>
   if (a.length !== b.length) return false;
 
   const setB = new Set(b);
+
   return a.every((value) => setB.has(value));
 };
 

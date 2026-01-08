@@ -17,7 +17,6 @@ describe('useFiltersState', () => {
         minDate: '2023-01-01',
         maxDate: '2023-12-31',
         onChange,
-        data: [],
       }),
     );
 
@@ -37,7 +36,6 @@ describe('useFiltersState', () => {
         minDate: '',
         maxDate: '',
         onChange,
-        data: [],
       }),
     );
 
@@ -52,7 +50,6 @@ describe('useFiltersState', () => {
         minDate: '',
         maxDate: '',
         onChange,
-        data: [],
       }),
     );
 
@@ -71,7 +68,6 @@ describe('useFiltersState', () => {
         minDate: '',
         maxDate: '',
         onChange,
-        data: [],
       }),
     );
 
@@ -96,7 +92,6 @@ describe('useFiltersState', () => {
           minDate: '',
           maxDate: '',
           onChange,
-          data: [],
         }),
       { initialProps: { channelName: 'A' } },
     );

@@ -1,14 +1,15 @@
 import { useState, useEffect, useCallback } from 'react';
-import type { UsePageSizeParams, UsePageSizeResult } from '~/types/hooks.types';
+import type { PageSizeFilterProps } from '~/types/components.types';
+import type { UsePageSizeResult } from '~/types/hooks.types';
 import type { Change } from '~/types/types';
 import { sanitizePageSizeInput, validatePageSize } from '~/utils/filters.utils';
 
 export const usePageSize = ({
   pageSize,
-  min,
+  min = 1,
   dataLength,
   onChange,
-}: UsePageSizeParams): UsePageSizeResult => {
+}: PageSizeFilterProps): UsePageSizeResult => {
   const [localPageSize, setLocalPageSize] = useState<number>(pageSize);
 
   useEffect(() => {
@@ -22,7 +23,7 @@ export const usePageSize = ({
     setLocalPageSize(parsed);
   }, []);
 
-  const applyPageSize = useCallback(() => {
+  const apply = useCallback(() => {
     const validated: number = validatePageSize(localPageSize, min, dataLength);
 
     if (validated !== pageSize) {
@@ -34,6 +35,6 @@ export const usePageSize = ({
   return {
     localPageSize,
     handleChange,
-    applyPageSize,
+    apply,
   };
 };

@@ -1,31 +1,23 @@
 import { memo, useCallback } from 'react';
-import type { Sale } from '~/types/types';
-import { asc, desc, FIELDS } from '~/consts';
+import type { KeyOfSale } from '~/types/types';
+import { asc, FIELDS } from '~/consts';
 import type { SortProps } from '~/types/components.types';
+import { getNextSortState } from '~/utils/sort.utils';
 
 export const SortComponent = ({ sort, onChange }: SortProps) => {
   const handleClick = useCallback(
-    (field: keyof Sale) => {
-      if (!sort || sort.field !== field) {
-        onChange({ field, order: asc });
-      } else if (sort.field === field && sort.order === asc) {
-        onChange({ field, order: desc });
-      } else {
-        onChange(undefined);
-      }
+    (field: KeyOfSale) => {
+      onChange(getNextSortState(sort, field));
     },
     [sort, onChange],
   );
 
-  const getArrow = (field: keyof Sale) => {
-    if (!sort || sort.field !== field) return null;
-
-    return sort.order === asc ? '↑' : '↓';
-  };
+  const getArrow = (field: KeyOfSale) =>
+    sort?.field === field ? (sort.order === asc ? '↑' : '↓') : null;
 
   return (
     <div>
-      <div className="flex mt-5 ">Sort By</div>
+      <div className="flex mt-5 ">↕️ Sort By</div>
       <div className={'sort-container'}>
         {FIELDS.map(({ label, value }) => {
           const isActive = sort?.field === value;
