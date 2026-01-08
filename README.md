@@ -1,8 +1,6 @@
-## ⚠️ Node.js 22 Notice
+## ⚠️ Node.js First-run “Pre-transform” Notice
 
-As of **08.01.2026**, Node.js 22 may cause intermittent issues with `react-router`.
-
-In some cases, the project may not start correctly after running `npm run dev`.
+As of **08.01.2026**, in larger projects using React Router v7 (`react-router`) + Vite, the first run of the dev server (`npm run dev`) may produce temporary errors like:
 
 `
 Failed to load resource: the server responded with a status of 504 (Outdated Optimize Dep)
@@ -10,14 +8,12 @@ Uncaught (in promise) TypeError: Failed to fetch dynamically imported module:
 Failed to load resource: the server responded with a status of 504 (Outdated Optimize Dep)
 `
 
-Temporary workaround:
+This happens because Vite tries to pre-transform dependencies before React Router generates the `.react-routes` folder. In smaller projects, this error often does not appear because `.react-routes` is generated almost instantly.
+This is only a first-run dev server issue. Production builds (SSR) are not affected, because `react-router` build generates all necessary files beforehand.
 
-- Refresh the browser using `Ctrl + Shift + R` (usually works on the second load)
-- Or run the project using Docker: `docker run`
+Solution:
 
-A permanent fix is in progress.
-
----
+- Refresh the browser using `Ctrl + Shift + R` (works on the second load)
 
 ---
 
