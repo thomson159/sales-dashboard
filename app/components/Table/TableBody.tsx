@@ -10,10 +10,7 @@ const TableBodyComponent = ({ data, visibleColumns }: TableBodyProps) => {
   return (
     <tbody>
       {data.map((s, i) => (
-        <tr
-          key={`${s.date}-${s.channel_name}-${s.order_status_id}-${s.sum_sales}-${s.count_orders}`}
-          className={`${i % 2 === 0 ? 'odd' : 'even'}`}
-        >
+        <tr key={i} className={`${i % 2 === 0 ? 'odd' : 'even'}`}>
           {visibleSet.has(index) && (
             <td className={`px-3 py-2 whitespace-nowrap text-left`}>{i + 1}</td>
           )}

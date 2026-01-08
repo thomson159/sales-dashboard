@@ -7,14 +7,14 @@ import type { KeyOfSale, SaleArray, SaleData, SortOr } from '~/types/types';
 import { TableBody } from './TableBody';
 import { TableHeader } from './TableHeader';
 import { useTableColumns } from '~/hooks/Table/useTableColumns';
-import { useSort } from '~/hooks/Data/useSort';
+import { useSortMemo } from '~/hooks/Data/useSort';
 import { getNextSortState } from '~/utils/sort.utils';
 
 const SalesTableComponent = ({ data }: SaleData) => {
   const [sort, setSort] = useState<SortOr>(undefined);
   const [visibleRowsCount, setVisibleRowsCount] = useState<number>(ROWS_INCREMENT);
   const { visibleColumns, onToggle }: UseTableColumnsResult = useTableColumns();
-  const sortedData: SaleArray = useSort(data, sort);
+  const sortedData: SaleArray = useSortMemo(data, sort);
 
   const displayedData: SaleArray = useMemo(
     () => sortedData.slice(0, visibleRowsCount),
