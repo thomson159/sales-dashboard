@@ -24,7 +24,7 @@ exports[`FiltersView > matches snapshot 1`] = `
         />
         <button
           aria-label="Clear name filter"
-          class="absolute right-4 top-[30px]"
+          class="arrow absolute right-4 top-[30px]"
           type="button"
         >
           ✕
