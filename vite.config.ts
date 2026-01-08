@@ -17,6 +17,12 @@ export default defineConfig({
       deleteOriginFile: false
     })
   ],
+  ssr: {
+    noExternal: ["react-router", "@react-router/node", "@react-router/serve"]
+  },
+  optimizeDeps: {
+    exclude: ["@react-router/dev"]
+  },
   css: {
     preprocessorOptions: {
       scss: {
