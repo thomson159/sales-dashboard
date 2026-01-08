@@ -3,6 +3,7 @@
   --light-gray: #f1f1f1;
   --white: #ffffff;
   --black: black;
+  --dark: #374151;
 
   --main: #5b21b6;
   --text: #374151;
@@ -11,7 +12,7 @@
 
 [data-theme='dark'] {
   --text: #ffffff;
-  --bg: #374151;
+  --bg: #1a1a1a;
 }
 
 body {
