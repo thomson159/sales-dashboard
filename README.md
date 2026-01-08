@@ -2,11 +2,9 @@
 
 As of **08.01.2026**, in larger projects using React Router v7 (`react-router`) + Vite, the first run of the dev server (`npm run dev`) may produce temporary errors like:
 
-`
-Failed to load resource: the server responded with a status of 504 (Outdated Optimize Dep)
+`Failed to load resource: the server responded with a status of 504 (Outdated Optimize Dep)
 Uncaught (in promise) TypeError: Failed to fetch dynamically imported module: 
-Failed to load resource: the server responded with a status of 504 (Outdated Optimize Dep)
-`
+Failed to load resource: the server responded with a status of 504 (Outdated Optimize Dep)`
 
 This happens because Vite tries to pre-transform dependencies before React Router generates the `.react-routes` folder. In smaller projects, this error often does not appear because `.react-routes` is generated almost instantly.
 This is only a first-run dev server issue. Production builds (SSR) are not affected, because `react-router` build generates all necessary files beforehand.
@@ -36,6 +34,11 @@ A modern, production-ready template for building full-stack React applications u
 ## Getting Started
 
 `node >= v22`
+
+I use:
+
+`node: v22.21.1`
+`npm: 11.7.0`
 
 ### Environment Variables
 
