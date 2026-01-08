@@ -1,0 +1,6210 @@
+[
+  {
+    "date": "2024-09-14",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14386,
+    "sum_sales": 1527.49,
+    "count_orders": 106
+  },
+  {
+    "date": "2024-09-08",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14386,
+    "sum_sales": 1521.55,
+    "count_orders": 128
+  },
+  {
+    "date": "2024-09-17",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 125937,
+    "sum_sales": 1441.2,
+    "count_orders": 54
+  },
+  {
+    "date": "2024-09-07",
+    "channel_type": "marketplace",
+    "channel_name": "[shoper_rest]",
+    "order_status_id": 14386,
+    "sum_sales": 1232.54,
+    "count_orders": 17
+  },
+  {
+    "date": "2024-09-12",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14445,
+    "sum_sales": 1018.0,
+    "count_orders": 4
+  },
+  {
+    "date": "2024-09-02",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14445,
+    "sum_sales": 1000.0,
+    "count_orders": 2
+  },
+  {
+    "date": "2024-09-23",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 113916,
+    "sum_sales": 1064.12,
+    "count_orders": 8
+  },
+  {
+    "date": "2024-09-15",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 228758,
+    "sum_sales": 1153.59,
+    "count_orders": 38
+  },
+  {
+    "date": "2024-09-17",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14405,
+    "sum_sales": 1029.31,
+    "count_orders": 4
+  },
+  {
+    "date": "2024-09-05",
+    "channel_type": "marketplace",
+    "channel_name": "[shopify_v2]",
+    "order_status_id": 217792,
+    "sum_sales": 1129.93,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-19",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 363150,
+    "sum_sales": 1029.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-14",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14450,
+    "sum_sales": 1000.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-24",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 113916,
+    "sum_sales": 1024.16,
+    "count_orders": 3
+  },
+  {
+    "date": "2024-09-11",
+    "channel_type": "marketplace",
+    "channel_name": "[shoper_rest]",
+    "order_status_id": 14445,
+    "sum_sales": 1000.0,
+    "count_orders": 2
+  },
+  {
+    "date": "2024-09-13",
+    "channel_type": "marketplace",
+    "channel_name": "[shopify_v2]",
+    "order_status_id": 217792,
+    "sum_sales": 1074.8,
+    "count_orders": 2
+  },
+  {
+    "date": "2024-09-23",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 14405,
+    "sum_sales": 1015.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-24",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 14405,
+    "sum_sales": 1000.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-14",
+    "channel_type": "marketplace",
+    "channel_name": "[presta]",
+    "order_status_id": 125937,
+    "sum_sales": 1015.0,
+    "count_orders": 2
+  },
+  {
+    "date": "2024-09-06",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14450,
+    "sum_sales": 1000.0,
+    "count_orders": 3
+  },
+  {
+    "date": "2024-09-21",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 118895,
+    "sum_sales": 1000.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-26",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 121792,
+    "sum_sales": 1000.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-09",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 329316,
+    "sum_sales": 1000.0,
+    "count_orders": 2
+  },
+  {
+    "date": "2024-09-17",
+    "channel_type": "marketplace",
+    "channel_name": "[shoper_rest]",
+    "order_status_id": 14437,
+    "sum_sales": 1012.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-23",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 118895,
+    "sum_sales": 1003.99,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-21",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 14445,
+    "sum_sales": 1000.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-21",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 14405,
+    "sum_sales": 1023.75,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-25",
+    "channel_type": "marketplace",
+    "channel_name": "[shopify_v2]",
+    "order_status_id": 217792,
+    "sum_sales": 1000.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-11",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 125937,
+    "sum_sales": 3967.99,
+    "count_orders": 755
+  },
+  {
+    "date": "2024-09-13",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 125937,
+    "sum_sales": 3521.68,
+    "count_orders": 525
+  },
+  {
+    "date": "2024-09-23",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 79937,
+    "sum_sales": 1095.71,
+    "count_orders": 24
+  },
+  {
+    "date": "2024-09-25",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 79936,
+    "sum_sales": 2641.9,
+    "count_orders": 478
+  },
+  {
+    "date": "2024-09-26",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 79936,
+    "sum_sales": 2523.1,
+    "count_orders": 470
+  },
+  {
+    "date": "2024-09-27",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 113918,
+    "sum_sales": 1010.95,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-07",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 79936,
+    "sum_sales": 1539.17,
+    "count_orders": 172
+  },
+  {
+    "date": "2024-09-09",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 228758,
+    "sum_sales": 1139.97,
+    "count_orders": 40
+  },
+  {
+    "date": "2024-09-02",
+    "channel_type": "marketplace",
+    "channel_name": "[shoper_rest]",
+    "order_status_id": 14386,
+    "sum_sales": 1252.0,
+    "count_orders": 28
+  },
+  {
+    "date": "2024-09-19",
+    "channel_type": "marketplace",
+    "channel_name": "[shoper_rest]",
+    "order_status_id": 14386,
+    "sum_sales": 1345.81,
+    "count_orders": 30
+  },
+  {
+    "date": "2024-09-04",
+    "channel_type": "marketplace",
+    "channel_name": "[shopify_v2]",
+    "order_status_id": 217792,
+    "sum_sales": 1014.93,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-18",
+    "channel_type": "marketplace",
+    "channel_name": "[shoper_rest]",
+    "order_status_id": 79936,
+    "sum_sales": 1035.0,
+    "count_orders": 3
+  },
+  {
+    "date": "2024-09-09",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14445,
+    "sum_sales": 1026.73,
+    "count_orders": 6
+  },
+  {
+    "date": "2024-09-16",
+    "channel_type": "marketplace",
+    "channel_name": "[shoper_rest]",
+    "order_status_id": 14405,
+    "sum_sales": 1143.35,
+    "count_orders": 6
+  },
+  {
+    "date": "2024-09-16",
+    "channel_type": "marketplace",
+    "channel_name": "[shoper_rest]",
+    "order_status_id": 79936,
+    "sum_sales": 1022.0,
+    "count_orders": 2
+  },
+  {
+    "date": "2024-09-24",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 79937,
+    "sum_sales": 1026.05,
+    "count_orders": 11
+  },
+  {
+    "date": "2024-09-17",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 271363,
+    "sum_sales": 1004.99,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-11",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 14447,
+    "sum_sales": 1077.03,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-06",
+    "channel_type": "marketplace",
+    "channel_name": "[shopify_v2]",
+    "order_status_id": 217792,
+    "sum_sales": 1000.0,
+    "count_orders": 2
+  },
+  {
+    "date": "2024-09-16",
+    "channel_type": "marketplace",
+    "channel_name": "[presta]",
+    "order_status_id": 125937,
+    "sum_sales": 1015.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-12",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 118896,
+    "sum_sales": 1000.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-07",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14437,
+    "sum_sales": 1016.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-03",
+    "channel_type": "marketplace",
+    "channel_name": "[shoper_rest]",
+    "order_status_id": 79936,
+    "sum_sales": 1012.5,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-29",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 271363,
+    "sum_sales": 1000.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-05",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14386,
+    "sum_sales": 1540.76,
+    "count_orders": 135
+  },
+  {
+    "date": "2024-09-13",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14386,
+    "sum_sales": 1484.83,
+    "count_orders": 108
+  },
+  {
+    "date": "2024-09-20",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14386,
+    "sum_sales": 1515.62,
+    "count_orders": 92
+  },
+  {
+    "date": "2024-09-05",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 125937,
+    "sum_sales": 3995.75,
+    "count_orders": 703
+  },
+  {
+    "date": "2024-09-15",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 79936,
+    "sum_sales": 1959.34,
+    "count_orders": 303
+  },
+  {
+    "date": "2024-09-15",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 79936,
+    "sum_sales": 1104.42,
+    "count_orders": 12
+  },
+  {
+    "date": "2024-09-10",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 228758,
+    "sum_sales": 1108.7,
+    "count_orders": 36
+  },
+  {
+    "date": "2024-09-07",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 14405,
+    "sum_sales": 1015.0,
+    "count_orders": 2
+  },
+  {
+    "date": "2024-09-13",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 79936,
+    "sum_sales": 1118.94,
+    "count_orders": 16
+  },
+  {
+    "date": "2024-09-25",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 14405,
+    "sum_sales": 1049.0,
+    "count_orders": 3
+  },
+  {
+    "date": "2024-09-07",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 79936,
+    "sum_sales": 1098.94,
+    "count_orders": 9
+  },
+  {
+    "date": "2024-09-25",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14438,
+    "sum_sales": 1000.0,
+    "count_orders": 2
+  },
+  {
+    "date": "2024-09-09",
+    "channel_type": "marketplace",
+    "channel_name": "[ebay de]",
+    "order_status_id": 14386,
+    "sum_sales": 1042.7,
+    "count_orders": 2
+  },
+  {
+    "date": "2024-09-10",
+    "channel_type": "marketplace",
+    "channel_name": "[ebay de]",
+    "order_status_id": 14386,
+    "sum_sales": 1021.35,
+    "count_orders": 2
+  },
+  {
+    "date": "2024-09-13",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14440,
+    "sum_sales": 1000.0,
+    "count_orders": 2
+  },
+  {
+    "date": "2024-09-26",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 164082,
+    "sum_sales": 1003.99,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-20",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14440,
+    "sum_sales": 1000.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-20",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 79937,
+    "sum_sales": 1016.91,
+    "count_orders": 3
+  },
+  {
+    "date": "2024-09-20",
+    "channel_type": "marketplace",
+    "channel_name": "[presta]",
+    "order_status_id": 125937,
+    "sum_sales": 1090.0,
+    "count_orders": 5
+  },
+  {
+    "date": "2024-09-08",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14450,
+    "sum_sales": 1000.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-23",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 14413,
+    "sum_sales": 1000.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-03",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14445,
+    "sum_sales": 1000.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-08",
+    "channel_type": "marketplace",
+    "channel_name": "[shoper_rest]",
+    "order_status_id": 14437,
+    "sum_sales": 1000.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-16",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14386,
+    "sum_sales": 1762.22,
+    "count_orders": 168
+  },
+  {
+    "date": "2024-09-01",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 79937,
+    "sum_sales": 1026.06,
+    "count_orders": 9
+  },
+  {
+    "date": "2024-09-11",
+    "channel_type": "marketplace",
+    "channel_name": "[presta]",
+    "order_status_id": 125937,
+    "sum_sales": 1000.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-11",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14440,
+    "sum_sales": 1010.95,
+    "count_orders": 4
+  },
+  {
+    "date": "2024-09-08",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 79936,
+    "sum_sales": 1036.48,
+    "count_orders": 6
+  },
+  {
+    "date": "2024-09-29",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 118896,
+    "sum_sales": 1000.0,
+    "count_orders": 3
+  },
+  {
+    "date": "2024-09-01",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14440,
+    "sum_sales": 1000.0,
+    "count_orders": 3
+  },
+  {
+    "date": "2024-09-18",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 113916,
+    "sum_sales": 1053.13,
+    "count_orders": 7
+  },
+  {
+    "date": "2024-09-12",
+    "channel_type": "marketplace",
+    "channel_name": "[ebay de]",
+    "order_status_id": 14386,
+    "sum_sales": 1021.35,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-21",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 113916,
+    "sum_sales": 1034.15,
+    "count_orders": 5
+  },
+  {
+    "date": "2024-09-22",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14437,
+    "sum_sales": 1010.95,
+    "count_orders": 2
+  },
+  {
+    "date": "2024-09-14",
+    "channel_type": "marketplace",
+    "channel_name": "[shoper_rest]",
+    "order_status_id": 79936,
+    "sum_sales": 1019.0,
+    "count_orders": 2
+  },
+  {
+    "date": "2024-09-17",
+    "channel_type": "marketplace",
+    "channel_name": "[shoper_rest]",
+    "order_status_id": 14445,
+    "sum_sales": 1012.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-27",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 14409,
+    "sum_sales": 1000.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-05",
+    "channel_type": "marketplace",
+    "channel_name": "[shoper_rest]",
+    "order_status_id": 14445,
+    "sum_sales": 1012.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-26",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 118896,
+    "sum_sales": 1000.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-04",
+    "channel_type": "marketplace",
+    "channel_name": "[shoper_rest]",
+    "order_status_id": 14437,
+    "sum_sales": 1027.0,
+    "count_orders": 2
+  },
+  {
+    "date": "2024-09-10",
+    "channel_type": "marketplace",
+    "channel_name": "[shoper_rest]",
+    "order_status_id": 14386,
+    "sum_sales": 1307.54,
+    "count_orders": 29
+  },
+  {
+    "date": "2024-09-04",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 125937,
+    "sum_sales": 1646.34,
+    "count_orders": 63
+  },
+  {
+    "date": "2024-09-12",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 79936,
+    "sum_sales": 1113.93,
+    "count_orders": 13
+  },
+  {
+    "date": "2024-09-12",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 79936,
+    "sum_sales": 2115.63,
+    "count_orders": 374
+  },
+  {
+    "date": "2024-09-20",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 125937,
+    "sum_sales": 3041.81,
+    "count_orders": 392
+  },
+  {
+    "date": "2024-09-22",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 79936,
+    "sum_sales": 1841.96,
+    "count_orders": 334
+  },
+  {
+    "date": "2024-09-01",
+    "channel_type": "marketplace",
+    "channel_name": "[shoper_rest]",
+    "order_status_id": 14386,
+    "sum_sales": 1340.7,
+    "count_orders": 23
+  },
+  {
+    "date": "2024-09-04",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 14386,
+    "sum_sales": 1325.39,
+    "count_orders": 33
+  },
+  {
+    "date": "2024-09-25",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14386,
+    "sum_sales": 1687.62,
+    "count_orders": 151
+  },
+  {
+    "date": "2024-09-03",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 228758,
+    "sum_sales": 1262.52,
+    "count_orders": 56
+  },
+  {
+    "date": "2024-09-05",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 79936,
+    "sum_sales": 1059.94,
+    "count_orders": 7
+  },
+  {
+    "date": "2024-09-16",
+    "channel_type": "marketplace",
+    "channel_name": "[shoper_rest]",
+    "order_status_id": 14386,
+    "sum_sales": 1441.08,
+    "count_orders": 38
+  },
+  {
+    "date": "2024-09-26",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14386,
+    "sum_sales": 1695.55,
+    "count_orders": 131
+  },
+  {
+    "date": "2024-09-16",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 228758,
+    "sum_sales": 1075.63,
+    "count_orders": 34
+  },
+  {
+    "date": "2024-09-04",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14405,
+    "sum_sales": 1027.86,
+    "count_orders": 6
+  },
+  {
+    "date": "2024-09-18",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 228758,
+    "sum_sales": 1170.76,
+    "count_orders": 39
+  },
+  {
+    "date": "2024-09-01",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 118896,
+    "sum_sales": 1010.95,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-26",
+    "channel_type": "marketplace",
+    "channel_name": "[shoper_rest]",
+    "order_status_id": 79936,
+    "sum_sales": 1009.5,
+    "count_orders": 2
+  },
+  {
+    "date": "2024-09-21",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 79937,
+    "sum_sales": 1018.06,
+    "count_orders": 5
+  },
+  {
+    "date": "2024-09-25",
+    "channel_type": "marketplace",
+    "channel_name": "[shoper_rest]",
+    "order_status_id": 14439,
+    "sum_sales": 1000.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-27",
+    "channel_type": "marketplace",
+    "channel_name": "[presta]",
+    "order_status_id": 125937,
+    "sum_sales": 1055.0,
+    "count_orders": 3
+  },
+  {
+    "date": "2024-09-19",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 113916,
+    "sum_sales": 1059.44,
+    "count_orders": 9
+  },
+  {
+    "date": "2024-09-11",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 121792,
+    "sum_sales": 1013.0,
+    "count_orders": 3
+  },
+  {
+    "date": "2024-09-11",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 118896,
+    "sum_sales": 1014.45,
+    "count_orders": 2
+  },
+  {
+    "date": "2024-09-03",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 14413,
+    "sum_sales": 1000.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-07",
+    "channel_type": "marketplace",
+    "channel_name": "[shoper_rest]",
+    "order_status_id": 79936,
+    "sum_sales": 1013.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-08",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 125937,
+    "sum_sales": 3589.32,
+    "count_orders": 644
+  },
+  {
+    "date": "2024-09-14",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 125937,
+    "sum_sales": 2426.69,
+    "count_orders": 363
+  },
+  {
+    "date": "2024-09-17",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 228758,
+    "sum_sales": 1043.88,
+    "count_orders": 26
+  },
+  {
+    "date": "2024-09-12",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 79934,
+    "sum_sales": 1061.32,
+    "count_orders": 6
+  },
+  {
+    "date": "2024-09-19",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 79937,
+    "sum_sales": 1057.66,
+    "count_orders": 21
+  },
+  {
+    "date": "2024-09-26",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 271363,
+    "sum_sales": 1000.0,
+    "count_orders": 2
+  },
+  {
+    "date": "2024-09-10",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 79937,
+    "sum_sales": 1014.94,
+    "count_orders": 7
+  },
+  {
+    "date": "2024-09-07",
+    "channel_type": "marketplace",
+    "channel_name": "[ebay de]",
+    "order_status_id": 14386,
+    "sum_sales": 1021.35,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-05",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 228758,
+    "sum_sales": 1029.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-17",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14450,
+    "sum_sales": 1000.0,
+    "count_orders": 3
+  },
+  {
+    "date": "2024-09-20",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 118896,
+    "sum_sales": 1000.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-28",
+    "channel_type": "marketplace",
+    "channel_name": "[shoper_rest]",
+    "order_status_id": 79936,
+    "sum_sales": 1013.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-16",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 14405,
+    "sum_sales": 1018.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-13",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 164082,
+    "sum_sales": 1003.99,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-08",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14440,
+    "sum_sales": 1010.95,
+    "count_orders": 2
+  },
+  {
+    "date": "2024-09-03",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14438,
+    "sum_sales": 1000.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-08",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14437,
+    "sum_sales": 1016.91,
+    "count_orders": 2
+  },
+  {
+    "date": "2024-09-13",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 228758,
+    "sum_sales": 1000.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-25",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 121792,
+    "sum_sales": 1000.0,
+    "count_orders": 2
+  },
+  {
+    "date": "2024-09-16",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14438,
+    "sum_sales": 1010.95,
+    "count_orders": 4
+  },
+  {
+    "date": "2024-09-22",
+    "channel_type": "marketplace",
+    "channel_name": "[shoper_rest]",
+    "order_status_id": 14405,
+    "sum_sales": 1052.54,
+    "count_orders": 2
+  },
+  {
+    "date": "2024-09-18",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14438,
+    "sum_sales": 1000.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-27",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 79937,
+    "sum_sales": 1000.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-20",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 14405,
+    "sum_sales": 1027.0,
+    "count_orders": 2
+  },
+  {
+    "date": "2024-09-24",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14386,
+    "sum_sales": 1808.68,
+    "count_orders": 153
+  },
+  {
+    "date": "2024-09-02",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 125937,
+    "sum_sales": 1620.18,
+    "count_orders": 61
+  },
+  {
+    "date": "2024-09-06",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 125937,
+    "sum_sales": 3702.82,
+    "count_orders": 550
+  },
+  {
+    "date": "2024-09-09",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 125937,
+    "sum_sales": 4668.69,
+    "count_orders": 789
+  },
+  {
+    "date": "2024-09-23",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14386,
+    "sum_sales": 1865.74,
+    "count_orders": 157
+  },
+  {
+    "date": "2024-09-13",
+    "channel_type": "marketplace",
+    "channel_name": "[shoper_rest]",
+    "order_status_id": 14405,
+    "sum_sales": 1048.0,
+    "count_orders": 4
+  },
+  {
+    "date": "2024-09-04",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 329316,
+    "sum_sales": 1009.99,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-08",
+    "channel_type": "marketplace",
+    "channel_name": "[shopify_v2]",
+    "order_status_id": 217792,
+    "sum_sales": 1168.48,
+    "count_orders": 2
+  },
+  {
+    "date": "2024-09-21",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 79936,
+    "sum_sales": 1046.97,
+    "count_orders": 6
+  },
+  {
+    "date": "2024-09-25",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 250924,
+    "sum_sales": 1025.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-26",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 118895,
+    "sum_sales": 1003.99,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-28",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 14386,
+    "sum_sales": 1365.14,
+    "count_orders": 24
+  },
+  {
+    "date": "2024-09-23",
+    "channel_type": "marketplace",
+    "channel_name": "[presta]",
+    "order_status_id": 125937,
+    "sum_sales": 1040.0,
+    "count_orders": 2
+  },
+  {
+    "date": "2024-09-18",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14437,
+    "sum_sales": 1000.0,
+    "count_orders": 2
+  },
+  {
+    "date": "2024-09-13",
+    "channel_type": "marketplace",
+    "channel_name": "[presta]",
+    "order_status_id": 125937,
+    "sum_sales": 1000.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-11",
+    "channel_type": "marketplace",
+    "channel_name": "[shoper_rest]",
+    "order_status_id": 14405,
+    "sum_sales": 1038.27,
+    "count_orders": 2
+  },
+  {
+    "date": "2024-09-01",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 131340,
+    "sum_sales": 1000.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-11",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 25090,
+    "sum_sales": 1000.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-01",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14386,
+    "sum_sales": 1801.95,
+    "count_orders": 154
+  },
+  {
+    "date": "2024-09-13",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 14405,
+    "sum_sales": 1015.0,
+    "count_orders": 2
+  },
+  {
+    "date": "2024-09-05",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 79936,
+    "sum_sales": 2120.72,
+    "count_orders": 368
+  },
+  {
+    "date": "2024-09-13",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 125937,
+    "sum_sales": 1450.18,
+    "count_orders": 55
+  },
+  {
+    "date": "2024-09-15",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 125937,
+    "sum_sales": 1723.19,
+    "count_orders": 68
+  },
+  {
+    "date": "2024-09-05",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 14386,
+    "sum_sales": 1272.2,
+    "count_orders": 36
+  },
+  {
+    "date": "2024-09-22",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14386,
+    "sum_sales": 1523.04,
+    "count_orders": 135
+  },
+  {
+    "date": "2024-09-16",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 113916,
+    "sum_sales": 1000.0,
+    "count_orders": 3
+  },
+  {
+    "date": "2024-09-10",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 113916,
+    "sum_sales": 1020.57,
+    "count_orders": 5
+  },
+  {
+    "date": "2024-09-29",
+    "channel_type": "marketplace",
+    "channel_name": "[shopify_v2]",
+    "order_status_id": 217792,
+    "sum_sales": 1089.73,
+    "count_orders": 5
+  },
+  {
+    "date": "2024-09-15",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 14386,
+    "sum_sales": 1296.25,
+    "count_orders": 30
+  },
+  {
+    "date": "2024-09-28",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14437,
+    "sum_sales": 1010.95,
+    "count_orders": 5
+  },
+  {
+    "date": "2024-09-01",
+    "channel_type": "marketplace",
+    "channel_name": "[presta]",
+    "order_status_id": 125937,
+    "sum_sales": 1015.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-12",
+    "channel_type": "marketplace",
+    "channel_name": "[presta]",
+    "order_status_id": 228758,
+    "sum_sales": 1025.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-15",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14405,
+    "sum_sales": 1030.61,
+    "count_orders": 9
+  },
+  {
+    "date": "2024-09-13",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14405,
+    "sum_sales": 1027.69,
+    "count_orders": 5
+  },
+  {
+    "date": "2024-09-02",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 14413,
+    "sum_sales": 1000.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-21",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 118896,
+    "sum_sales": 1025.4,
+    "count_orders": 2
+  },
+  {
+    "date": "2024-09-22",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 79936,
+    "sum_sales": 1053.98,
+    "count_orders": 6
+  },
+  {
+    "date": "2024-09-16",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 228758,
+    "sum_sales": 1000.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-19",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 79934,
+    "sum_sales": 1015.98,
+    "count_orders": 2
+  },
+  {
+    "date": "2024-09-08",
+    "channel_type": "marketplace",
+    "channel_name": "[shoper_rest]",
+    "order_status_id": 14405,
+    "sum_sales": 1012.0,
+    "count_orders": 2
+  },
+  {
+    "date": "2024-09-18",
+    "channel_type": "marketplace",
+    "channel_name": "[shoper_rest]",
+    "order_status_id": 14405,
+    "sum_sales": 1048.35,
+    "count_orders": 2
+  },
+  {
+    "date": "2024-09-03",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 113916,
+    "sum_sales": 1012.08,
+    "count_orders": 4
+  },
+  {
+    "date": "2024-09-11",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 329316,
+    "sum_sales": 1022.94,
+    "count_orders": 2
+  },
+  {
+    "date": "2024-09-25",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14437,
+    "sum_sales": 1016.0,
+    "count_orders": 3
+  },
+  {
+    "date": "2024-09-03",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 14450,
+    "sum_sales": 1000.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-04",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14440,
+    "sum_sales": 1000.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-17",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 14413,
+    "sum_sales": 1000.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-03",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 228758,
+    "sum_sales": 1015.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-09",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 228758,
+    "sum_sales": 1058.0,
+    "count_orders": 2
+  },
+  {
+    "date": "2024-09-26",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 127592,
+    "sum_sales": 1000.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-28",
+    "channel_type": "marketplace",
+    "channel_name": "[shopify_v2]",
+    "order_status_id": 217792,
+    "sum_sales": 1000.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-05",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 250924,
+    "sum_sales": 1025.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-14",
+    "channel_type": "marketplace",
+    "channel_name": "[shoper_rest]",
+    "order_status_id": 14405,
+    "sum_sales": 1026.27,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-04",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14386,
+    "sum_sales": 1801.6,
+    "count_orders": 174
+  },
+  {
+    "date": "2024-09-02",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 79937,
+    "sum_sales": 1076.82,
+    "count_orders": 24
+  },
+  {
+    "date": "2024-09-04",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 125937,
+    "sum_sales": 4847.3,
+    "count_orders": 819
+  },
+  {
+    "date": "2024-09-22",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 125937,
+    "sum_sales": 3507.22,
+    "count_orders": 513
+  },
+  {
+    "date": "2024-09-12",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 125937,
+    "sum_sales": 1738.24,
+    "count_orders": 82
+  },
+  {
+    "date": "2024-09-27",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 125937,
+    "sum_sales": 1425.01,
+    "count_orders": 48
+  },
+  {
+    "date": "2024-09-22",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 79937,
+    "sum_sales": 1027.86,
+    "count_orders": 6
+  },
+  {
+    "date": "2024-09-10",
+    "channel_type": "marketplace",
+    "channel_name": "[shoper_rest]",
+    "order_status_id": 14405,
+    "sum_sales": 1024.0,
+    "count_orders": 2
+  },
+  {
+    "date": "2024-09-12",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14405,
+    "sum_sales": 1008.37,
+    "count_orders": 4
+  },
+  {
+    "date": "2024-09-12",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 14386,
+    "sum_sales": 1207.14,
+    "count_orders": 22
+  },
+  {
+    "date": "2024-09-25",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14449,
+    "sum_sales": 1000.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-27",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14405,
+    "sum_sales": 1037.9,
+    "count_orders": 5
+  },
+  {
+    "date": "2024-09-04",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 79936,
+    "sum_sales": 1086.16,
+    "count_orders": 8
+  },
+  {
+    "date": "2024-09-13",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 329316,
+    "sum_sales": 1000.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-27",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 14386,
+    "sum_sales": 1235.0,
+    "count_orders": 23
+  },
+  {
+    "date": "2024-09-26",
+    "channel_type": "marketplace",
+    "channel_name": "[presta]",
+    "order_status_id": 130065,
+    "sum_sales": 1015.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-19",
+    "channel_type": "marketplace",
+    "channel_name": "[ebay de]",
+    "order_status_id": 14386,
+    "sum_sales": 1000.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-06",
+    "channel_type": "marketplace",
+    "channel_name": "[presta]",
+    "order_status_id": 125937,
+    "sum_sales": 1000.0,
+    "count_orders": 2
+  },
+  {
+    "date": "2024-09-05",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14405,
+    "sum_sales": 1032.85,
+    "count_orders": 6
+  },
+  {
+    "date": "2024-09-20",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14438,
+    "sum_sales": 1000.0,
+    "count_orders": 3
+  },
+  {
+    "date": "2024-09-12",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 14418,
+    "sum_sales": 1213.98,
+    "count_orders": 2
+  },
+  {
+    "date": "2024-09-05",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 14405,
+    "sum_sales": 1000.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-11",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 239458,
+    "sum_sales": 1015.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-21",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 60655,
+    "sum_sales": 1025.25,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-10",
+    "channel_type": "marketplace",
+    "channel_name": "[shoper_rest]",
+    "order_status_id": 79936,
+    "sum_sales": 1009.5,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-24",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14438,
+    "sum_sales": 1000.0,
+    "count_orders": 2
+  },
+  {
+    "date": "2024-09-13",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14450,
+    "sum_sales": 1000.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-01",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 125937,
+    "sum_sales": 3192.21,
+    "count_orders": 505
+  },
+  {
+    "date": "2024-09-10",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 125937,
+    "sum_sales": 5065.92,
+    "count_orders": 850
+  },
+  {
+    "date": "2024-09-10",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 79936,
+    "sum_sales": 1085.94,
+    "count_orders": 14
+  },
+  {
+    "date": "2024-09-11",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 79936,
+    "sum_sales": 2093.35,
+    "count_orders": 378
+  },
+  {
+    "date": "2024-09-27",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 125937,
+    "sum_sales": 2815.51,
+    "count_orders": 441
+  },
+  {
+    "date": "2024-09-13",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 79936,
+    "sum_sales": 1774.5,
+    "count_orders": 255
+  },
+  {
+    "date": "2024-09-05",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 228758,
+    "sum_sales": 1158.97,
+    "count_orders": 42
+  },
+  {
+    "date": "2024-09-10",
+    "channel_type": "marketplace",
+    "channel_name": "[shoper_rest]",
+    "order_status_id": 79937,
+    "sum_sales": 1016.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-12",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 228758,
+    "sum_sales": 1087.76,
+    "count_orders": 48
+  },
+  {
+    "date": "2024-09-17",
+    "channel_type": "marketplace",
+    "channel_name": "[shoper_rest]",
+    "order_status_id": 14386,
+    "sum_sales": 1327.81,
+    "count_orders": 28
+  },
+  {
+    "date": "2024-09-21",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 228758,
+    "sum_sales": 1143.47,
+    "count_orders": 17
+  },
+  {
+    "date": "2024-09-27",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 79937,
+    "sum_sales": 1068.37,
+    "count_orders": 26
+  },
+  {
+    "date": "2024-09-14",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 113916,
+    "sum_sales": 1043.14,
+    "count_orders": 6
+  },
+  {
+    "date": "2024-09-21",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14450,
+    "sum_sales": 1000.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-05",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 14413,
+    "sum_sales": 1000.0,
+    "count_orders": 2
+  },
+  {
+    "date": "2024-09-19",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 79936,
+    "sum_sales": 1021.99,
+    "count_orders": 6
+  },
+  {
+    "date": "2024-09-09",
+    "channel_type": "marketplace",
+    "channel_name": "[shoper_rest]",
+    "order_status_id": 14405,
+    "sum_sales": 1012.0,
+    "count_orders": 3
+  },
+  {
+    "date": "2024-09-04",
+    "channel_type": "marketplace",
+    "channel_name": "[ebay de]",
+    "order_status_id": 14453,
+    "sum_sales": 1136.95,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-29",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14445,
+    "sum_sales": 1009.99,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-10",
+    "channel_type": "marketplace",
+    "channel_name": "[presta]",
+    "order_status_id": 125937,
+    "sum_sales": 1050.0,
+    "count_orders": 5
+  },
+  {
+    "date": "2024-09-19",
+    "channel_type": "marketplace",
+    "channel_name": "[shoper_rest]",
+    "order_status_id": 79936,
+    "sum_sales": 1009.5,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-11",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 250924,
+    "sum_sales": 1025.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-24",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 14453,
+    "sum_sales": 1000.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-09",
+    "channel_type": "marketplace",
+    "channel_name": "[presta]",
+    "order_status_id": 125937,
+    "sum_sales": 1015.0,
+    "count_orders": 3
+  },
+  {
+    "date": "2024-09-29",
+    "channel_type": "marketplace",
+    "channel_name": "[shoper_rest]",
+    "order_status_id": 79936,
+    "sum_sales": 1008.9,
+    "count_orders": 2
+  },
+  {
+    "date": "2024-09-21",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 228758,
+    "sum_sales": 1029.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-10",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14386,
+    "sum_sales": 1728.41,
+    "count_orders": 156
+  },
+  {
+    "date": "2024-09-16",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 125937,
+    "sum_sales": 3801.17,
+    "count_orders": 682
+  },
+  {
+    "date": "2024-09-19",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 125937,
+    "sum_sales": 3569.87,
+    "count_orders": 561
+  },
+  {
+    "date": "2024-09-02",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 228758,
+    "sum_sales": 1180.54,
+    "count_orders": 50
+  },
+  {
+    "date": "2024-09-04",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 113916,
+    "sum_sales": 1022.07,
+    "count_orders": 5
+  },
+  {
+    "date": "2024-09-08",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14438,
+    "sum_sales": 1010.95,
+    "count_orders": 4
+  },
+  {
+    "date": "2024-09-12",
+    "channel_type": "marketplace",
+    "channel_name": "[shoper_rest]",
+    "order_status_id": 14386,
+    "sum_sales": 1239.27,
+    "count_orders": 21
+  },
+  {
+    "date": "2024-09-18",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14405,
+    "sum_sales": 1021.9,
+    "count_orders": 6
+  },
+  {
+    "date": "2024-09-21",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 125937,
+    "sum_sales": 1265.06,
+    "count_orders": 30
+  },
+  {
+    "date": "2024-09-06",
+    "channel_type": "marketplace",
+    "channel_name": "[shoper_rest]",
+    "order_status_id": 14386,
+    "sum_sales": 1266.35,
+    "count_orders": 20
+  },
+  {
+    "date": "2024-09-27",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14440,
+    "sum_sales": 1000.0,
+    "count_orders": 2
+  },
+  {
+    "date": "2024-09-10",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14440,
+    "sum_sales": 1013.0,
+    "count_orders": 6
+  },
+  {
+    "date": "2024-09-18",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 14405,
+    "sum_sales": 1000.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-14",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14438,
+    "sum_sales": 1000.0,
+    "count_orders": 2
+  },
+  {
+    "date": "2024-09-15",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 118896,
+    "sum_sales": 1000.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-28",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 14405,
+    "sum_sales": 1068.75,
+    "count_orders": 4
+  },
+  {
+    "date": "2024-09-28",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 14450,
+    "sum_sales": 1000.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-28",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 14453,
+    "sum_sales": 1072.75,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-04",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14445,
+    "sum_sales": 1053.61,
+    "count_orders": 4
+  },
+  {
+    "date": "2024-09-21",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14405,
+    "sum_sales": 1016.0,
+    "count_orders": 2
+  },
+  {
+    "date": "2024-09-06",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14438,
+    "sum_sales": 1000.0,
+    "count_orders": 3
+  },
+  {
+    "date": "2024-09-19",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14440,
+    "sum_sales": 1000.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-24",
+    "channel_type": "marketplace",
+    "channel_name": "[shoper_rest]",
+    "order_status_id": 14445,
+    "sum_sales": 1012.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-28",
+    "channel_type": "marketplace",
+    "channel_name": "[shoper_rest]",
+    "order_status_id": 14405,
+    "sum_sales": 1012.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-20",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 79934,
+    "sum_sales": 1014.45,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-15",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 131340,
+    "sum_sales": 1029.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-06",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 121792,
+    "sum_sales": 1003.99,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-06",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 14386,
+    "sum_sales": 1101.89,
+    "count_orders": 17
+  },
+  {
+    "date": "2024-09-29",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14386,
+    "sum_sales": 1496.4,
+    "count_orders": 113
+  },
+  {
+    "date": "2024-09-09",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 79936,
+    "sum_sales": 2010.99,
+    "count_orders": 351
+  },
+  {
+    "date": "2024-09-20",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 228758,
+    "sum_sales": 1184.88,
+    "count_orders": 31
+  },
+  {
+    "date": "2024-09-02",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 79936,
+    "sum_sales": 1173.11,
+    "count_orders": 16
+  },
+  {
+    "date": "2024-09-04",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 14405,
+    "sum_sales": 1000.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-08",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 228758,
+    "sum_sales": 1012.08,
+    "count_orders": 4
+  },
+  {
+    "date": "2024-09-12",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14437,
+    "sum_sales": 1021.9,
+    "count_orders": 6
+  },
+  {
+    "date": "2024-09-17",
+    "channel_type": "marketplace",
+    "channel_name": "[shopify_v2]",
+    "order_status_id": 217792,
+    "sum_sales": 1330.51,
+    "count_orders": 6
+  },
+  {
+    "date": "2024-09-26",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14445,
+    "sum_sales": 1000.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-03",
+    "channel_type": "marketplace",
+    "channel_name": "[shoper_rest]",
+    "order_status_id": 14445,
+    "sum_sales": 1012.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-29",
+    "channel_type": "marketplace",
+    "channel_name": "[presta]",
+    "order_status_id": 125937,
+    "sum_sales": 1055.0,
+    "count_orders": 4
+  },
+  {
+    "date": "2024-09-11",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 79934,
+    "sum_sales": 1000.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-04",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 118895,
+    "sum_sales": 1009.99,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-11",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 113916,
+    "sum_sales": 1019.98,
+    "count_orders": 6
+  },
+  {
+    "date": "2024-09-11",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 113916,
+    "sum_sales": 1000.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-04",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14450,
+    "sum_sales": 1000.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-02",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14437,
+    "sum_sales": 1022.94,
+    "count_orders": 2
+  },
+  {
+    "date": "2024-09-19",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 14450,
+    "sum_sales": 1000.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-17",
+    "channel_type": "marketplace",
+    "channel_name": "[presta]",
+    "order_status_id": 130065,
+    "sum_sales": 1000.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-22",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14438,
+    "sum_sales": 1000.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-06",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 125937,
+    "sum_sales": 1491.63,
+    "count_orders": 44
+  },
+  {
+    "date": "2024-09-26",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 228758,
+    "sum_sales": 1150.5,
+    "count_orders": 32
+  },
+  {
+    "date": "2024-09-29",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 125937,
+    "sum_sales": 3308.72,
+    "count_orders": 492
+  },
+  {
+    "date": "2024-09-21",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 79936,
+    "sum_sales": 1515.75,
+    "count_orders": 180
+  },
+  {
+    "date": "2024-09-17",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 14386,
+    "sum_sales": 1324.65,
+    "count_orders": 28
+  },
+  {
+    "date": "2024-09-15",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14445,
+    "sum_sales": 1016.0,
+    "count_orders": 5
+  },
+  {
+    "date": "2024-09-07",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 228758,
+    "sum_sales": 1198.58,
+    "count_orders": 22
+  },
+  {
+    "date": "2024-09-12",
+    "channel_type": "marketplace",
+    "channel_name": "[shoper_rest]",
+    "order_status_id": 79936,
+    "sum_sales": 1034.4,
+    "count_orders": 3
+  },
+  {
+    "date": "2024-09-28",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 79936,
+    "sum_sales": 1042.97,
+    "count_orders": 5
+  },
+  {
+    "date": "2024-09-20",
+    "channel_type": "marketplace",
+    "channel_name": "[ebay de]",
+    "order_status_id": 14386,
+    "sum_sales": 1021.35,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-19",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 257653,
+    "sum_sales": 1009.99,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-09",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 14405,
+    "sum_sales": 1000.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-01",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 113916,
+    "sum_sales": 1015.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-21",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 250924,
+    "sum_sales": 1029.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-05",
+    "channel_type": "marketplace",
+    "channel_name": "[ebay de]",
+    "order_status_id": 14386,
+    "sum_sales": 1021.35,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-06",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14405,
+    "sum_sales": 1013.0,
+    "count_orders": 5
+  },
+  {
+    "date": "2024-09-08",
+    "channel_type": "marketplace",
+    "channel_name": "[shoper_rest]",
+    "order_status_id": 14445,
+    "sum_sales": 1012.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-25",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14445,
+    "sum_sales": 1010.95,
+    "count_orders": 2
+  },
+  {
+    "date": "2024-09-16",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 271363,
+    "sum_sales": 1000.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-18",
+    "channel_type": "marketplace",
+    "channel_name": "[shoper_rest]",
+    "order_status_id": 14445,
+    "sum_sales": 1012.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-09",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 118895,
+    "sum_sales": 1019.21,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-09",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14386,
+    "sum_sales": 1877.56,
+    "count_orders": 170
+  },
+  {
+    "date": "2024-09-17",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14386,
+    "sum_sales": 1774.89,
+    "count_orders": 165
+  },
+  {
+    "date": "2024-09-16",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 79937,
+    "sum_sales": 1044.21,
+    "count_orders": 13
+  },
+  {
+    "date": "2024-09-29",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 79936,
+    "sum_sales": 2281.33,
+    "count_orders": 398
+  },
+  {
+    "date": "2024-09-28",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 125937,
+    "sum_sales": 1433.3,
+    "count_orders": 36
+  },
+  {
+    "date": "2024-09-11",
+    "channel_type": "marketplace",
+    "channel_name": "[shopify_v2]",
+    "order_status_id": 217792,
+    "sum_sales": 1164.24,
+    "count_orders": 3
+  },
+  {
+    "date": "2024-09-09",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 14386,
+    "sum_sales": 1196.89,
+    "count_orders": 24
+  },
+  {
+    "date": "2024-09-29",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 118895,
+    "sum_sales": 1000.0,
+    "count_orders": 4
+  },
+  {
+    "date": "2024-09-27",
+    "channel_type": "marketplace",
+    "channel_name": "[shoper_rest]",
+    "order_status_id": 14386,
+    "sum_sales": 1262.51,
+    "count_orders": 18
+  },
+  {
+    "date": "2024-09-21",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 79938,
+    "sum_sales": 1009.99,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-05",
+    "channel_type": "marketplace",
+    "channel_name": "[shoper_rest]",
+    "order_status_id": 14405,
+    "sum_sales": 1062.27,
+    "count_orders": 4
+  },
+  {
+    "date": "2024-09-23",
+    "channel_type": "marketplace",
+    "channel_name": "[shoper_rest]",
+    "order_status_id": 14405,
+    "sum_sales": 1088.54,
+    "count_orders": 7
+  },
+  {
+    "date": "2024-09-06",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 79936,
+    "sum_sales": 1024.99,
+    "count_orders": 9
+  },
+  {
+    "date": "2024-09-09",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14440,
+    "sum_sales": 1000.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-20",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 14450,
+    "sum_sales": 1000.0,
+    "count_orders": 2
+  },
+  {
+    "date": "2024-09-24",
+    "channel_type": "marketplace",
+    "channel_name": "[shoper_rest]",
+    "order_status_id": 79936,
+    "sum_sales": 1078.38,
+    "count_orders": 6
+  },
+  {
+    "date": "2024-09-19",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 271363,
+    "sum_sales": 1000.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-28",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14405,
+    "sum_sales": 1000.0,
+    "count_orders": 6
+  },
+  {
+    "date": "2024-09-09",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 79937,
+    "sum_sales": 1032.45,
+    "count_orders": 5
+  },
+  {
+    "date": "2024-09-25",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 118896,
+    "sum_sales": 1000.0,
+    "count_orders": 4
+  },
+  {
+    "date": "2024-09-24",
+    "channel_type": "marketplace",
+    "channel_name": "[shoper_rest]",
+    "order_status_id": 14405,
+    "sum_sales": 1026.27,
+    "count_orders": 2
+  },
+  {
+    "date": "2024-09-20",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 113916,
+    "sum_sales": 1009.99,
+    "count_orders": 2
+  },
+  {
+    "date": "2024-09-23",
+    "channel_type": "marketplace",
+    "channel_name": "[shoper_rest]",
+    "order_status_id": 79936,
+    "sum_sales": 1062.9,
+    "count_orders": 6
+  },
+  {
+    "date": "2024-09-01",
+    "channel_type": "marketplace",
+    "channel_name": "[ebay de]",
+    "order_status_id": 14386,
+    "sum_sales": 1021.35,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-17",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14440,
+    "sum_sales": 1010.95,
+    "count_orders": 2
+  },
+  {
+    "date": "2024-09-20",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 228758,
+    "sum_sales": 1000.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-26",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 14405,
+    "sum_sales": 1000.0,
+    "count_orders": 2
+  },
+  {
+    "date": "2024-09-19",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 14409,
+    "sum_sales": 1000.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-27",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14450,
+    "sum_sales": 1000.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-09",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 14418,
+    "sum_sales": 1064.19,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-11",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14437,
+    "sum_sales": 1016.0,
+    "count_orders": 3
+  },
+  {
+    "date": "2024-09-09",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 125937,
+    "sum_sales": 1851.33,
+    "count_orders": 70
+  },
+  {
+    "date": "2024-09-17",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 125937,
+    "sum_sales": 3694.64,
+    "count_orders": 614
+  },
+  {
+    "date": "2024-09-19",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 79936,
+    "sum_sales": 2311.33,
+    "count_orders": 411
+  },
+  {
+    "date": "2024-09-03",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 14386,
+    "sum_sales": 1282.5,
+    "count_orders": 25
+  },
+  {
+    "date": "2024-09-21",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14386,
+    "sum_sales": 1364.01,
+    "count_orders": 75
+  },
+  {
+    "date": "2024-09-26",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 14453,
+    "sum_sales": 1025.25,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-13",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 228758,
+    "sum_sales": 1106.77,
+    "count_orders": 40
+  },
+  {
+    "date": "2024-09-27",
+    "channel_type": "marketplace",
+    "channel_name": "[shoper_rest]",
+    "order_status_id": 14405,
+    "sum_sales": 1074.27,
+    "count_orders": 5
+  },
+  {
+    "date": "2024-09-24",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 125937,
+    "sum_sales": 1449.18,
+    "count_orders": 54
+  },
+  {
+    "date": "2024-09-17",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 79936,
+    "sum_sales": 1029.97,
+    "count_orders": 5
+  },
+  {
+    "date": "2024-09-14",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 14386,
+    "sum_sales": 1205.03,
+    "count_orders": 18
+  },
+  {
+    "date": "2024-09-20",
+    "channel_type": "marketplace",
+    "channel_name": "[shoper_rest]",
+    "order_status_id": 14405,
+    "sum_sales": 1026.27,
+    "count_orders": 3
+  },
+  {
+    "date": "2024-09-17",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 14405,
+    "sum_sales": 1015.39,
+    "count_orders": 3
+  },
+  {
+    "date": "2024-09-17",
+    "channel_type": "marketplace",
+    "channel_name": "[presta]",
+    "order_status_id": 125937,
+    "sum_sales": 1060.0,
+    "count_orders": 5
+  },
+  {
+    "date": "2024-09-22",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 118896,
+    "sum_sales": 1000.0,
+    "count_orders": 3
+  },
+  {
+    "date": "2024-09-27",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 332502,
+    "sum_sales": 1000.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-26",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 228758,
+    "sum_sales": 1088.0,
+    "count_orders": 4
+  },
+  {
+    "date": "2024-09-02",
+    "channel_type": "marketplace",
+    "channel_name": "[presta]",
+    "order_status_id": 125937,
+    "sum_sales": 1015.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-04",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 121792,
+    "sum_sales": 1000.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-27",
+    "channel_type": "marketplace",
+    "channel_name": "[shoper_rest]",
+    "order_status_id": 14445,
+    "sum_sales": 1012.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-21",
+    "channel_type": "marketplace",
+    "channel_name": "[shoper_rest]",
+    "order_status_id": 79936,
+    "sum_sales": 1011.98,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-16",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 14413,
+    "sum_sales": 1000.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-18",
+    "channel_type": "marketplace",
+    "channel_name": "[shoper_rest]",
+    "order_status_id": 14386,
+    "sum_sales": 1420.43,
+    "count_orders": 34
+  },
+  {
+    "date": "2024-09-23",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 79936,
+    "sum_sales": 2667.74,
+    "count_orders": 481
+  },
+  {
+    "date": "2024-09-25",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 125937,
+    "sum_sales": 3739.23,
+    "count_orders": 596
+  },
+  {
+    "date": "2024-09-25",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 79937,
+    "sum_sales": 1046.13,
+    "count_orders": 16
+  },
+  {
+    "date": "2024-09-26",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 125937,
+    "sum_sales": 3717.2,
+    "count_orders": 546
+  },
+  {
+    "date": "2024-09-07",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 125937,
+    "sum_sales": 1295.75,
+    "count_orders": 32
+  },
+  {
+    "date": "2024-09-11",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 14386,
+    "sum_sales": 1434.0,
+    "count_orders": 26
+  },
+  {
+    "date": "2024-09-13",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 14386,
+    "sum_sales": 1321.64,
+    "count_orders": 36
+  },
+  {
+    "date": "2024-09-21",
+    "channel_type": "marketplace",
+    "channel_name": "[shoper_rest]",
+    "order_status_id": 14386,
+    "sum_sales": 1302.35,
+    "count_orders": 22
+  },
+  {
+    "date": "2024-09-06",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 228758,
+    "sum_sales": 1221.29,
+    "count_orders": 32
+  },
+  {
+    "date": "2024-09-07",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14405,
+    "sum_sales": 1016.91,
+    "count_orders": 3
+  },
+  {
+    "date": "2024-09-17",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 121792,
+    "sum_sales": 1000.0,
+    "count_orders": 2
+  },
+  {
+    "date": "2024-09-25",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 79936,
+    "sum_sales": 1071.98,
+    "count_orders": 10
+  },
+  {
+    "date": "2024-09-08",
+    "channel_type": "marketplace",
+    "channel_name": "[presta]",
+    "order_status_id": 125937,
+    "sum_sales": 1055.0,
+    "count_orders": 4
+  },
+  {
+    "date": "2024-09-07",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 79937,
+    "sum_sales": 1042.03,
+    "count_orders": 7
+  },
+  {
+    "date": "2024-09-08",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 14453,
+    "sum_sales": 1085.59,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-14",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 14450,
+    "sum_sales": 1000.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-29",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 217792,
+    "sum_sales": 1000.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-16",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 250924,
+    "sum_sales": 1045.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-10",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14438,
+    "sum_sales": 1000.0,
+    "count_orders": 2
+  },
+  {
+    "date": "2024-09-12",
+    "channel_type": "marketplace",
+    "channel_name": "[shopify_v2]",
+    "order_status_id": 217792,
+    "sum_sales": 1129.76,
+    "count_orders": 2
+  },
+  {
+    "date": "2024-09-16",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 118895,
+    "sum_sales": 1000.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-16",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 113916,
+    "sum_sales": 1000.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-24",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 271363,
+    "sum_sales": 1004.99,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-15",
+    "channel_type": "marketplace",
+    "channel_name": "[shoper_rest]",
+    "order_status_id": 14386,
+    "sum_sales": 1417.81,
+    "count_orders": 34
+  },
+  {
+    "date": "2024-09-17",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 79936,
+    "sum_sales": 2372.92,
+    "count_orders": 419
+  },
+  {
+    "date": "2024-09-18",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 125937,
+    "sum_sales": 1778.14,
+    "count_orders": 74
+  },
+  {
+    "date": "2024-09-03",
+    "channel_type": "marketplace",
+    "channel_name": "[shoper_rest]",
+    "order_status_id": 14386,
+    "sum_sales": 1440.35,
+    "count_orders": 34
+  },
+  {
+    "date": "2024-09-03",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14386,
+    "sum_sales": 1754.06,
+    "count_orders": 161
+  },
+  {
+    "date": "2024-09-27",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 228758,
+    "sum_sales": 1215.24,
+    "count_orders": 33
+  },
+  {
+    "date": "2024-09-07",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 113916,
+    "sum_sales": 1019.98,
+    "count_orders": 3
+  },
+  {
+    "date": "2024-09-11",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 79937,
+    "sum_sales": 1019.98,
+    "count_orders": 6
+  },
+  {
+    "date": "2024-09-09",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 79936,
+    "sum_sales": 1095.94,
+    "count_orders": 13
+  },
+  {
+    "date": "2024-09-17",
+    "channel_type": "marketplace",
+    "channel_name": "[shoper_rest]",
+    "order_status_id": 79936,
+    "sum_sales": 1038.59,
+    "count_orders": 4
+  },
+  {
+    "date": "2024-09-25",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14440,
+    "sum_sales": 1000.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-20",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 127592,
+    "sum_sales": 1000.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-01",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14438,
+    "sum_sales": 1000.0,
+    "count_orders": 2
+  },
+  {
+    "date": "2024-09-06",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14445,
+    "sum_sales": 1010.95,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-14",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 14405,
+    "sum_sales": 1000.0,
+    "count_orders": 3
+  },
+  {
+    "date": "2024-09-26",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14440,
+    "sum_sales": 1000.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-03",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14450,
+    "sum_sales": 1000.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-16",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14440,
+    "sum_sales": 1000.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-17",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 118895,
+    "sum_sales": 1000.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-04",
+    "channel_type": "marketplace",
+    "channel_name": "[shoper_rest]",
+    "order_status_id": 14445,
+    "sum_sales": 1015.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-20",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 14437,
+    "sum_sales": 1015.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-03",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14440,
+    "sum_sales": 1000.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-29",
+    "channel_type": "marketplace",
+    "channel_name": "[shoper_rest]",
+    "order_status_id": 14405,
+    "sum_sales": 1078.81,
+    "count_orders": 4
+  },
+  {
+    "date": "2024-09-01",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 79936,
+    "sum_sales": 1839.09,
+    "count_orders": 349
+  },
+  {
+    "date": "2024-09-10",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 79936,
+    "sum_sales": 2278.1,
+    "count_orders": 388
+  },
+  {
+    "date": "2024-09-24",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 228758,
+    "sum_sales": 1055.87,
+    "count_orders": 25
+  },
+  {
+    "date": "2024-09-03",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14405,
+    "sum_sales": 1052.9,
+    "count_orders": 6
+  },
+  {
+    "date": "2024-09-23",
+    "channel_type": "marketplace",
+    "channel_name": "[shoper_rest]",
+    "order_status_id": 14386,
+    "sum_sales": 1233.62,
+    "count_orders": 23
+  },
+  {
+    "date": "2024-09-08",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 125937,
+    "sum_sales": 1495.23,
+    "count_orders": 54
+  },
+  {
+    "date": "2024-09-19",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 14405,
+    "sum_sales": 1000.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-03",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 125937,
+    "sum_sales": 1591.56,
+    "count_orders": 64
+  },
+  {
+    "date": "2024-09-14",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 125937,
+    "sum_sales": 1604.14,
+    "count_orders": 64
+  },
+  {
+    "date": "2024-09-09",
+    "channel_type": "marketplace",
+    "channel_name": "[shoper_rest]",
+    "order_status_id": 14386,
+    "sum_sales": 1343.62,
+    "count_orders": 25
+  },
+  {
+    "date": "2024-09-18",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 14386,
+    "sum_sales": 1263.84,
+    "count_orders": 26
+  },
+  {
+    "date": "2024-09-06",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 113916,
+    "sum_sales": 1009.99,
+    "count_orders": 2
+  },
+  {
+    "date": "2024-09-08",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 14386,
+    "sum_sales": 1220.0,
+    "count_orders": 23
+  },
+  {
+    "date": "2024-09-23",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 228758,
+    "sum_sales": 1146.17,
+    "count_orders": 38
+  },
+  {
+    "date": "2024-09-24",
+    "channel_type": "marketplace",
+    "channel_name": "[shoper_rest]",
+    "order_status_id": 14386,
+    "sum_sales": 1342.81,
+    "count_orders": 29
+  },
+  {
+    "date": "2024-09-21",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14445,
+    "sum_sales": 1016.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-18",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 79937,
+    "sum_sales": 1000.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-17",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 118895,
+    "sum_sales": 1000.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-14",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14405,
+    "sum_sales": 1013.0,
+    "count_orders": 2
+  },
+  {
+    "date": "2024-09-09",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14450,
+    "sum_sales": 1000.0,
+    "count_orders": 4
+  },
+  {
+    "date": "2024-09-27",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14437,
+    "sum_sales": 1010.95,
+    "count_orders": 3
+  },
+  {
+    "date": "2024-09-07",
+    "channel_type": "marketplace",
+    "channel_name": "[shopify_v2]",
+    "order_status_id": 217792,
+    "sum_sales": 1000.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-11",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 14388,
+    "sum_sales": 1000.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-08",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14405,
+    "sum_sales": 1010.95,
+    "count_orders": 4
+  },
+  {
+    "date": "2024-09-19",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14437,
+    "sum_sales": 1010.95,
+    "count_orders": 3
+  },
+  {
+    "date": "2024-09-04",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 118896,
+    "sum_sales": 1000.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-22",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 79934,
+    "sum_sales": 1000.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-09",
+    "channel_type": "marketplace",
+    "channel_name": "[shoper_rest]",
+    "order_status_id": 14437,
+    "sum_sales": 1000.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-15",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 121792,
+    "sum_sales": 1010.95,
+    "count_orders": 2
+  },
+  {
+    "date": "2024-09-22",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 228758,
+    "sum_sales": 1015.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-26",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 121792,
+    "sum_sales": 1000.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-02",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 79936,
+    "sum_sales": 2258.77,
+    "count_orders": 422
+  },
+  {
+    "date": "2024-09-25",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 125937,
+    "sum_sales": 1436.15,
+    "count_orders": 52
+  },
+  {
+    "date": "2024-09-15",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14438,
+    "sum_sales": 1000.0,
+    "count_orders": 3
+  },
+  {
+    "date": "2024-09-08",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 228758,
+    "sum_sales": 1139.84,
+    "count_orders": 30
+  },
+  {
+    "date": "2024-09-22",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 125937,
+    "sum_sales": 1532.46,
+    "count_orders": 50
+  },
+  {
+    "date": "2024-09-01",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 14386,
+    "sum_sales": 1156.64,
+    "count_orders": 28
+  },
+  {
+    "date": "2024-09-27",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 113916,
+    "sum_sales": 1000.0,
+    "count_orders": 3
+  },
+  {
+    "date": "2024-09-11",
+    "channel_type": "marketplace",
+    "channel_name": "[shoper_rest]",
+    "order_status_id": 79936,
+    "sum_sales": 1021.48,
+    "count_orders": 2
+  },
+  {
+    "date": "2024-09-01",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 228758,
+    "sum_sales": 1105.81,
+    "count_orders": 31
+  },
+  {
+    "date": "2024-09-22",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14405,
+    "sum_sales": 1021.9,
+    "count_orders": 4
+  },
+  {
+    "date": "2024-09-21",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14440,
+    "sum_sales": 1000.0,
+    "count_orders": 2
+  },
+  {
+    "date": "2024-09-03",
+    "channel_type": "marketplace",
+    "channel_name": "[ebay de]",
+    "order_status_id": 14386,
+    "sum_sales": 1025.25,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-07",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 329316,
+    "sum_sales": 1010.95,
+    "count_orders": 2
+  },
+  {
+    "date": "2024-09-01",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14445,
+    "sum_sales": 1010.95,
+    "count_orders": 4
+  },
+  {
+    "date": "2024-09-17",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 79937,
+    "sum_sales": 1009.99,
+    "count_orders": 2
+  },
+  {
+    "date": "2024-09-17",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14437,
+    "sum_sales": 1010.95,
+    "count_orders": 3
+  },
+  {
+    "date": "2024-09-01",
+    "channel_type": "marketplace",
+    "channel_name": "[shoper_rest]",
+    "order_status_id": 14437,
+    "sum_sales": 1030.0,
+    "count_orders": 2
+  },
+  {
+    "date": "2024-09-10",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14445,
+    "sum_sales": 1000.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-03",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 121792,
+    "sum_sales": 1000.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-10",
+    "channel_type": "marketplace",
+    "channel_name": "[ebay de]",
+    "order_status_id": 14418,
+    "sum_sales": 1072.75,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-17",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 164082,
+    "sum_sales": 1000.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-19",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 131340,
+    "sum_sales": 1000.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-01",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 113916,
+    "sum_sales": 1011.99,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-01",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14450,
+    "sum_sales": 1010.95,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-13",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14438,
+    "sum_sales": 1000.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-27",
+    "channel_type": "marketplace",
+    "channel_name": "[shoper_rest]",
+    "order_status_id": 14437,
+    "sum_sales": 1030.0,
+    "count_orders": 2
+  },
+  {
+    "date": "2024-09-26",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 79937,
+    "sum_sales": 1000.0,
+    "count_orders": 3
+  },
+  {
+    "date": "2024-09-11",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 79936,
+    "sum_sales": 1089.97,
+    "count_orders": 16
+  },
+  {
+    "date": "2024-09-05",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 164082,
+    "sum_sales": 1010.08,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-04",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 228758,
+    "sum_sales": 1029.0,
+    "count_orders": 2
+  },
+  {
+    "date": "2024-09-12",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 121792,
+    "sum_sales": 1000.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-01",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 79936,
+    "sum_sales": 1118.33,
+    "count_orders": 14
+  },
+  {
+    "date": "2024-09-06",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 113916,
+    "sum_sales": 1075.7,
+    "count_orders": 8
+  },
+  {
+    "date": "2024-09-03",
+    "channel_type": "marketplace",
+    "channel_name": "[shoper_rest]",
+    "order_status_id": 14405,
+    "sum_sales": 1062.27,
+    "count_orders": 4
+  },
+  {
+    "date": "2024-09-02",
+    "channel_type": "marketplace",
+    "channel_name": "[ebay de]",
+    "order_status_id": 14386,
+    "sum_sales": 1021.35,
+    "count_orders": 2
+  },
+  {
+    "date": "2024-09-08",
+    "channel_type": "marketplace",
+    "channel_name": "[shoper_rest]",
+    "order_status_id": 79936,
+    "sum_sales": 1050.48,
+    "count_orders": 4
+  },
+  {
+    "date": "2024-09-01",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14437,
+    "sum_sales": 1000.0,
+    "count_orders": 3
+  },
+  {
+    "date": "2024-09-08",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14445,
+    "sum_sales": 1009.99,
+    "count_orders": 3
+  },
+  {
+    "date": "2024-09-21",
+    "channel_type": "marketplace",
+    "channel_name": "[shoper_rest]",
+    "order_status_id": 14405,
+    "sum_sales": 1026.27,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-04",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14437,
+    "sum_sales": 1000.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-09",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 113916,
+    "sum_sales": 1028.97,
+    "count_orders": 5
+  },
+  {
+    "date": "2024-09-11",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 14405,
+    "sum_sales": 1000.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-24",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14440,
+    "sum_sales": 1000.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-14",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 121792,
+    "sum_sales": 1006.99,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-23",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14440,
+    "sum_sales": 1000.0,
+    "count_orders": 2
+  },
+  {
+    "date": "2024-09-02",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14386,
+    "sum_sales": 1890.85,
+    "count_orders": 169
+  },
+  {
+    "date": "2024-09-24",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14405,
+    "sum_sales": 1016.74,
+    "count_orders": 3
+  },
+  {
+    "date": "2024-09-03",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 79936,
+    "sum_sales": 2080.34,
+    "count_orders": 385
+  },
+  {
+    "date": "2024-09-23",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 125937,
+    "sum_sales": 1322.46,
+    "count_orders": 49
+  },
+  {
+    "date": "2024-09-15",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14386,
+    "sum_sales": 1718.39,
+    "count_orders": 149
+  },
+  {
+    "date": "2024-09-09",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14405,
+    "sum_sales": 1056.8,
+    "count_orders": 8
+  },
+  {
+    "date": "2024-09-24",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14445,
+    "sum_sales": 1015.0,
+    "count_orders": 2
+  },
+  {
+    "date": "2024-09-04",
+    "channel_type": "marketplace",
+    "channel_name": "[shoper_rest]",
+    "order_status_id": 14386,
+    "sum_sales": 1308.35,
+    "count_orders": 26
+  },
+  {
+    "date": "2024-09-25",
+    "channel_type": "marketplace",
+    "channel_name": "[shoper_rest]",
+    "order_status_id": 14405,
+    "sum_sales": 1090.81,
+    "count_orders": 4
+  },
+  {
+    "date": "2024-09-29",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 79936,
+    "sum_sales": 1073.96,
+    "count_orders": 10
+  },
+  {
+    "date": "2024-09-20",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14445,
+    "sum_sales": 1000.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-01",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 231538,
+    "sum_sales": 1000.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-24",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 14445,
+    "sum_sales": 1015.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-26",
+    "channel_type": "marketplace",
+    "channel_name": "[shoper_rest]",
+    "order_status_id": 14405,
+    "sum_sales": 1131.35,
+    "count_orders": 6
+  },
+  {
+    "date": "2024-09-19",
+    "channel_type": "marketplace",
+    "channel_name": "[shoper_rest]",
+    "order_status_id": 14445,
+    "sum_sales": 1015.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-12",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 14405,
+    "sum_sales": 1000.0,
+    "count_orders": 4
+  },
+  {
+    "date": "2024-09-15",
+    "channel_type": "marketplace",
+    "channel_name": "[shoper_rest]",
+    "order_status_id": 14405,
+    "sum_sales": 1062.27,
+    "count_orders": 5
+  },
+  {
+    "date": "2024-09-10",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 118896,
+    "sum_sales": 1000.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-27",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14438,
+    "sum_sales": 1000.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-23",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14405,
+    "sum_sales": 1021.9,
+    "count_orders": 6
+  },
+  {
+    "date": "2024-09-16",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 118896,
+    "sum_sales": 1000.0,
+    "count_orders": 2
+  },
+  {
+    "date": "2024-09-23",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14445,
+    "sum_sales": 1008.37,
+    "count_orders": 2
+  },
+  {
+    "date": "2024-09-04",
+    "channel_type": "marketplace",
+    "channel_name": "[ebay de]",
+    "order_status_id": 14386,
+    "sum_sales": 1046.6,
+    "count_orders": 2
+  },
+  {
+    "date": "2024-09-26",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 113916,
+    "sum_sales": 1044.48,
+    "count_orders": 3
+  },
+  {
+    "date": "2024-09-03",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 79937,
+    "sum_sales": 1013.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-13",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14445,
+    "sum_sales": 1000.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-15",
+    "channel_type": "marketplace",
+    "channel_name": "[presta]",
+    "order_status_id": 125937,
+    "sum_sales": 1015.0,
+    "count_orders": 2
+  },
+  {
+    "date": "2024-09-12",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 329316,
+    "sum_sales": 1010.95,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-26",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14405,
+    "sum_sales": 1038.81,
+    "count_orders": 5
+  },
+  {
+    "date": "2024-09-23",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 125937,
+    "sum_sales": 3544.26,
+    "count_orders": 557
+  },
+  {
+    "date": "2024-09-24",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 125937,
+    "sum_sales": 3298.38,
+    "count_orders": 565
+  },
+  {
+    "date": "2024-09-24",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 79936,
+    "sum_sales": 1051.95,
+    "count_orders": 6
+  },
+  {
+    "date": "2024-09-26",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 125937,
+    "sum_sales": 1445.43,
+    "count_orders": 42
+  },
+  {
+    "date": "2024-09-27",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 79936,
+    "sum_sales": 2223.77,
+    "count_orders": 345
+  },
+  {
+    "date": "2024-09-20",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 79936,
+    "sum_sales": 1954.33,
+    "count_orders": 261
+  },
+  {
+    "date": "2024-09-19",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 228758,
+    "sum_sales": 1131.08,
+    "count_orders": 33
+  },
+  {
+    "date": "2024-09-11",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 14450,
+    "sum_sales": 1000.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-25",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14405,
+    "sum_sales": 1019.32,
+    "count_orders": 3
+  },
+  {
+    "date": "2024-09-29",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 228758,
+    "sum_sales": 1199.5,
+    "count_orders": 33
+  },
+  {
+    "date": "2024-09-23",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14437,
+    "sum_sales": 1024.92,
+    "count_orders": 5
+  },
+  {
+    "date": "2024-09-25",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 14386,
+    "sum_sales": 1141.25,
+    "count_orders": 20
+  },
+  {
+    "date": "2024-09-28",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 228758,
+    "sum_sales": 1050.9,
+    "count_orders": 12
+  },
+  {
+    "date": "2024-09-20",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 79936,
+    "sum_sales": 1037.99,
+    "count_orders": 4
+  },
+  {
+    "date": "2024-09-02",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 118896,
+    "sum_sales": 1000.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-04",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 79937,
+    "sum_sales": 1022.92,
+    "count_orders": 12
+  },
+  {
+    "date": "2024-09-09",
+    "channel_type": "marketplace",
+    "channel_name": "[shopify_v2]",
+    "order_status_id": 217792,
+    "sum_sales": 1085.55,
+    "count_orders": 2
+  },
+  {
+    "date": "2024-09-18",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14445,
+    "sum_sales": 1000.0,
+    "count_orders": 4
+  },
+  {
+    "date": "2024-09-20",
+    "channel_type": "marketplace",
+    "channel_name": "[shoper_rest]",
+    "order_status_id": 79937,
+    "sum_sales": 1011.98,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-11",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14438,
+    "sum_sales": 1000.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-17",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 228758,
+    "sum_sales": 1025.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-06",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14386,
+    "sum_sales": 1536.56,
+    "count_orders": 101
+  },
+  {
+    "date": "2024-09-07",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14386,
+    "sum_sales": 1483.47,
+    "count_orders": 92
+  },
+  {
+    "date": "2024-09-11",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 228758,
+    "sum_sales": 1604.15,
+    "count_orders": 31
+  },
+  {
+    "date": "2024-09-28",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 79936,
+    "sum_sales": 1916.61,
+    "count_orders": 250
+  },
+  {
+    "date": "2024-09-23",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 14386,
+    "sum_sales": 1175.53,
+    "count_orders": 19
+  },
+  {
+    "date": "2024-09-14",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 79937,
+    "sum_sales": 1038.88,
+    "count_orders": 7
+  },
+  {
+    "date": "2024-09-11",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14445,
+    "sum_sales": 1000.0,
+    "count_orders": 2
+  },
+  {
+    "date": "2024-09-18",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 79937,
+    "sum_sales": 1079.53,
+    "count_orders": 14
+  },
+  {
+    "date": "2024-09-22",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 14386,
+    "sum_sales": 1282.89,
+    "count_orders": 19
+  },
+  {
+    "date": "2024-09-27",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 228758,
+    "sum_sales": 1049.99,
+    "count_orders": 3
+  },
+  {
+    "date": "2024-09-25",
+    "channel_type": "marketplace",
+    "channel_name": "[shoper_rest]",
+    "order_status_id": 14386,
+    "sum_sales": 1584.05,
+    "count_orders": 41
+  },
+  {
+    "date": "2024-09-06",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 79937,
+    "sum_sales": 1025.05,
+    "count_orders": 13
+  },
+  {
+    "date": "2024-09-11",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 14413,
+    "sum_sales": 1000.0,
+    "count_orders": 3
+  },
+  {
+    "date": "2024-09-24",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 14386,
+    "sum_sales": 1190.25,
+    "count_orders": 19
+  },
+  {
+    "date": "2024-09-05",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14438,
+    "sum_sales": 1000.0,
+    "count_orders": 3
+  },
+  {
+    "date": "2024-09-22",
+    "channel_type": "marketplace",
+    "channel_name": "[shoper_rest]",
+    "order_status_id": 14386,
+    "sum_sales": 1360.89,
+    "count_orders": 27
+  },
+  {
+    "date": "2024-09-07",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 14453,
+    "sum_sales": 1136.95,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-29",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14437,
+    "sum_sales": 1010.95,
+    "count_orders": 4
+  },
+  {
+    "date": "2024-09-07",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 315140,
+    "sum_sales": 1000.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-16",
+    "channel_type": "marketplace",
+    "channel_name": "[shopify_v2]",
+    "order_status_id": 217792,
+    "sum_sales": 1199.34,
+    "count_orders": 3
+  },
+  {
+    "date": "2024-09-26",
+    "channel_type": "marketplace",
+    "channel_name": "[presta]",
+    "order_status_id": 125937,
+    "sum_sales": 1015.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-18",
+    "channel_type": "marketplace",
+    "channel_name": "[shopify_v2]",
+    "order_status_id": 217792,
+    "sum_sales": 1014.93,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-07",
+    "channel_type": "marketplace",
+    "channel_name": "[presta]",
+    "order_status_id": 125937,
+    "sum_sales": 1025.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-19",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 231538,
+    "sum_sales": 1025.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-13",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 121792,
+    "sum_sales": 1039.88,
+    "count_orders": 5
+  },
+  {
+    "date": "2024-09-22",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14450,
+    "sum_sales": 1000.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-16",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 121792,
+    "sum_sales": 1000.0,
+    "count_orders": 2
+  },
+  {
+    "date": "2024-09-19",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 228758,
+    "sum_sales": 1015.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-25",
+    "channel_type": "marketplace",
+    "channel_name": "[presta]",
+    "order_status_id": 125937,
+    "sum_sales": 1025.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-27",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 14405,
+    "sum_sales": 1015.39,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-12",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14386,
+    "sum_sales": 1693.88,
+    "count_orders": 124
+  },
+  {
+    "date": "2024-09-19",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14386,
+    "sum_sales": 1656.02,
+    "count_orders": 139
+  },
+  {
+    "date": "2024-09-02",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 125937,
+    "sum_sales": 5086.8,
+    "count_orders": 909
+  },
+  {
+    "date": "2024-09-08",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 79936,
+    "sum_sales": 1936.85,
+    "count_orders": 298
+  },
+  {
+    "date": "2024-09-14",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 79936,
+    "sum_sales": 1698.92,
+    "count_orders": 207
+  },
+  {
+    "date": "2024-09-16",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 79936,
+    "sum_sales": 2329.32,
+    "count_orders": 398
+  },
+  {
+    "date": "2024-09-18",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 79936,
+    "sum_sales": 2295.06,
+    "count_orders": 424
+  },
+  {
+    "date": "2024-09-12",
+    "channel_type": "marketplace",
+    "channel_name": "[shoper_rest]",
+    "order_status_id": 14405,
+    "sum_sales": 1207.89,
+    "count_orders": 10
+  },
+  {
+    "date": "2024-09-14",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 79936,
+    "sum_sales": 1045.47,
+    "count_orders": 6
+  },
+  {
+    "date": "2024-09-05",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 113916,
+    "sum_sales": 1041.96,
+    "count_orders": 5
+  },
+  {
+    "date": "2024-09-16",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 125937,
+    "sum_sales": 1813.0,
+    "count_orders": 76
+  },
+  {
+    "date": "2024-09-25",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 113916,
+    "sum_sales": 1061.23,
+    "count_orders": 6
+  },
+  {
+    "date": "2024-09-21",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 14386,
+    "sum_sales": 1231.74,
+    "count_orders": 28
+  },
+  {
+    "date": "2024-09-26",
+    "channel_type": "marketplace",
+    "channel_name": "[shopify_v2]",
+    "order_status_id": 217792,
+    "sum_sales": 1000.0,
+    "count_orders": 2
+  },
+  {
+    "date": "2024-09-22",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 113916,
+    "sum_sales": 1067.05,
+    "count_orders": 7
+  },
+  {
+    "date": "2024-09-05",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14445,
+    "sum_sales": 1038.81,
+    "count_orders": 4
+  },
+  {
+    "date": "2024-09-05",
+    "channel_type": "marketplace",
+    "channel_name": "[shoper_rest]",
+    "order_status_id": 79936,
+    "sum_sales": 1009.5,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-23",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 135904,
+    "sum_sales": 1000.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-09",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 14437,
+    "sum_sales": 1015.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-12",
+    "channel_type": "marketplace",
+    "channel_name": "[presta]",
+    "order_status_id": 125937,
+    "sum_sales": 1015.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-06",
+    "channel_type": "marketplace",
+    "channel_name": "[ebay de]",
+    "order_status_id": 14386,
+    "sum_sales": 1021.35,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-17",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14445,
+    "sum_sales": 1000.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-01",
+    "channel_type": "marketplace",
+    "channel_name": "[shoper_rest]",
+    "order_status_id": 14445,
+    "sum_sales": 1026.27,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-27",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 14453,
+    "sum_sales": 1072.75,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-15",
+    "channel_type": "marketplace",
+    "channel_name": "[presta]",
+    "order_status_id": 228758,
+    "sum_sales": 1000.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-03",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 14405,
+    "sum_sales": 1023.75,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-18",
+    "channel_type": "marketplace",
+    "channel_name": "[shoper_rest]",
+    "order_status_id": 14437,
+    "sum_sales": 1027.0,
+    "count_orders": 2
+  },
+  {
+    "date": "2024-09-28",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14438,
+    "sum_sales": 1000.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-13",
+    "channel_type": "marketplace",
+    "channel_name": "[ebay de]",
+    "order_status_id": 14386,
+    "sum_sales": 1021.35,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-04",
+    "channel_type": "marketplace",
+    "channel_name": "[shoper_rest]",
+    "order_status_id": 14440,
+    "sum_sales": 1000.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-18",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14386,
+    "sum_sales": 1543.75,
+    "count_orders": 129
+  },
+  {
+    "date": "2024-09-03",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 125937,
+    "sum_sales": 4785.68,
+    "count_orders": 801
+  },
+  {
+    "date": "2024-09-28",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14386,
+    "sum_sales": 1549.34,
+    "count_orders": 89
+  },
+  {
+    "date": "2024-09-26",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 79937,
+    "sum_sales": 1041.24,
+    "count_orders": 13
+  },
+  {
+    "date": "2024-09-25",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 228758,
+    "sum_sales": 1117.05,
+    "count_orders": 32
+  },
+  {
+    "date": "2024-09-05",
+    "channel_type": "marketplace",
+    "channel_name": "[shoper_rest]",
+    "order_status_id": 14386,
+    "sum_sales": 1435.08,
+    "count_orders": 36
+  },
+  {
+    "date": "2024-09-22",
+    "channel_type": "marketplace",
+    "channel_name": "[shoper_rest]",
+    "order_status_id": 79936,
+    "sum_sales": 1044.5,
+    "count_orders": 4
+  },
+  {
+    "date": "2024-09-23",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 79936,
+    "sum_sales": 1100.43,
+    "count_orders": 13
+  },
+  {
+    "date": "2024-09-02",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 113916,
+    "sum_sales": 1059.14,
+    "count_orders": 7
+  },
+  {
+    "date": "2024-09-25",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 14413,
+    "sum_sales": 1000.0,
+    "count_orders": 2
+  },
+  {
+    "date": "2024-09-21",
+    "channel_type": "marketplace",
+    "channel_name": "[presta]",
+    "order_status_id": 125937,
+    "sum_sales": 1030.0,
+    "count_orders": 3
+  },
+  {
+    "date": "2024-09-15",
+    "channel_type": "marketplace",
+    "channel_name": "[ebay de]",
+    "order_status_id": 14418,
+    "sum_sales": 1072.75,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-09",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14437,
+    "sum_sales": 1035.98,
+    "count_orders": 5
+  },
+  {
+    "date": "2024-09-24",
+    "channel_type": "marketplace",
+    "channel_name": "[presta]",
+    "order_status_id": 125937,
+    "sum_sales": 1055.0,
+    "count_orders": 4
+  },
+  {
+    "date": "2024-09-24",
+    "channel_type": "marketplace",
+    "channel_name": "[shoper_rest]",
+    "order_status_id": 79937,
+    "sum_sales": 1016.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-18",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14450,
+    "sum_sales": 1000.0,
+    "count_orders": 2
+  },
+  {
+    "date": "2024-09-01",
+    "channel_type": "marketplace",
+    "channel_name": "[shopify_v2]",
+    "order_status_id": 217792,
+    "sum_sales": 1014.93,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-23",
+    "channel_type": "marketplace",
+    "channel_name": "[shoper_rest]",
+    "order_status_id": 79937,
+    "sum_sales": 1011.98,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-25",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 113916,
+    "sum_sales": 1009.99,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-07",
+    "channel_type": "marketplace",
+    "channel_name": "[shoper_rest]",
+    "order_status_id": 14437,
+    "sum_sales": 1012.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-28",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14440,
+    "sum_sales": 1000.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-26",
+    "channel_type": "marketplace",
+    "channel_name": "[shoper_rest]",
+    "order_status_id": 14386,
+    "sum_sales": 1480.89,
+    "count_orders": 34
+  },
+  {
+    "date": "2024-09-03",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 79937,
+    "sum_sales": 1090.46,
+    "count_orders": 16
+  },
+  {
+    "date": "2024-09-18",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 125937,
+    "sum_sales": 3245.97,
+    "count_orders": 598
+  },
+  {
+    "date": "2024-09-21",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 125937,
+    "sum_sales": 2579.74,
+    "count_orders": 293
+  },
+  {
+    "date": "2024-09-28",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 125937,
+    "sum_sales": 2523.6,
+    "count_orders": 316
+  },
+  {
+    "date": "2024-09-15",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 113916,
+    "sum_sales": 1029.97,
+    "count_orders": 4
+  },
+  {
+    "date": "2024-09-02",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 14386,
+    "sum_sales": 1166.5,
+    "count_orders": 21
+  },
+  {
+    "date": "2024-09-18",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 79936,
+    "sum_sales": 1048.46,
+    "count_orders": 11
+  },
+  {
+    "date": "2024-09-20",
+    "channel_type": "marketplace",
+    "channel_name": "[shoper_rest]",
+    "order_status_id": 14386,
+    "sum_sales": 1336.08,
+    "count_orders": 27
+  },
+  {
+    "date": "2024-09-10",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14437,
+    "sum_sales": 1050.85,
+    "count_orders": 8
+  },
+  {
+    "date": "2024-09-09",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14438,
+    "sum_sales": 1000.0,
+    "count_orders": 3
+  },
+  {
+    "date": "2024-09-16",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14437,
+    "sum_sales": 1000.0,
+    "count_orders": 4
+  },
+  {
+    "date": "2024-09-08",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 126770,
+    "sum_sales": 1000.0,
+    "count_orders": 2
+  },
+  {
+    "date": "2024-09-18",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14440,
+    "sum_sales": 1000.0,
+    "count_orders": 2
+  },
+  {
+    "date": "2024-09-22",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14445,
+    "sum_sales": 1000.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-16",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 79936,
+    "sum_sales": 1037.99,
+    "count_orders": 5
+  },
+  {
+    "date": "2024-09-03",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 79936,
+    "sum_sales": 1057.16,
+    "count_orders": 6
+  },
+  {
+    "date": "2024-09-13",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 113916,
+    "sum_sales": 1032.06,
+    "count_orders": 4
+  },
+  {
+    "date": "2024-09-03",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14437,
+    "sum_sales": 1000.0,
+    "count_orders": 2
+  },
+  {
+    "date": "2024-09-05",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 118896,
+    "sum_sales": 1000.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-04",
+    "channel_type": "marketplace",
+    "channel_name": "[shoper_rest]",
+    "order_status_id": 14405,
+    "sum_sales": 1086.27,
+    "count_orders": 7
+  },
+  {
+    "date": "2024-09-02",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14450,
+    "sum_sales": 1000.0,
+    "count_orders": 3
+  },
+  {
+    "date": "2024-09-27",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 118896,
+    "sum_sales": 1000.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-04",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 14450,
+    "sum_sales": 1000.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-28",
+    "channel_type": "marketplace",
+    "channel_name": "[ebay de]",
+    "order_status_id": 14386,
+    "sum_sales": 1046.6,
+    "count_orders": 2
+  },
+  {
+    "date": "2024-09-02",
+    "channel_type": "marketplace",
+    "channel_name": "[shoper_rest]",
+    "order_status_id": 14437,
+    "sum_sales": 1000.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-10",
+    "channel_type": "marketplace",
+    "channel_name": "[shopify_v2]",
+    "order_status_id": 217792,
+    "sum_sales": 1014.93,
+    "count_orders": 2
+  },
+  {
+    "date": "2024-09-15",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14450,
+    "sum_sales": 1000.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-09",
+    "channel_type": "marketplace",
+    "channel_name": "[shoper_rest]",
+    "order_status_id": 79936,
+    "sum_sales": 1023.29,
+    "count_orders": 2
+  },
+  {
+    "date": "2024-09-11",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 125937,
+    "sum_sales": 1814.22,
+    "count_orders": 80
+  },
+  {
+    "date": "2024-09-04",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 228758,
+    "sum_sales": 1257.35,
+    "count_orders": 51
+  },
+  {
+    "date": "2024-09-26",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 79936,
+    "sum_sales": 1065.95,
+    "count_orders": 8
+  },
+  {
+    "date": "2024-09-16",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 14386,
+    "sum_sales": 1347.14,
+    "count_orders": 26
+  },
+  {
+    "date": "2024-09-10",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 14386,
+    "sum_sales": 1277.75,
+    "count_orders": 17
+  },
+  {
+    "date": "2024-09-11",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14405,
+    "sum_sales": 1023.95,
+    "count_orders": 7
+  },
+  {
+    "date": "2024-09-23",
+    "channel_type": "marketplace",
+    "channel_name": "[shopify_v2]",
+    "order_status_id": 217792,
+    "sum_sales": 1074.8,
+    "count_orders": 5
+  },
+  {
+    "date": "2024-09-11",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 79937,
+    "sum_sales": 1071.76,
+    "count_orders": 12
+  },
+  {
+    "date": "2024-09-24",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 118896,
+    "sum_sales": 1014.45,
+    "count_orders": 3
+  },
+  {
+    "date": "2024-09-26",
+    "channel_type": "marketplace",
+    "channel_name": "[shoper_rest]",
+    "order_status_id": 14445,
+    "sum_sales": 1015.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-05",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14437,
+    "sum_sales": 1013.0,
+    "count_orders": 3
+  },
+  {
+    "date": "2024-09-23",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 118896,
+    "sum_sales": 1000.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-24",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 121792,
+    "sum_sales": 1000.0,
+    "count_orders": 2
+  },
+  {
+    "date": "2024-09-29",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 113916,
+    "sum_sales": 1012.08,
+    "count_orders": 2
+  },
+  {
+    "date": "2024-09-24",
+    "channel_type": "marketplace",
+    "channel_name": "[shopify_v2]",
+    "order_status_id": 217792,
+    "sum_sales": 1074.8,
+    "count_orders": 2
+  },
+  {
+    "date": "2024-09-02",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 14450,
+    "sum_sales": 1012.0,
+    "count_orders": 2
+  },
+  {
+    "date": "2024-09-11",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 14418,
+    "sum_sales": 1000.0,
+    "count_orders": 2
+  },
+  {
+    "date": "2024-09-28",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 118896,
+    "sum_sales": 1000.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-04",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 14413,
+    "sum_sales": 1000.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-10",
+    "channel_type": "marketplace",
+    "channel_name": "[shoper_rest]",
+    "order_status_id": 14437,
+    "sum_sales": 1015.0,
+    "count_orders": 2
+  },
+  {
+    "date": "2024-09-09",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 294549,
+    "sum_sales": 1000.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-02",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14385,
+    "sum_sales": 1000.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-05",
+    "channel_type": "marketplace",
+    "channel_name": "[ebay de]",
+    "order_status_id": 14453,
+    "sum_sales": 1077.03,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-27",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 60655,
+    "sum_sales": 1000.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-15",
+    "channel_type": "marketplace",
+    "channel_name": "[shoper_rest]",
+    "order_status_id": 14445,
+    "sum_sales": 1015.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-23",
+    "channel_type": "marketplace",
+    "channel_name": "[shoper_rest]",
+    "order_status_id": 14438,
+    "sum_sales": 1026.27,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-15",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 228758,
+    "sum_sales": 1000.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-20",
+    "channel_type": "marketplace",
+    "channel_name": "[shopify_v2]",
+    "order_status_id": 217792,
+    "sum_sales": 1059.87,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-01",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 79937,
+    "sum_sales": 1000.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-11",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14386,
+    "sum_sales": 1634.21,
+    "count_orders": 141
+  },
+  {
+    "date": "2024-09-19",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 125937,
+    "sum_sales": 1623.19,
+    "count_orders": 58
+  },
+  {
+    "date": "2024-09-02",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14405,
+    "sum_sales": 1055.84,
+    "count_orders": 12
+  },
+  {
+    "date": "2024-09-14",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 228758,
+    "sum_sales": 1245.57,
+    "count_orders": 32
+  },
+  {
+    "date": "2024-09-22",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 228758,
+    "sum_sales": 1064.82,
+    "count_orders": 25
+  },
+  {
+    "date": "2024-09-29",
+    "channel_type": "marketplace",
+    "channel_name": "[shoper_rest]",
+    "order_status_id": 14386,
+    "sum_sales": 1438.16,
+    "count_orders": 28
+  },
+  {
+    "date": "2024-09-28",
+    "channel_type": "marketplace",
+    "channel_name": "[shoper_rest]",
+    "order_status_id": 14386,
+    "sum_sales": 1245.35,
+    "count_orders": 15
+  },
+  {
+    "date": "2024-09-07",
+    "channel_type": "marketplace",
+    "channel_name": "[shoper_rest]",
+    "order_status_id": 14445,
+    "sum_sales": 1027.0,
+    "count_orders": 2
+  },
+  {
+    "date": "2024-09-08",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 79937,
+    "sum_sales": 1036.41,
+    "count_orders": 11
+  },
+  {
+    "date": "2024-09-19",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 14386,
+    "sum_sales": 1236.75,
+    "count_orders": 26
+  },
+  {
+    "date": "2024-09-17",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14438,
+    "sum_sales": 1000.0,
+    "count_orders": 3
+  },
+  {
+    "date": "2024-09-12",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 113916,
+    "sum_sales": 1015.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-17",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 113916,
+    "sum_sales": 1047.06,
+    "count_orders": 7
+  },
+  {
+    "date": "2024-09-19",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14405,
+    "sum_sales": 1000.0,
+    "count_orders": 2
+  },
+  {
+    "date": "2024-09-13",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14437,
+    "sum_sales": 1000.0,
+    "count_orders": 2
+  },
+  {
+    "date": "2024-09-05",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 113916,
+    "sum_sales": 1062.06,
+    "count_orders": 8
+  },
+  {
+    "date": "2024-09-06",
+    "channel_type": "marketplace",
+    "channel_name": "[shoper_rest]",
+    "order_status_id": 14405,
+    "sum_sales": 1052.54,
+    "count_orders": 3
+  },
+  {
+    "date": "2024-09-09",
+    "channel_type": "marketplace",
+    "channel_name": "[ebay de]",
+    "order_status_id": 14418,
+    "sum_sales": 1136.95,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-11",
+    "channel_type": "marketplace",
+    "channel_name": "[shoper_rest]",
+    "order_status_id": 14386,
+    "sum_sales": 1314.27,
+    "count_orders": 31
+  },
+  {
+    "date": "2024-09-07",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 125937,
+    "sum_sales": 3136.32,
+    "count_orders": 417
+  },
+  {
+    "date": "2024-09-15",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 125937,
+    "sum_sales": 2842.0,
+    "count_orders": 529
+  },
+  {
+    "date": "2024-09-24",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 79936,
+    "sum_sales": 2579.6,
+    "count_orders": 458
+  },
+  {
+    "date": "2024-09-08",
+    "channel_type": "marketplace",
+    "channel_name": "[shoper_rest]",
+    "order_status_id": 14386,
+    "sum_sales": 1239.27,
+    "count_orders": 18
+  },
+  {
+    "date": "2024-09-05",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 79937,
+    "sum_sales": 1011.99,
+    "count_orders": 7
+  },
+  {
+    "date": "2024-09-17",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 79937,
+    "sum_sales": 1033.33,
+    "count_orders": 9
+  },
+  {
+    "date": "2024-09-27",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14386,
+    "sum_sales": 1450.95,
+    "count_orders": 105
+  },
+  {
+    "date": "2024-09-12",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 79937,
+    "sum_sales": 1173.66,
+    "count_orders": 24
+  },
+  {
+    "date": "2024-09-15",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14437,
+    "sum_sales": 1010.95,
+    "count_orders": 3
+  },
+  {
+    "date": "2024-09-15",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14440,
+    "sum_sales": 1010.95,
+    "count_orders": 3
+  },
+  {
+    "date": "2024-09-10",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 228758,
+    "sum_sales": 1072.98,
+    "count_orders": 5
+  },
+  {
+    "date": "2024-09-28",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 228758,
+    "sum_sales": 1015.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-17",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 14418,
+    "sum_sales": 1136.95,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-16",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14450,
+    "sum_sales": 1000.0,
+    "count_orders": 2
+  },
+  {
+    "date": "2024-09-09",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 14413,
+    "sum_sales": 1000.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-19",
+    "channel_type": "marketplace",
+    "channel_name": "[shoper_rest]",
+    "order_status_id": 14405,
+    "sum_sales": 1012.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-26",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 14386,
+    "sum_sales": 1123.75,
+    "count_orders": 16
+  },
+  {
+    "date": "2024-09-05",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 125937,
+    "sum_sales": 1653.89,
+    "count_orders": 72
+  },
+  {
+    "date": "2024-09-29",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 125937,
+    "sum_sales": 1560.76,
+    "count_orders": 57
+  },
+  {
+    "date": "2024-09-04",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14438,
+    "sum_sales": 1000.0,
+    "count_orders": 2
+  },
+  {
+    "date": "2024-09-07",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 14386,
+    "sum_sales": 1098.5,
+    "count_orders": 14
+  },
+  {
+    "date": "2024-09-13",
+    "channel_type": "marketplace",
+    "channel_name": "[shoper_rest]",
+    "order_status_id": 14386,
+    "sum_sales": 1489.08,
+    "count_orders": 39
+  },
+  {
+    "date": "2024-09-20",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 125937,
+    "sum_sales": 1631.13,
+    "count_orders": 50
+  },
+  {
+    "date": "2024-09-29",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 14386,
+    "sum_sales": 1437.01,
+    "count_orders": 34
+  },
+  {
+    "date": "2024-09-29",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14405,
+    "sum_sales": 1029.31,
+    "count_orders": 5
+  },
+  {
+    "date": "2024-09-28",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 79937,
+    "sum_sales": 1039.28,
+    "count_orders": 10
+  },
+  {
+    "date": "2024-09-29",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 79937,
+    "sum_sales": 1024.96,
+    "count_orders": 12
+  },
+  {
+    "date": "2024-09-19",
+    "channel_type": "marketplace",
+    "channel_name": "[shopify_v2]",
+    "order_status_id": 217792,
+    "sum_sales": 1171.69,
+    "count_orders": 5
+  },
+  {
+    "date": "2024-09-27",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14445,
+    "sum_sales": 1010.95,
+    "count_orders": 2
+  },
+  {
+    "date": "2024-09-22",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 14405,
+    "sum_sales": 1075.0,
+    "count_orders": 5
+  },
+  {
+    "date": "2024-09-11",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 14445,
+    "sum_sales": 1015.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-14",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14437,
+    "sum_sales": 1000.0,
+    "count_orders": 3
+  },
+  {
+    "date": "2024-09-21",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 164082,
+    "sum_sales": 1006.99,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-01",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 125937,
+    "sum_sales": 1460.04,
+    "count_orders": 49
+  },
+  {
+    "date": "2024-09-26",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14437,
+    "sum_sales": 1016.0,
+    "count_orders": 6
+  },
+  {
+    "date": "2024-09-28",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 113916,
+    "sum_sales": 1009.99,
+    "count_orders": 2
+  },
+  {
+    "date": "2024-09-10",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 329316,
+    "sum_sales": 1000.0,
+    "count_orders": 2
+  },
+  {
+    "date": "2024-09-10",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 125937,
+    "sum_sales": 1861.38,
+    "count_orders": 75
+  },
+  {
+    "date": "2024-09-15",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 79937,
+    "sum_sales": 1031.85,
+    "count_orders": 8
+  },
+  {
+    "date": "2024-09-14",
+    "channel_type": "marketplace",
+    "channel_name": "[shoper_rest]",
+    "order_status_id": 14386,
+    "sum_sales": 1348.08,
+    "count_orders": 26
+  },
+  {
+    "date": "2024-09-01",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14405,
+    "sum_sales": 1051.8,
+    "count_orders": 10
+  },
+  {
+    "date": "2024-09-16",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14405,
+    "sum_sales": 1056.9,
+    "count_orders": 12
+  },
+  {
+    "date": "2024-09-19",
+    "channel_type": "marketplace",
+    "channel_name": "[presta]",
+    "order_status_id": 125937,
+    "sum_sales": 1025.0,
+    "count_orders": 2
+  },
+  {
+    "date": "2024-09-08",
+    "channel_type": "marketplace",
+    "channel_name": "[shoper_rest]",
+    "order_status_id": 14440,
+    "sum_sales": 1000.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-07",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14440,
+    "sum_sales": 1000.0,
+    "count_orders": 2
+  },
+  {
+    "date": "2024-09-02",
+    "channel_type": "marketplace",
+    "channel_name": "[shoper_rest]",
+    "order_status_id": 14405,
+    "sum_sales": 1076.54,
+    "count_orders": 5
+  },
+  {
+    "date": "2024-09-12",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 228758,
+    "sum_sales": 1037.99,
+    "count_orders": 3
+  },
+  {
+    "date": "2024-09-13",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 79937,
+    "sum_sales": 1010.95,
+    "count_orders": 5
+  },
+  {
+    "date": "2024-09-10",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14405,
+    "sum_sales": 1089.71,
+    "count_orders": 11
+  },
+  {
+    "date": "2024-09-10",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14450,
+    "sum_sales": 1000.0,
+    "count_orders": 2
+  },
+  {
+    "date": "2024-09-20",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14437,
+    "sum_sales": 1021.9,
+    "count_orders": 2
+  },
+  {
+    "date": "2024-09-02",
+    "channel_type": "marketplace",
+    "channel_name": "[shoper_rest]",
+    "order_status_id": 14445,
+    "sum_sales": 1000.0,
+    "count_orders": 2
+  },
+  {
+    "date": "2024-09-06",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14437,
+    "sum_sales": 1000.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-12",
+    "channel_type": "marketplace",
+    "channel_name": "[shoper_rest]",
+    "order_status_id": 14445,
+    "sum_sales": 1000.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-01",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 329316,
+    "sum_sales": 1010.95,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-17",
+    "channel_type": "marketplace",
+    "channel_name": "[shoper_rest]",
+    "order_status_id": 14405,
+    "sum_sales": 1026.27,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-04",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 79936,
+    "sum_sales": 2603.39,
+    "count_orders": 433
+  },
+  {
+    "date": "2024-09-06",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 79936,
+    "sum_sales": 2016.53,
+    "count_orders": 300
+  },
+  {
+    "date": "2024-09-12",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 125937,
+    "sum_sales": 3710.59,
+    "count_orders": 679
+  },
+  {
+    "date": "2024-09-25",
+    "channel_type": "marketplace",
+    "channel_name": "[shoper_rest]",
+    "order_status_id": 79936,
+    "sum_sales": 1029.09,
+    "count_orders": 3
+  },
+  {
+    "date": "2024-09-11",
+    "channel_type": "marketplace",
+    "channel_name": "[ebay de]",
+    "order_status_id": 14386,
+    "sum_sales": 1021.35,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-22",
+    "channel_type": "marketplace",
+    "channel_name": "[presta]",
+    "order_status_id": 125937,
+    "sum_sales": 1015.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-27",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 79936,
+    "sum_sales": 1060.98,
+    "count_orders": 8
+  },
+  {
+    "date": "2024-09-20",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14405,
+    "sum_sales": 1023.95,
+    "count_orders": 5
+  },
+  {
+    "date": "2024-09-02",
+    "channel_type": "marketplace",
+    "channel_name": "[shopify_v2]",
+    "order_status_id": 217792,
+    "sum_sales": 1014.93,
+    "count_orders": 3
+  },
+  {
+    "date": "2024-09-20",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 14386,
+    "sum_sales": 1175.25,
+    "count_orders": 17
+  },
+  {
+    "date": "2024-09-18",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 228758,
+    "sum_sales": 1074.0,
+    "count_orders": 3
+  },
+  {
+    "date": "2024-09-27",
+    "channel_type": "marketplace",
+    "channel_name": "[shoper_rest]",
+    "order_status_id": 79936,
+    "sum_sales": 1018.4,
+    "count_orders": 2
+  },
+  {
+    "date": "2024-09-08",
+    "channel_type": "marketplace",
+    "channel_name": "",
+    "order_status_id": 113916,
+    "sum_sales": 1009.99,
+    "count_orders": 2
+  },
+  {
+    "date": "2024-09-20",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14450,
+    "sum_sales": 1000.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-13",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 231538,
+    "sum_sales": 1000.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-12",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14440,
+    "sum_sales": 1010.95,
+    "count_orders": 3
+  },
+  {
+    "date": "2024-09-10",
+    "channel_type": "marketplace",
+    "channel_name": "[shoper_rest]",
+    "order_status_id": 14445,
+    "sum_sales": 1012.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-02",
+    "channel_type": "marketplace",
+    "channel_name": "[allegro-pl]",
+    "order_status_id": 14440,
+    "sum_sales": 1008.37,
+    "count_orders": 3
+  },
+  {
+    "date": "2024-09-20",
+    "channel_type": "marketplace",
+    "channel_name": "[shoper_rest]",
+    "order_status_id": 14437,
+    "sum_sales": 1015.0,
+    "count_orders": 1
+  },
+  {
+    "date": "2024-09-11",
+    "channel_type": "marketplace",
+    "channel_name": "[shoper_rest]",
+    "order_status_id": 79937,
+    "sum_sales": 1012.5,
+    "count_orders": 1
+  }
+]
