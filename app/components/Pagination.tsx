@@ -1,6 +1,7 @@
-import { memo, useCallback, useMemo } from 'react';
+import { memo, useCallback } from 'react';
 import type { PaginationProps } from '~/types/components.types';
 import type { Mouse } from '~/types/types';
+import { getVisiblePages } from '~/utils/pagination.utils';
 
 export const PaginationComponent = ({
   currentPage,
@@ -32,21 +33,7 @@ export const PaginationComponent = ({
     [currentPage, totalPages, onChange],
   );
 
-  const visiblePages: number[] = useMemo(() => {
-    const pages: number[] = [];
-    const start = Math.max(1, currentPage - windowSize);
-    const end = Math.min(totalPages, currentPage + windowSize);
-
-    if (start > 1) pages.push(1);
-    if (start > 2) pages.push(-1);
-
-    for (let p = start; p <= end; p++) pages.push(p);
-
-    if (end < totalPages - 1) pages.push(-1);
-    if (end < totalPages) pages.push(totalPages);
-
-    return pages;
-  }, [currentPage, totalPages, windowSize]);
+  const visiblePages: number[] = getVisiblePages(currentPage, totalPages, windowSize);
 
   return (
     <div className="flex flex-col items-center gap-2">

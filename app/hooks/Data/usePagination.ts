@@ -9,12 +9,7 @@ export const usePagination = (
   pageSize: number,
 ): UsePaginationResult => {
   const dataLength: number = data.length;
-  const totalPages: number = useMemo(() => {
-    // VERY IMPORTANT TO HANDLE edge cases
-    if (pageSize <= 0 || dataLength <= 0) return 0;
-
-    return Math.ceil(dataLength / pageSize);
-  }, [dataLength, pageSize]);
+  const totalPages: number = pageSize > 0 && dataLength > 0 ? Math.ceil(dataLength / pageSize) : 0;
 
   const pagedData: SaleArray = useMemo(
     () => applyPagination(data, currentPage, pageSize),

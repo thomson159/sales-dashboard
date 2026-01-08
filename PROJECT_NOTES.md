@@ -76,6 +76,8 @@ To achieve this, multiple optimization techniques were applied:
 
 ### Memoization & Render Optimization
 
+Filtering, sorting, and metric calculations are memoized (`useMemo`) to optimize performance for the current dataset (~1000 records), but for larger datasets or frequent updates, additional techniques such as virtualized rendering or Web Workers should be considered.
+
 - `useMemo` – for caching expensive calculations and data transformations
 - `React.memo` – to prevent unnecessary component re-renders
 - `useCallback` – to stabilize function references between renders

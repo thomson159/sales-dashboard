@@ -41,7 +41,7 @@ export const Dashboard = ({ chartsAreVisible = false }: Props) => {
   const { theme, toggleTheme } = useThemeStore();
 
   const [showCharts, setShowCharts] = useState<boolean>(false);
-  const handleSort = useCallback((nextSort?: SortType) => setSort(nextSort), [setSort]);
+  const handleSort = useCallback((value?: SortType) => setSort(value), [setSort]);
   const handleFilters = useCallback((value: FiltersType) => setFilters(value), [setFilters]);
 
   const summaryProps: Metrics = useMemo(
