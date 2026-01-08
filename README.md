@@ -1,3 +1,20 @@
+## ⚠️ Node.js 22 Notice
+
+As of **08.01.2026**, Node.js 22 may cause intermittent issues with react-router.
+
+In some cases, the project may not start correctly after running `npm run dev`.
+
+Temporary workaround:
+
+- Refresh the browser using **Ctrl + Shift + R** (usually works on the second load)
+- Or run the project using Docker
+
+A permanent fix is in progress.
+
+---
+
+---
+
 # React 19 + TypeScript + Vite + React Router + Tailwind
 
 A modern, production-ready template for building full-stack React applications using React Router.
