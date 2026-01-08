@@ -25,7 +25,7 @@ export const FiltersView = ({ state, channels, hasChanges, apply, dispatch }: Fi
             <button
               type="button"
               onClick={() => dispatch({ type: 'CLEAR_CHANNEL_NAME' })}
-              className="absolute right-4 top-[30px]"
+              className="arrow absolute right-4 top-[30px]"
               aria-label="Clear name filter"
             >
               ✕

@@ -7,8 +7,9 @@
   border: 1px solid var(--gray);
   border-radius: 6px;
   background-color: var(--white);
-  cursor: pointer;
   font-size: 0.9rem;
+  cursor: pointer;
+  color: var(--dark);
 
   &:disabled {
     cursor: not-allowed;

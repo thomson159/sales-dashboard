@@ -12,6 +12,7 @@ import Sort from '../Sort';
 import Charts from '../Charts/Recharts/Charts';
 import { Button } from '../small/Button';
 import Filters from '../Filters/Filters';
+import { useThemeStore } from '~/store/useThemeStore';
 
 const Table = lazy(() => import('../Table/Table'));
 
@@ -37,6 +38,8 @@ export const Dashboard = ({ chartsAreVisible = false }: Props) => {
     setSort,
   }: UseData = useData();
 
+  const { theme, toggleTheme } = useThemeStore();
+
   const [showCharts, setShowCharts] = useState<boolean>(false);
   const handleSort = useCallback((nextSort?: SortType) => setSort(nextSort), [setSort]);
   const handleFilters = useCallback((value: FiltersType) => setFilters(value), [setFilters]);
@@ -49,6 +52,7 @@ export const Dashboard = ({ chartsAreVisible = false }: Props) => {
   return (
     <>
       <Navbar loading={loading}>
+        <button className='mb-5 cursor-pointer' onClick={toggleTheme}>{theme === "dark" ? "🌞" : "🌑"}</button>
         <Filters data={chartData} {...filters} onChange={handleFilters} />
         <Sort sort={sort} onChange={handleSort} />
       </Navbar>

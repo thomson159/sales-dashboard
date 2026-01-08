@@ -5,8 +5,13 @@
   border: 1px solid var(--gray);
   background: var(--white);
   font-size: 0.9rem;
+  color: var(--dark);
 
   &:focus {
     outline: none;
   }
+}
+
+.arrow {
+  color: var(--dark);
 }
