@@ -52,7 +52,9 @@ export const Dashboard = ({ chartsAreVisible = false }: Props) => {
   return (
     <>
       <Navbar loading={loading}>
-        <button className='mb-5 cursor-pointer' onClick={toggleTheme}>{theme === "dark" ? "🌞" : "🌑"}</button>
+        <button className="mb-5 cursor-pointer" onClick={toggleTheme}>
+          {theme === 'dark' ? '🌞' : '🌑'}
+        </button>
         <Filters data={chartData} {...filters} onChange={handleFilters} />
         <Sort sort={sort} onChange={handleSort} />
       </Navbar>
