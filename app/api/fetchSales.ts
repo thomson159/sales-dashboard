@@ -1,6 +1,8 @@
 import type { SaleArray } from '~/types/types';
 import { z } from 'zod';
+import saleData from '../../api-data.json';
 
+const SALES_URL_ON = import.meta.env.VITE_SALES_API_URL_ON as string;
 const SALES_URL = import.meta.env.VITE_SALES_API_URL as string;
 
 const saleJsonSchema = z.object({
@@ -18,15 +20,22 @@ const saleSchema = saleJsonSchema.omit({
 
 export const fetchSales = async (): Promise<SaleArray> => {
   try {
-    const response: Response = await fetch(SALES_URL);
+    let rawData: unknown;
 
-    if (!response.ok) {
-      console.error(`Fetch error: ${response.status}`);
+    if (SALES_URL_ON === "true") {
+      rawData = saleData;
+    } else {
+      const response: Response = await fetch(SALES_URL);
 
-      return [];
+      if (!response.ok) {
+        console.error(`Fetch error: ${response.status}`);
+
+        return [];
+      }
+
+      rawData = await response.json();
     }
 
-    const rawData: unknown = await response.json();
     const parsed = z.array(saleJsonSchema).safeParse(rawData);
 
     if (!parsed.success) {
