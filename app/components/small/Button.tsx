@@ -5,6 +5,14 @@ import type { Children } from '~/types/components.types';
 export type ButtonProps = Children &
   ButtonHTMLAttributes<HTMLButtonElement>;
 
+export function Button({ children, className = '', ...rest }: ButtonProps) {
+  return (
+    <button type="button" className={`own-button ${className}`} {...rest}>
+      {children}
+    </button>
+  );
+}
+
 const StyledButton = styled.button`
   position: relative;
   font-weight: 700;
@@ -39,7 +47,7 @@ const StyledButton = styled.button`
   }
 `;
 
-export function Button({ children, ...rest }: ButtonProps) {
+export function OwnButton({ children, ...rest }: ButtonProps) {
   return (
     <StyledButton type="button" {...rest}>
       {children}
