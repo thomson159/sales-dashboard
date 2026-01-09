@@ -7,23 +7,29 @@ export const STORAGE_KEY = 'sales-table-columns';
 export const ROWS_INCREMENT = 10;
 export const asc = 'asc';
 export const desc = 'desc';
+
 export const index = 'index';
+export const date = 'date';
+export const channel_name = 'channel_name';
+export const order_status_id = 'order_status_id';
+export const sum_sales = 'sum_sales';
+export const count_orders = 'count_orders';
 
 export const COLUMNS: Column[] = [
   { key: index, label: 'Nr', sortable: false },
-  { key: 'date', label: '📅 Date', sortable: true },
-  { key: 'channel_name', label: '🏷️ Name', sortable: true },
-  { key: 'order_status_id', label: '📌 Status', sortable: true },
-  { key: 'sum_sales', label: '💰 Sales', sortable: true },
-  { key: 'count_orders', label: '📦 Orders', sortable: true },
+  { key: date, label: '📅 Date', sortable: true },
+  { key: channel_name, label: '🏷️ Name', sortable: true },
+  { key: order_status_id, label: '📌 Status', sortable: true },
+  { key: sum_sales, label: '💰 Sales', sortable: true },
+  { key: count_orders, label: '📦 Orders', sortable: true },
 ];
 
-export const FIELDS: Fields[] = [
-  { label: 'Date', value: 'date' },
-  { label: 'Name', value: 'channel_name' },
-  { label: 'Status', value: 'order_status_id' },
-  { label: 'Sales', value: 'sum_sales' },
-  { label: 'Orders', value: 'count_orders' },
+export const SORT_FIELDS: Fields[] = [
+  { label: 'Date', value: date },
+  { label: 'Name', value: channel_name },
+  { label: 'Status', value: order_status_id },
+  { label: 'Sales', value: sum_sales },
+  { label: 'Orders', value: count_orders },
 ];
 
 export const CHANNEL_MAP: Record<string, string> = {
@@ -35,7 +41,6 @@ export const CHANNEL_MAP: Record<string, string> = {
 };
 
 export const BLUE = '#2563eb';
-
 export const CHARTS_COLORS = [
   '#ef4444',
   '#f97316',

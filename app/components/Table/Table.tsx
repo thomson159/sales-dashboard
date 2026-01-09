@@ -13,7 +13,7 @@ import { getNextSortState } from '~/utils/sort.utils';
 const SalesTableComponent = ({ data }: SaleData) => {
   const [sort, setSort] = useState<SortOr>(undefined);
   const [visibleRowsCount, setVisibleRowsCount] = useState<number>(ROWS_INCREMENT);
-  const { visibleColumns, onToggle }: UseTableColumnsResult = useTableColumns();
+  const { visibleColumns, toggleColumn }: UseTableColumnsResult = useTableColumns();
   const sortedData: SaleArray = useSortMemo(data, sort);
 
   const displayedData: SaleArray = useMemo(
@@ -25,9 +25,11 @@ const SalesTableComponent = ({ data }: SaleData) => {
     () => setVisibleRowsCount((prev: number) => prev + ROWS_INCREMENT),
     [],
   );
-  const handleClick = useCallback((field: KeyOfSale) => {
-    setSort((prev: SortOr) => getNextSortState(prev, field));
-  }, []);
+
+  const handleClick = useCallback(
+    (field: KeyOfSale) => setSort((prev: SortOr) => getNextSortState(prev, field)),
+    [],
+  );
 
   if (data.length === 0) {
     return null;
@@ -35,7 +37,7 @@ const SalesTableComponent = ({ data }: SaleData) => {
 
   return (
     <div>
-      <ColumnSelector visibleColumns={visibleColumns} onToggle={onToggle} />
+      <ColumnSelector visibleColumns={visibleColumns} toggleColumn={toggleColumn} />
       <div className="relative w-full overflow-x-auto">
         <table className={`w-full sales-table border-collapse font-inter text-sm rounded-lg`}>
           <TableHeader

@@ -1,6 +1,6 @@
 import { memo, useCallback } from 'react';
 import type { KeyOfSale } from '~/types/types';
-import { asc, FIELDS } from '~/consts';
+import { asc, SORT_FIELDS } from '~/consts';
 import type { SortProps } from '~/types/components.types';
 import { getNextSortState } from '~/utils/sort.utils';
 
@@ -19,7 +19,7 @@ export const SortComponent = ({ sort, onChange }: SortProps) => {
     <div>
       <div className="flex mt-5 ">↕️ Sort By</div>
       <div className={'sort-container'}>
-        {FIELDS.map(({ label, value }) => {
+        {SORT_FIELDS.map(({ label, value }) => {
           const isActive = sort?.field === value;
 
           return (

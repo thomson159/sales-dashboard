@@ -1,9 +1,12 @@
 import type { Dispatch } from 'react';
-import type { ToggleColumn, VisibleColumns } from './components.types';
+import type { VisibleColumns } from './components.types';
 import type { Action, State } from './state.types';
-import type { SortKey, SortOrder, SaleArray, SaleData, Change } from './types';
+import type { SaleArray, SaleData, Change, ColumnKey } from './types';
 
-export type UseTableColumnsResult = VisibleColumns & ToggleColumn;
+export type UseTableColumnsResult = Readonly<{
+  toggleColumn: (key: ColumnKey) => void;
+}> &
+  VisibleColumns;
 
 export type Apply = Readonly<{
   apply: () => void;
@@ -26,13 +29,6 @@ export type UsePageSizeResult = Readonly<{
   handleChange: (e: Change) => void;
 }> &
   Apply;
-
-export type UseTableSortingResult = Readonly<{
-  key: SortKey;
-  order: SortOrder;
-  sortedData: SaleArray;
-  onChange: (key: SortKey) => void;
-}>;
 
 export type UseFiltersStateResult = Readonly<{
   state: State;

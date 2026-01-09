@@ -1,8 +1,16 @@
 import { useCallback, useMemo, useState } from 'react';
-import type { SortKey, SortOrder, SaleArray, ColumnKeyArray } from '~/types/types';
+import type { SortOrder, SaleArray, ColumnKeyArray, KeyOfSale } from '~/types/types';
 import { asc, desc } from '~/consts';
 import { sortTableData } from '~/utils/table.utils';
-import type { UseTableSortingResult } from '~/types/hooks.types';
+
+export type UseTableSortingResult = Readonly<{
+  key: SortKey;
+  order: SortOrder;
+  sortedData: SaleArray;
+  onChange: (key: SortKey) => void;
+}>;
+
+export type SortKey = KeyOfSale | null;
 
 export const useTableSorting = (
   data: SaleArray,

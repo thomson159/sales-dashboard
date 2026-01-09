@@ -19,7 +19,7 @@ describe('ColumnSelector', () => {
   });
 
   it('renders all columns with unchecked checkboxes by default', () => {
-    render(<ColumnSelector visibleColumns={[]} onToggle={toggleColumn} />);
+    render(<ColumnSelector visibleColumns={[]} toggleColumn={toggleColumn} />);
 
     expect(screen.getAllByRole('checkbox')).toHaveLength(3);
 
@@ -32,7 +32,7 @@ describe('ColumnSelector', () => {
     render(
       <ColumnSelector
         visibleColumns={['name' as ColumnKey, 'email' as ColumnKey]}
-        onToggle={toggleColumn}
+        toggleColumn={toggleColumn}
       />,
     );
 
@@ -42,7 +42,7 @@ describe('ColumnSelector', () => {
   });
 
   it('calls toggleColumn with correct key on checkbox click', () => {
-    render(<ColumnSelector visibleColumns={[]} onToggle={toggleColumn} />);
+    render(<ColumnSelector visibleColumns={[]} toggleColumn={toggleColumn} />);
 
     fireEvent.click(screen.getByLabelText('Name'));
     fireEvent.click(screen.getByLabelText('Email'));
@@ -53,7 +53,7 @@ describe('ColumnSelector', () => {
   });
 
   it('allows toggling already selected column', () => {
-    render(<ColumnSelector visibleColumns={['age' as ColumnKey]} onToggle={toggleColumn} />);
+    render(<ColumnSelector visibleColumns={['age' as ColumnKey]} toggleColumn={toggleColumn} />);
 
     fireEvent.click(screen.getByLabelText('Age'));
 
@@ -62,7 +62,7 @@ describe('ColumnSelector', () => {
   });
 
   it('handles unknown visibleColumns keys gracefully', () => {
-    render(<ColumnSelector visibleColumns={['unknown' as ColumnKey]} onToggle={toggleColumn} />);
+    render(<ColumnSelector visibleColumns={['unknown' as ColumnKey]} toggleColumn={toggleColumn} />);
 
     expect((screen.getByLabelText('Name') as HTMLInputElement).checked).toBe(false);
     expect((screen.getByLabelText('Age') as HTMLInputElement).checked).toBe(false);
@@ -70,7 +70,7 @@ describe('ColumnSelector', () => {
   });
 
   it('has proper input attributes for accessibility', () => {
-    render(<ColumnSelector visibleColumns={[]} onToggle={toggleColumn} />);
+    render(<ColumnSelector visibleColumns={[]} toggleColumn={toggleColumn} />);
 
     const nameCheckbox = screen.getByLabelText('Name') as HTMLInputElement;
 
@@ -83,7 +83,7 @@ describe('ColumnSelector', () => {
     const { container } = render(
       <ColumnSelector
         visibleColumns={['name' as ColumnKey, 'age' as ColumnKey, 'email' as ColumnKey]}
-        onToggle={toggleColumn}
+        toggleColumn={toggleColumn}
       />,
     );
 
