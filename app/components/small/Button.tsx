@@ -2,8 +2,7 @@ import { styled } from 'styled-components';
 import type { ButtonHTMLAttributes } from 'react';
 import type { Children } from '~/types/components.types';
 
-export type ButtonProps = Children &
-  ButtonHTMLAttributes<HTMLButtonElement>;
+export type ButtonProps = Children & ButtonHTMLAttributes<HTMLButtonElement>;
 
 export function Button({ children, className = '', ...rest }: ButtonProps) {
   return (
@@ -12,6 +11,12 @@ export function Button({ children, className = '', ...rest }: ButtonProps) {
     </button>
   );
 }
+
+// ⚠️ A sample usage of `styled-components` was added to the project for demonstration purposes only,
+// however it is not the recommended approach.With`styled-components`, styles are injected at render time,
+// which may cause a brief flash of unstyled content and visible layout shifts.In our case,
+// loading scss files before rendering components provides more stable initial styling and
+// prevents the page from visually “jumping” during load.
 
 const StyledButton = styled.button`
   position: relative;
@@ -33,11 +38,6 @@ const StyledButton = styled.button`
   &:disabled {
     opacity: 0.4;
     cursor: not-allowed;
-  }
-
-  &:active {
-    transform: translateY(0);
-    filter: brightness(1.05);
   }
 
   &:hover:not(:disabled) {
