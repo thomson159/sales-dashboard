@@ -13,6 +13,7 @@ import Charts from '../Charts/Recharts/Charts';
 import { Button } from '../small/Button';
 import Filters from '../Filters/Filters';
 import { useThemeStore } from '~/store/useThemeStore';
+import { ThemeEffect } from '~/store/ThemeEffect';
 
 const Table = lazy(() => import('../Table/Table'));
 
@@ -51,6 +52,7 @@ export const Dashboard = ({ chartsAreVisible = false }: Props) => {
 
   return (
     <>
+      <ThemeEffect />
       <Navbar loading={loading}>
         <button className="mb-5 cursor-pointer" onClick={toggleTheme}>
           {theme === 'dark' ? '🌞' : '🌑'}
