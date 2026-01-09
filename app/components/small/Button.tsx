@@ -2,8 +2,7 @@ import { styled } from 'styled-components';
 import type { ButtonHTMLAttributes } from 'react';
 import type { Children } from '~/types/components.types';
 
-export type ButtonProps = Children &
-  ButtonHTMLAttributes<HTMLButtonElement>;
+export type ButtonProps = Children & ButtonHTMLAttributes<HTMLButtonElement>;
 
 const StyledButton = styled.button`
   position: relative;
