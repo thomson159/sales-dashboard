@@ -11,14 +11,14 @@ const data: SaleArray = [
   {
     date: '2025-01-01',
     channel_name: 'chan1',
-    order_status_id: 1,
+    order_status_id: 152,
     sum_sales: 100.5,
     count_orders: 2,
   },
   {
     date: '',
     channel_name: '',
-    order_status_id: 0,
+    order_status_id: 1620,
     sum_sales: 50,
     count_orders: 1,
   },
@@ -46,7 +46,7 @@ describe('TableBody', () => {
       </table>,
     );
 
-    expect(screen.getByText('2025-01-01')).toBeDefined();
+    expect(screen.getByText('2025.01.01')).toBeDefined();
     const fallbacks = screen.getAllByText((content) => content === '-' || content.trim() === '');
     expect(fallbacks.length).toBeGreaterThan(0);
   });
@@ -67,8 +67,8 @@ describe('TableBody', () => {
         <TableBody data={data} visibleColumns={['order_status_id']} />
       </table>,
     );
-    expect(screen.getByText('1')).toBeDefined();
-    expect(screen.getByText('0')).toBeDefined();
+    expect(screen.getByText('152')).toBeDefined();
+    expect(screen.getByText('1620')).toBeDefined();
   });
 
   it('renders sum_sales column with 2 decimals', () => {

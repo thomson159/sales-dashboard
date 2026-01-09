@@ -11,5 +11,7 @@ export const formatNumber = (value: number): string =>
     })
     .replace(/,/g, ' ');
 
+export const formatDate = (date: string): string => date.replace(/-/g, '.');
+
 export const areNumbers = (aValue: unknown, bValue: unknown): boolean =>
   typeof aValue === 'number' && typeof bValue === 'number';
