@@ -3,6 +3,7 @@ import { parseISO, format } from 'date-fns';
 import { BLUE } from '~/consts';
 import { memo } from 'react';
 import type { SalesProps } from '~/types/components.types';
+import { formatNumber } from '~/utils/utils';
 
 const SalesOverTime = ({ data }: SalesProps) => {
   const interval: number = data.length > 0 ? Math.ceil(data.length / 5) : 0;
@@ -29,7 +30,9 @@ const SalesOverTime = ({ data }: SalesProps) => {
               <div className="tooltip px-2 py-1">
                 <div>{label}</div>
                 {payload.map((p) => (
-                  <div key={p.dataKey}>{p.value.toFixed(2)}</div>
+                  <div key={p.dataKey}>
+                    {typeof p.value === 'number' ? formatNumber(p.value) : ""}
+                  </div>
                 ))}
               </div>
             );
