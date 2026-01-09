@@ -6,12 +6,16 @@ export const getSalesOverTime = (data: SaleArray): SalesOverTimeItem[] => {
 
   for (let i = 0; i < data.length; i++) {
     const sale: Sale = data[i];
+
     if (!sale.date) continue;
+
     const date: string = sale.date.slice(0, 10);
+
     salesMap.set(date, (salesMap.get(date) || 0) + sale.sum_sales);
   }
 
   const result: SalesOverTimeItem[] = [];
+
   salesMap.forEach((revenue, date) => {
     result.push({ date, revenue });
   });
@@ -36,10 +40,12 @@ export const getRevenuePerChannel = (data: SaleArray): RevenuePerChannelItem[] =
   for (let i = 0; i < data.length; i++) {
     const sale: Sale = data[i];
     const channelRaw: string = sale.channel_name?.trim() || 'other';
+
     channelsMap.set(channelRaw, (channelsMap.get(channelRaw) || 0) + sale.sum_sales);
   }
 
   const result: RevenuePerChannelItem[] = [];
+
   channelsMap.forEach((revenue, channelRaw) => {
     result.push({
       channel: normalizeCached(channelRaw),

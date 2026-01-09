@@ -3,7 +3,8 @@ import { CHANNEL_MAP } from '~/consts';
 export const normalizeChannelName = (value: string): string =>
   CHANNEL_MAP[value.toLowerCase()] ?? value;
 
-export const formatNumber = (value: number) => value.toLocaleString('en-US', {
+export const formatNumber = (value: number) =>
+  value.toLocaleString('en-US', {
     maximumFractionDigits: 2,
   });
 
