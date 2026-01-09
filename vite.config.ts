@@ -15,7 +15,20 @@ export default defineConfig({
       ext: ".br",
       threshold: 10240,
       deleteOriginFile: false
-    })
+    }),
+    // Temporary workaround to suppress Chrome DevTools warning about the missing
+    {
+      name: "suppress-chrome-devtools-route",
+      configureServer(server) {
+        server.middlewares.use(
+          "/.well-known/appspecific/com.chrome.devtools.json",
+          (_, res) => {
+            res.statusCode = 204;
+            res.end();
+          }
+        );
+      },
+    },
   ],
   css: {
     preprocessorOptions: {
