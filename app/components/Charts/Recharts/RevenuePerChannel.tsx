@@ -3,6 +3,7 @@ import { ResponsiveContainer, BarChart, XAxis, YAxis, Tooltip, Bar, Cell } from 
 import { CHARTS_COLORS as COLORS } from '~/consts';
 import { useIsMobileCharts } from '~/hooks/useIsMobile';
 import type { RevenueProps } from '~/types/components.types';
+import { formatNumber } from '~/utils/utils';
 
 const RevenuePerChannel = ({ data }: RevenueProps) => {
   const isMobile: boolean = useIsMobileCharts();
@@ -31,7 +32,7 @@ const RevenuePerChannel = ({ data }: RevenueProps) => {
               <div className="tooltip px-2 py-1">
                 <div>{label}</div>
                 {payload.map((p) => (
-                  <div key={p.dataKey}>{p.value.toFixed(2)}</div>
+                  <div key={p.dataKey}>{formatNumber(Number(p.value))}</div>
                 ))}
               </div>
             );

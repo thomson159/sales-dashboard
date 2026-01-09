@@ -1,6 +1,7 @@
 import { memo } from 'react';
 import type { SummaryItemProps } from '~/types/components.types';
 import type { Metrics } from '~/types/types';
+import { formatNumber } from '~/utils/utils';
 
 const SummaryItem = ({ label, value }: SummaryItemProps) => (
   <div className="flex-1 min-w-[200px] rounded-lg panel px-6 py-3 flex flex-col items-center">
@@ -13,9 +14,9 @@ const SummaryItem = ({ label, value }: SummaryItemProps) => (
 
 export const SalesSummaryComponent = ({ totalRevenue, totalOrders, avgOrderValue }: Metrics) => {
   const summaryData = [
-    { label: '🏆 Total Revenue', value: `${totalRevenue.toFixed(2)} $` },
+    { label: '🏆 Total Revenue', value: `${formatNumber(totalRevenue)} $` },
     { label: '📊 Total Orders', value: totalOrders },
-    { label: '💰 Average Order Value', value: `${avgOrderValue.toFixed(2)} $` },
+    { label: '💰 Average Order Value', value: `${formatNumber(avgOrderValue)} $` },
   ];
 
   return (
