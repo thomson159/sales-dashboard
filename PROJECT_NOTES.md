@@ -118,6 +118,8 @@ The following stylistic approaches were used in the project:
 - **SCSS** (`mixin, include, BEM`) – used selectively to demonstrate alternative styling approaches and integration with traditional stylesheets where appropriate
 - **Styled Component** - also added a styled component to show a different approach to styling
 
+⚠️ A sample usage of `styled-components` was added to the project for demonstration purposes only, however it is not the recommended approach. With `styled-components`, styles are injected at render time, which may cause a brief flash of unstyled content and visible layout shifts. In our case, loading scss files before rendering components provides more stable initial styling and prevents the page from visually “jumping” during load.
+
 ---
 
 ## 💾 Data Persistence (localStorage)
