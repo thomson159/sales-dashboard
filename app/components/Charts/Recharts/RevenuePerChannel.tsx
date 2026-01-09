@@ -3,9 +3,17 @@ import { ResponsiveContainer, BarChart, XAxis, YAxis, Tooltip, Bar, Cell } from 
 import { CHARTS_COLORS as COLORS } from '~/consts';
 import { useIsMobileCharts } from '~/hooks/useIsMobile';
 import type { RevenueProps } from '~/types/components.types';
+import type { RevenuePerChannelItem } from '~/types/types';
 
 const RevenuePerChannel = ({ data }: RevenueProps) => {
   const isMobile: boolean = useIsMobileCharts();
+
+  const formatTick = (value?: string | number): string =>
+    typeof value === 'number'
+      ? value >= 1000
+        ? `${(value / 1000).toFixed(0)}k`
+        : `${value}`
+      : value ?? '';
 
   return (
     <ResponsiveContainer width="100%" height={300}>
@@ -21,7 +29,7 @@ const RevenuePerChannel = ({ data }: RevenueProps) => {
         <YAxis
           fontSize={12}
           stroke="black"
-          tickFormatter={(value) => (value >= 1000 ? `${(value / 1000).toFixed(0)}k` : value)}
+          tickFormatter={formatTick}
         />
         <Tooltip
           content={({ payload, label }) => {
@@ -38,7 +46,7 @@ const RevenuePerChannel = ({ data }: RevenueProps) => {
           }}
         />
         <Bar dataKey="revenue">
-          {data.map((entry, index) => (
+          {data.map((entry: RevenuePerChannelItem, index: number) => (
             <Cell key={entry.channel} fill={COLORS[index % COLORS.length]} />
           ))}
         </Bar>
