@@ -31,7 +31,7 @@ const SalesOverTime = ({ data }: SalesProps) => {
                 <div>{label}</div>
                 {payload.map((p) => (
                   <div key={p.dataKey}>
-                    {typeof p.value === 'number' ? formatNumber(p.value) : ""}
+                    {typeof p.value === 'number' ? formatNumber(p.value) : ''}
                   </div>
                 ))}
               </div>

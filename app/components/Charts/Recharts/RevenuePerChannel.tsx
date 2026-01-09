@@ -14,7 +14,7 @@ const RevenuePerChannel = ({ data }: RevenueProps) => {
       ? value >= 1000
         ? `${(value / 1000).toFixed(0)}k`
         : `${value}`
-      : value ?? '';
+      : (value ?? '');
 
   return (
     <ResponsiveContainer width="100%" height={300}>
@@ -27,11 +27,7 @@ const RevenuePerChannel = ({ data }: RevenueProps) => {
           minTickGap={20}
           hide={isMobile}
         />
-        <YAxis
-          fontSize={12}
-          stroke="black"
-          tickFormatter={formatTick}
-        />
+        <YAxis fontSize={12} stroke="black" tickFormatter={formatTick} />
         <Tooltip
           content={({ payload, label }) => {
             if (!payload || payload.length === 0) return null;
@@ -41,7 +37,7 @@ const RevenuePerChannel = ({ data }: RevenueProps) => {
                 <div>{label}</div>
                 {payload.map((p) => (
                   <div key={p.dataKey}>
-                    {typeof p.value === 'number' ? formatNumber(p.value) : ""}
+                    {typeof p.value === 'number' ? formatNumber(p.value) : ''}
                   </div>
                 ))}
               </div>
