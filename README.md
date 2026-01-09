@@ -21,7 +21,7 @@ A modern, production-ready template for building full-stack React applications u
 
 ![Opis obrazka](./lighthouse.png)
 
-## Features
+## Main Features
 
 - 🚀 Server-side rendering
 - ⚡️ Hot Module Replacement (HMR)
