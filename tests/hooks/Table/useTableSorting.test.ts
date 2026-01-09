@@ -1,7 +1,7 @@
 import { beforeEach, describe, expect, it, vi } from 'vitest';
-import { useTableSorting } from '~/hooks/Table/useTableSorting';
+import { useTableSorting, type SortKey } from '~/hooks/Table/useTableSorting';
 import { asc, desc } from '~/consts';
-import type { Sale, ColumnKey, SortKey } from '~/types/types';
+import type { Sale, ColumnKey } from '~/types/types';
 import * as tableUtils from '~/utils/table.utils';
 import { act, renderHook } from '@testing-library/react';
 

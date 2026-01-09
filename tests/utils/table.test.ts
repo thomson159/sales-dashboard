@@ -1,6 +1,7 @@
-import type { Sale, SortKey, SortOrder, ColumnKey } from '~/types/types';
+import type { Sale, SortOrder, ColumnKey } from '~/types/types';
 import { asc } from '~/consts';
 import { sortTableData } from '~/utils/table.utils';
+import type { SortKey } from '~/hooks/Table/useTableSorting';
 
 describe('sortTableData', () => {
   const sampleData: Sale[] = [

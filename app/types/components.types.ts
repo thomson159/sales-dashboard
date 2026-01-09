@@ -2,7 +2,6 @@ import { type MouseEventHandler, type ReactNode } from 'react';
 import type {
   Column,
   ColumnKeyArray,
-  ColumnKey,
   Filters,
   RevenuePerChannelItem,
   SalesOverTimeItem,
@@ -33,10 +32,6 @@ export type Columns = Readonly<{
 
 export type VisibleColumns = Readonly<{
   visibleColumns: ColumnKeyArray;
-}>;
-
-export type ToggleColumn = Readonly<{
-  onToggle: (key: ColumnKey) => void;
 }>;
 
 export type FiltersParams = Readonly<{

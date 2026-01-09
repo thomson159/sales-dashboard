@@ -14,18 +14,21 @@ export const useTableColumns = (): UseTableColumnsResult => {
     }
   });
 
-  useEffect(() => {
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(visibleColumns));
-  }, [visibleColumns]);
+  useEffect(
+    () => localStorage.setItem(STORAGE_KEY, JSON.stringify(visibleColumns)),
+    [visibleColumns],
+  );
 
-  const onToggle = useCallback((key: ColumnKey) => {
-    setVisibleColumns((prev: ColumnKey[]) =>
-      prev.includes(key) ? prev.filter((k) => k !== key) : [...prev, key],
-    );
-  }, []);
+  const toggleColumn = useCallback(
+    (key: ColumnKey) =>
+      setVisibleColumns((prev: ColumnKey[]) =>
+        prev.includes(key) ? prev.filter((k) => k !== key) : [...prev, key],
+      ),
+    [],
+  );
 
   return {
     visibleColumns,
-    onToggle,
+    toggleColumn,
   };
 };

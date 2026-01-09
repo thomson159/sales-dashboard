@@ -48,9 +48,8 @@ export const sanitizePageSizeInput = (value: string, maxLength: number = 3): num
   return response;
 };
 
-export const validatePageSize = (value: number, min: number, max: number): number => {
-  return Math.min(Math.max(value, min), max);
-};
+export const validatePageSize = (value: number, min: number, max: number): number =>
+  Math.min(Math.max(value, min), max);
 
 export const applyFiltersLazy = (data: SaleArray, filters: Filters): SaleArray => {
   const channelName = filters.channelName?.toLowerCase();

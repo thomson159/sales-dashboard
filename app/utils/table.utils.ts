@@ -1,5 +1,6 @@
-import type { ColumnKeyArray, Sale, SaleArray, SortKey, SortOrder } from '~/types/types';
+import type { ColumnKeyArray, Sale, SaleArray, SortOrder } from '~/types/types';
 import { asc } from '~/consts';
+import type { SortKey } from '~/hooks/Table/useTableSorting';
 
 export const sortTableData = (
   data: SaleArray,

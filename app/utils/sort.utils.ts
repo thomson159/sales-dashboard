@@ -8,7 +8,7 @@ export const sortData = (data: SaleArray, sort?: Sort): SaleArray => {
   if (!sort) return data;
 
   const { field, order }: Sort = sort;
-  const direction: Direction = order === 'asc' ? 1 : -1;
+  const direction: Direction = order === asc ? 1 : -1;
 
   return data
     .map((item, index) => ({ item, index }))

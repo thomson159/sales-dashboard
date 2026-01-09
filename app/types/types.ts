@@ -1,4 +1,4 @@
-import type { index } from '../consts';
+import type { asc, desc, index } from '../consts';
 import type { State } from './state.types';
 import { type ChangeEvent, type MouseEvent } from 'react';
 
@@ -51,8 +51,7 @@ export type Sort = Readonly<{
 export type StringArray = readonly string[];
 export type ColumnKeyArray = readonly ColumnKey[];
 export type ColumnKey = KeyOfSale | typeof index;
-export type SortKey = KeyOfSale | null;
-export type SortOrder = 'asc' | 'desc';
+export type SortOrder = typeof asc | typeof desc;
 
 export type Column = Readonly<{ key: ColumnKey; label: string; sortable: boolean }>;
 
