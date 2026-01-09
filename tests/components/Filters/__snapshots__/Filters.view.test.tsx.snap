@@ -104,7 +104,7 @@ exports[`FiltersView > matches snapshot 1`] = `
       </div>
     </div>
     <button
-      class="sc-bdnylu ktePuP w-full md:w-auto "
+      class="own-button w-full md:w-auto "
       type="button"
     >
       Apply
