@@ -12,7 +12,6 @@ import './styles/Navbar.scss';
 import './styles/Table.scss';
 import './styles/Sort.scss';
 import './styles/Filters.scss';
-import './styles/Button.scss';
 import './styles/Spinner.scss';
 import './styles/Summary.scss';
 import './styles/Charts.scss';

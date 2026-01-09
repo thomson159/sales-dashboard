@@ -66,7 +66,7 @@ export const Dashboard = ({ chartsAreVisible = false }: Props) => {
           <Charts data={chartData} />
         ) : (
           <div className="flex justify-center mb-15 mt-5">
-            <Button onClick={() => setShowCharts((prev) => !prev)}>Show Charts</Button>
+            <Button onClick={() => setShowCharts((prev: boolean) => !prev)}>Show Charts</Button>
           </div>
         )}
         <PageSizeFilter pageSize={pageSize} onChange={setPageSize} dataLength={dataLength} />

@@ -1,12 +1,48 @@
+import { styled } from 'styled-components';
 import type { ButtonHTMLAttributes } from 'react';
 import type { Children } from '~/types/components.types';
 
-export type ButtonProps = Children & ButtonHTMLAttributes<HTMLButtonElement>;
+export type ButtonProps = Children &
+  ButtonHTMLAttributes<HTMLButtonElement>;
 
-export function Button({ children, className = '', ...rest }: ButtonProps) {
+const StyledButton = styled.button`
+  position: relative;
+  font-weight: 700;
+  font-size: 16px;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1.5rem;
+  cursor: pointer;
+  white-space: nowrap;
+  color: var(--white);
+  background: linear-gradient(135deg, #7c3aed, #9333ea, #ec4899);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    filter 0.2s ease;
+
+  &:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+  }
+
+  &:active {
+    transform: translateY(0);
+    filter: brightness(1.05);
+  }
+
+  &:hover:not(:disabled) {
+    transform: translateY(-1px);
+    box-shadow: 0 8px 20px rgba(124, 58, 237, 0.35);
+    filter: brightness(1.15);
+  }
+`;
+
+export function Button({ children, ...rest }: ButtonProps) {
   return (
-    <button type="button" className={`${'own-button'} ${className}`} {...rest}>
+    <StyledButton type="button" {...rest}>
       {children}
-    </button>
+    </StyledButton>
   );
 }
