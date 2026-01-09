@@ -30,7 +30,7 @@ exports[`TableBody > matches snapshot for all columns 1`] = `
         <td
           class="px-3 py-2 whitespace-nowrap text-left"
         >
-          100.50
+          100.5
         </td>
         <td
           class="px-3 py-2 whitespace-nowrap text-left"
@@ -62,7 +62,7 @@ exports[`TableBody > matches snapshot for all columns 1`] = `
         <td
           class="px-3 py-2 whitespace-nowrap text-left"
         >
-          50.00
+          50
         </td>
         <td
           class="px-3 py-2 whitespace-nowrap text-left"

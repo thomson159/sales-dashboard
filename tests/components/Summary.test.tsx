@@ -13,7 +13,7 @@ describe('SalesSummaryComponent', () => {
     render(<SalesSummaryComponent {...mockMetrics} />);
 
     expect(screen.getByText('🏆 Total Revenue')).toBeInTheDocument();
-    expect(screen.getByText('1234.56 $')).toBeInTheDocument();
+    expect(screen.getByText('1 234.56 $')).toBeInTheDocument();
 
     expect(screen.getByText('📊 Total Orders')).toBeInTheDocument();
     expect(screen.getByText('78')).toBeInTheDocument();
