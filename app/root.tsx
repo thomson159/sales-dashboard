@@ -7,6 +7,10 @@ import {
   ScrollRestoration,
 } from 'react-router';
 import NotFound from './routes/notFound';
+import type { Route } from './+types/root';
+import type { Children } from './types/components.types';
+// Here we import the CSS, which prevents FOUC (Flash of Unstyled Content),
+// i.e., content appearing without styles.
 import './styles/app.css';
 import './styles/Navbar.scss';
 import './styles/Table.scss';
@@ -16,8 +20,6 @@ import './styles/Spinner.scss';
 import './styles/Summary.scss';
 import './styles/Charts.scss';
 import './styles/Button.scss';
-import type { Route } from './+types/root';
-import type { Children } from './types/components.types';
 
 export const links: Route.LinksFunction = () => [
   { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
