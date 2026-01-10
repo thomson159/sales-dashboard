@@ -16,7 +16,7 @@
   }
 
   @if $withHover {
-    &:hover {
+    &:hover:not(:disabled) {
       background-color: var(--light-gray);
     }
   }
@@ -47,13 +47,13 @@
   color: var(--white);
   font-weight: bold;
 
-  &:hover {
+  &:hover:not(:disabled) {
     filter: brightness(1.15);
   }
 }
 
 .sort-in-active {
-  &:hover {
+  &:hover:not(:disabled) {
     background-color: var(--light-gray);
   }
 }
