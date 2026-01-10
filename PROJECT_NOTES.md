@@ -200,3 +200,4 @@ It applies best practices for **React + TypeScript**, along with multiple perfor
 - /app/store/ThemeContext.tsx
 - /app/hooks/Table/useTableSorting.ts
 - /app/utils/table.utils.ts
+- /app/utils/utils.ts -> areNumbers

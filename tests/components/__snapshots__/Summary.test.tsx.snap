@@ -16,7 +16,7 @@ exports[`SalesSummary memo > matches snapshot 1`] = `
       <div
         class="text-xl font-semibold text-white flex items-center justify-center h-[38px]"
       >
-        1234.56 $
+        1 234.56 $
       </div>
     </div>
     <div
@@ -67,7 +67,7 @@ exports[`SalesSummaryComponent > matches snapshot 1`] = `
       <div
         class="text-xl font-semibold text-white flex items-center justify-center h-[38px]"
       >
-        1234.56 $
+        1 234.56 $
       </div>
     </div>
     <div
