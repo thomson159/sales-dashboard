@@ -12,7 +12,7 @@ const RevenuePerChannel = ({ data }: RevenueProps) => {
   const formatTick = (value?: string | number): string =>
     typeof value === 'number'
       ? value >= 1000
-        ? `${(value / 1000).toFixed(0)}k`
+        ? `${(value / 1000).toFixed(0)}k $`
         : `${value}`
       : (value ?? '');
 
@@ -37,7 +37,7 @@ const RevenuePerChannel = ({ data }: RevenueProps) => {
                 <div>{label}</div>
                 {payload.map((p) => (
                   <div key={p.dataKey}>
-                    {typeof p.value === 'number' ? formatNumber(p.value) : ''}
+                    {typeof p.value === 'number' ? `${formatNumber(p.value)} $` : ''}
                   </div>
                 ))}
               </div>

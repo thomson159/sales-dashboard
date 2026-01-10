@@ -20,7 +20,7 @@ export const COLUMNS: Column[] = [
   { key: date, label: '📅 Date', sortable: true },
   { key: channel_name, label: '🏷️ Name', sortable: true },
   { key: order_status_id, label: '📌 Status', sortable: true },
-  { key: sum_sales, label: '💰 Sales', sortable: true },
+  { key: sum_sales, label: '💰 Sum Sales', sortable: true },
   { key: count_orders, label: '📦 Orders', sortable: true },
 ];
 
