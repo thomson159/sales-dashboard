@@ -22,7 +22,7 @@ const TableBodyComponent = ({ data, visibleColumns }: TableBodyProps) => {
             <td className={classes}>{s.order_status_id || '-'}</td>
           )}
           {visibleSet.has('sum_sales') && (
-            <td className={classes}>{formatNumber(s.sum_sales) || '-'}</td>
+            <td className={classes}>{`${formatNumber(s.sum_sales)} $` || '-'}</td>
           )}
           {visibleSet.has('count_orders') && <td className={classes}>{s.count_orders || '-'}</td>}
         </tr>
