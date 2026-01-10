@@ -77,8 +77,8 @@ describe('TableBody', () => {
         <TableBody data={data} visibleColumns={['sum_sales']} />
       </table>,
     );
-    expect(screen.getByText('100.5')).toBeDefined();
-    expect(screen.getByText('50')).toBeDefined();
+    expect(screen.getByText('100.5 $')).toBeDefined();
+    expect(screen.getByText('50 $')).toBeDefined();
   });
 
   it('renders count_orders column', () => {
