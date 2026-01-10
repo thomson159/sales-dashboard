@@ -12,31 +12,18 @@ export default function SharedLayout() {
       <nav>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between h-16 items-center">
-            <div className="flex-shrink-0 font-bold text-lg">
-            </div>
+            <div className="flex-shrink-0 font-bold text-lg"></div>
             <div className="flex items-center space-x-4">
-              <button
-                onClick={() => navigate('/')}
-                className="cursor-pointer"
-              >
+              <button onClick={() => navigate('/')} className="cursor-pointer">
                 Home
               </button>
-              <button
-                onClick={() => navigate('/charts')}
-                className="cursor-pointer"
-              >
+              <button onClick={() => navigate('/charts')} className="cursor-pointer">
                 Charts
               </button>
-              <button
-                onClick={() => navigate('/404')}
-                className="cursor-pointer"
-              >
+              <button onClick={() => navigate('/404')} className="cursor-pointer">
                 404
               </button>
-              <button
-                onClick={toggleTheme}
-                className="ml-4 cursor-pointer"
-              >
+              <button onClick={toggleTheme} className="ml-4 cursor-pointer">
                 {theme === 'dark' ? '🌞' : '🌑'}
               </button>
             </div>
