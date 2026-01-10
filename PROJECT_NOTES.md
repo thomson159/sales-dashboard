@@ -7,6 +7,17 @@ Although the initial implementation was designed to work with a single JSON file
 
 ---
 
+## Implementation
+
+In this project, filtering, pagination, and sorting are handled on the frontend.  
+In my opinion, when working with large amounts of data and multiple APIs, it is much better to perform these operations on the server side to reduce application load and improve performance.
+
+Since this project only uses a single JSON file, frontend filtering is sufficient to handle the data.
+
+For future development and scaling of the project, it would be worth considering using a global store (e.g., Redux or Zustand) to manage filters and data state. In this version, all data and filtering are passed via props.
+
+---
+
 ## 🚦 Lighthouse & Performance
 
 ### Incognito Mode
