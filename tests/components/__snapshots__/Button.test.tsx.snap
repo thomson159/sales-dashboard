@@ -3,7 +3,7 @@
 exports[`Button > accepts id prop 1`] = `
 <div>
   <button
-    class="sc-bdnylu ktePuP"
+    class="own-button "
     id="my-button"
     type="button"
   >
@@ -15,7 +15,7 @@ exports[`Button > accepts id prop 1`] = `
 exports[`Button > accepts type prop 1`] = `
 <div>
   <button
-    class="sc-bdnylu ktePuP"
+    class="own-button "
     type="submit"
   >
     Submit
@@ -26,7 +26,7 @@ exports[`Button > accepts type prop 1`] = `
 exports[`Button > applies additional className 1`] = `
 <div>
   <button
-    class="sc-bdnylu ktePuP extra-class"
+    class="own-button extra-class"
     type="button"
   >
     Test
@@ -37,7 +37,7 @@ exports[`Button > applies additional className 1`] = `
 exports[`Button > handles multiple classNames correctly 1`] = `
 <div>
   <button
-    class="sc-bdnylu ktePuP first second"
+    class="own-button first second"
     type="button"
   >
     Classes
@@ -48,7 +48,7 @@ exports[`Button > handles multiple classNames correctly 1`] = `
 exports[`Button > is disabled when disabled prop is true 1`] = `
 <div>
   <button
-    class="sc-bdnylu ktePuP"
+    class="own-button "
     disabled=""
     type="button"
   >
@@ -60,7 +60,7 @@ exports[`Button > is disabled when disabled prop is true 1`] = `
 exports[`Button > renders children 1`] = `
 <div>
   <button
-    class="sc-bdnylu ktePuP"
+    class="own-button "
     type="button"
   >
     Click me

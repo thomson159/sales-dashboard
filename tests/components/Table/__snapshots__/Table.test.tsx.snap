@@ -115,7 +115,7 @@ exports[`Table > matches snapshot 1`] = `
       class="flex pt-5"
     >
       <button
-        class="sc-bdnylu ktePuP mx-auto"
+        class="own-button mx-auto"
         type="button"
       >
         More

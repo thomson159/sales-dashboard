@@ -15,6 +15,7 @@ import './styles/Filters.scss';
 import './styles/Spinner.scss';
 import './styles/Summary.scss';
 import './styles/Charts.scss';
+import './styles/Button.scss';
 import type { Route } from './+types/root';
 import type { Children } from './types/components.types';
 
