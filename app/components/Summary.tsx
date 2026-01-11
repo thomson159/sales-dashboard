@@ -5,8 +5,8 @@ import { formatNumber } from '~/utils/utils';
 
 const SummaryItem = ({ label, value }: SummaryItemProps) => (
   <div className="flex-1 min-w-[200px] rounded-lg panel px-6 py-3 flex flex-col items-center">
-    <p className="text-sm text-white/80">{label}</p>
-    <div className="text-xl font-semibold text-white flex items-center justify-center h-[38px]">
+    <p className="text-sm font-semibold text-white">{label}</p>
+    <div className="text-xl font-bold text-white flex items-center justify-center h-[38px]">
       {value}
     </div>
   </div>

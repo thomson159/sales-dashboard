@@ -10,7 +10,10 @@ import { type RouteConfig, index, route } from '@react-router/dev/routes';
 // Important: if we add such a route, performance and SEO scores in Lighthouse may drop significantly — for example, from 100% to around 70%.
 
 export default [
-  index('routes/home.tsx'),
-  route('charts', 'routes/charts.tsx'),
+  route('/', 'routes/_layout.tsx', [
+    index('routes/home.tsx'),
+    route('charts', 'routes/charts.tsx'),
+  ]),
+  route('all', 'routes/all.tsx'),
   // route('*', 'routes/notFound.tsx'),
 ] satisfies RouteConfig;
