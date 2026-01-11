@@ -1,4 +1,4 @@
-import { lazy, Suspense, useCallback, useMemo, useState } from 'react';
+import { lazy, Suspense, useCallback, useMemo } from 'react';
 import { useData } from '~/hooks/Data/useData';
 import type { Filters as FiltersType, Metrics, Sort as SortType, UseData } from '~/types/types';
 import { Navbar } from '../Navbar';
@@ -10,14 +10,11 @@ import { PageSizeFilter } from '../PageSizeFilter';
 import Pagination from '../Pagination';
 import Sort from '../Sort';
 import Charts from '../Charts/Recharts/Charts';
-import { Button } from '../small/Button';
 import Filters from '../Filters/Filters';
 
 const Table = lazy(() => import('../Table/Table'));
 
-type Props = { chartsAreVisible?: boolean };
-
-export const Dashboard = ({ chartsAreVisible = false }: Props) => {
+export const Dashboard = () => {
   const {
     data,
     chartData,
@@ -37,7 +34,6 @@ export const Dashboard = ({ chartsAreVisible = false }: Props) => {
     setSort,
   }: UseData = useData();
 
-  const [showCharts, setShowCharts] = useState<boolean>(false);
   const handleSort = useCallback((value?: SortType) => setSort(value), [setSort]);
   const handleFilters = useCallback((value: FiltersType) => setFilters(value), [setFilters]);
 
@@ -54,13 +50,7 @@ export const Dashboard = ({ chartsAreVisible = false }: Props) => {
       </Navbar>
       <Container>
         <Summary {...summaryProps} />
-        {showCharts || chartsAreVisible ? (
-          <Charts data={chartData} />
-        ) : (
-          <div className="flex justify-center mb-15 mt-5">
-            <Button onClick={() => setShowCharts((prev: boolean) => !prev)}>Show Charts</Button>
-          </div>
-        )}
+        <Charts data={chartData} />
         <PageSizeFilter pageSize={pageSize} onChange={setPageSize} dataLength={dataLength} />
         <Pagination
           currentPage={currentPage}
