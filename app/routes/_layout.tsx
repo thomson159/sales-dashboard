@@ -1,10 +1,14 @@
-import { Outlet, useNavigate } from 'react-router';
+import { NavLink } from 'react-router';
+import { DashboardLayout } from '~/components/Dashboard/DashboardLayout';
 import { ThemeEffect } from '~/store/ThemeEffect';
 import { useThemeStore } from '~/store/useThemeStore';
 
 export default function SharedLayout() {
   const { theme, toggleTheme } = useThemeStore();
-  const navigate = useNavigate();
+
+  const linkClass = ({ isActive }: { isActive: boolean }) =>
+    `${isActive ? 'text-blue-600' : ''
+    }`;
 
   return (
     <>
@@ -12,17 +16,19 @@ export default function SharedLayout() {
       <nav>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between h-16 items-center">
-            <div className="flex-shrink-0 font-bold text-lg"></div>
             <div className="flex items-center space-x-4">
-              <button onClick={() => navigate('/')} className="cursor-pointer">
+              <NavLink to="/" end className={linkClass}>
                 Home
-              </button>
-              <button onClick={() => navigate('/charts')} className="cursor-pointer">
+              </NavLink>
+              <NavLink to="/charts" className={linkClass}>
                 Charts
-              </button>
-              <button onClick={() => navigate('/404')} className="cursor-pointer">
+              </NavLink>
+              <NavLink to="/404" className={linkClass}>
                 404
-              </button>
+              </NavLink>
+              <NavLink to="/all" className={linkClass}>
+                No Routes
+              </NavLink>
               <button onClick={toggleTheme} className="ml-4 cursor-pointer">
                 {theme === 'dark' ? '🌞' : '🌑'}
               </button>
@@ -30,9 +36,7 @@ export default function SharedLayout() {
           </div>
         </div>
       </nav>
-      <main>
-        <Outlet />
-      </main>
+      <DashboardLayout />
     </>
   );
 }
