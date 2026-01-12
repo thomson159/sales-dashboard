@@ -27,7 +27,7 @@ export const DashboardLayout = () => {
           <Spinner />
         </div>
       )}
-      <Filters data={data} {...filters} onChange={handleFilters} />
+      <Filters data={[]} {...filters} onChange={handleFilters} />
       <Summary {...metrics} />
       <Outlet context={{ data: filteredData }} />
       <Footer />
