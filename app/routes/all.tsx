@@ -1,7 +1,7 @@
 import { Dashboard } from '~/components/Dashboard/Dashboard';
 import type { Route } from './+types/home';
 
-export function meta({ }: Route.MetaArgs) {
+export function meta({}: Route.MetaArgs) {
   return [{ title: 'Dashboard' }, { name: 'description', content: 'Dashboard' }];
 }
 

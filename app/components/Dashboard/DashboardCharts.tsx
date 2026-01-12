@@ -12,7 +12,7 @@ export const DashboardCharts = () => {
     <>
       <Charts data={data} />
       <div className="flex justify-center">
-        <Button onClick={() => navigate("/")}>Show Table</Button>
+        <Button onClick={() => navigate('/')}>Show Table</Button>
       </div>
     </>
   );
