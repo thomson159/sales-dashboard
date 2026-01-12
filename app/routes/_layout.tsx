@@ -16,18 +16,25 @@ export default function SharedLayout() {
 
 const NavbarLinks = () => {
   const linkClass = ({ isActive }: { isActive: boolean }) =>
-    `px-2 py-1 ${isActive && 'text-red-700 font-semibold'
-    }`;
+    `px-2 py-1 ${isActive && 'text-red-700 font-semibold'}`;
 
   return (
     <>
-      <NavLink to="/" className={linkClass}>Home</NavLink>
-      <NavLink to="/charts" className={linkClass}>Charts</NavLink>
-      <NavLink to="/404" className={linkClass}>404</NavLink>
-      <NavLink to="/all" className={linkClass}>NoRoutes</NavLink>
+      <NavLink to="/" className={linkClass}>
+        Home
+      </NavLink>
+      <NavLink to="/charts" className={linkClass}>
+        Charts
+      </NavLink>
+      <NavLink to="/404" className={linkClass}>
+        404
+      </NavLink>
+      <NavLink to="/all" className={linkClass}>
+        NoRoutes
+      </NavLink>
     </>
   );
-}
+};
 
 export const ThemeButton = () => {
   const { theme, toggleTheme } = useThemeStore();
@@ -37,7 +44,7 @@ export const ThemeButton = () => {
       {theme === 'dark' ? '🌞' : '🌑'}
     </button>
   );
-}
+};
 
 const Navbar = () => {
   return (
@@ -56,9 +63,7 @@ const Navbar = () => {
         </div>
         <div className="md:hidden py-3 space-y-3">
           <div className="flex justify-between items-center">
-            <h2 className={slogan}>
-              Dashboard
-            </h2>
+            <h2 className={slogan}>Dashboard</h2>
             <ThemeButton />
           </div>
           <div className="flex flex-wrap gap-3 text-sm">
@@ -67,5 +72,5 @@ const Navbar = () => {
         </div>
       </div>
     </nav>
-  )
+  );
 };

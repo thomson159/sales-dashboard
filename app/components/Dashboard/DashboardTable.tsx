@@ -1,5 +1,5 @@
 import { lazy, Suspense, useCallback, useState } from 'react';
-import type { SaleArray, SaleData, SortOr, Sort as SortType } from '~/types/types';
+import type { SaleArray, SaleData, Sort as SortType } from '~/types/types';
 import { Spinner } from '../small/Spinner';
 import { PageSizeFilter } from '../PageSizeFilter';
 import Pagination from '../Pagination';
@@ -9,17 +9,16 @@ import type { UsePaginationResult } from '~/types/hooks.types';
 import { useSort } from '~/hooks/Data/useSort';
 import Sort from '../Sort';
 import { Button } from '../small/Button';
+import { useSortStore, type SortState } from '~/store/useSortStore';
 
 const Table = lazy(() => import('../Table/Table'));
 
 export const DashboardTable = () => {
   const { data } = useOutletContext<SaleData>();
-  const [sort, setSort] = useState<SortOr>(undefined);
+  const { sort, setSort }: SortState = useSortStore();
   const [currentPage, setCurrentPage] = useState<number>(1);
   const [pageSize, setPageSize] = useState<number>(40);
-
   const navigate = useNavigate();
-
   const sortedData: SaleArray = useSort(data, sort);
   const { pagedData, dataLength, totalPages }: UsePaginationResult = usePagination(
     sortedData,
@@ -32,7 +31,7 @@ export const DashboardTable = () => {
   return (
     <>
       <div className="flex justify-center">
-        <Button onClick={() => navigate("/charts")}>Show Charts</Button>
+        <Button onClick={() => navigate('/charts')}>Show Charts</Button>
       </div>
       <Sort sort={sort} onChange={handleSort} />
       <PageSizeFilter pageSize={pageSize} onChange={setPageSize} dataLength={dataLength} />

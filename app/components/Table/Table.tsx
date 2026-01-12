@@ -10,7 +10,7 @@ import { useTableColumns } from '~/hooks/Table/useTableColumns';
 import { useSortMemo } from '~/hooks/Data/useSort';
 import { getNextSortState } from '~/utils/sort.utils';
 
-const SalesTableComponent = ({ data }: SaleData) => {
+const TableComponent = ({ data }: SaleData) => {
   const [sort, setSort] = useState<SortOr>(undefined);
   const [visibleRowsCount, setVisibleRowsCount] = useState<number>(ROWS_INCREMENT);
   const { visibleColumns, toggleColumn }: UseTableColumnsResult = useTableColumns();
@@ -60,5 +60,5 @@ const SalesTableComponent = ({ data }: SaleData) => {
   );
 };
 
-const Table = memo(SalesTableComponent);
+const Table = memo(TableComponent);
 export default Table;
