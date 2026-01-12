@@ -36,10 +36,12 @@ A modern, production-ready template for building full-stack React applications u
 - `/` (**Home**)  
   Displays **table only**.  
   Shares data with `/charts`.
+  With filters `/?channelName=p&minDate=2024-09-01&maxDate=2024-09-29`
 
 - `/charts` (**Charts**)  
   Displays **charts only**.  
   Shares data with `/`.
+  With filters `/charts?channelName=p&minDate=2024-09-01&maxDate=2024-09-29`
 
 - `/all` (**Table + Charts**)  
   Displays **table and charts together**.  

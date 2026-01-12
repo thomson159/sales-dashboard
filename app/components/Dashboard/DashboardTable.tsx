@@ -3,13 +3,14 @@ import type { SaleArray, SaleData, Sort as SortType } from '~/types/types';
 import { Spinner } from '../small/Spinner';
 import { PageSizeFilter } from '../PageSizeFilter';
 import Pagination from '../Pagination';
-import { useNavigate, useOutletContext } from 'react-router';
+import { useOutletContext } from 'react-router';
 import { usePagination } from '~/hooks/Data/usePagination';
 import type { UsePaginationResult } from '~/types/hooks.types';
 import { useSort } from '~/hooks/Data/useSort';
 import Sort from '../Sort';
 import { Button } from '../small/Button';
 import { useSortStore, type SortState } from '~/store/useSortStore';
+import { useNavigateWithFilters } from '~/hooks/useNavigateWithFilters';
 
 const Table = lazy(() => import('../Table/Table'));
 
@@ -18,7 +19,7 @@ export const DashboardTable = () => {
   const { sort, setSort }: SortState = useSortStore();
   const [currentPage, setCurrentPage] = useState<number>(1);
   const [pageSize, setPageSize] = useState<number>(40);
-  const navigate = useNavigate();
+  const navigate = useNavigateWithFilters();
   const sortedData: SaleArray = useSort(data, sort);
   const { pagedData, dataLength, totalPages }: UsePaginationResult = usePagination(
     sortedData,

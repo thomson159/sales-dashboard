@@ -1,12 +1,13 @@
 import type { SaleData } from '~/types/types';
 import Charts from '../Charts/Recharts/Charts';
-import { useNavigate, useOutletContext } from 'react-router';
+import { useOutletContext } from 'react-router';
 import { Button } from '../small/Button';
+import { useNavigateWithFilters } from '~/hooks/useNavigateWithFilters';
 
 export const DashboardCharts = () => {
   const { data } = useOutletContext<SaleData>();
 
-  const navigate = useNavigate();
+  const navigate = useNavigateWithFilters();
 
   return (
     <>

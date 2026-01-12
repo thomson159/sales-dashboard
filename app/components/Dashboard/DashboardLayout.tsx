@@ -1,4 +1,4 @@
-import { useCallback, useState } from 'react';
+import { useCallback } from 'react';
 import { Outlet } from 'react-router';
 import type { Filters as FiltersType, Metrics, SaleArray } from '~/types/types';
 import { Footer } from '../small/Footer';
@@ -10,10 +10,11 @@ import { useMetrics } from '~/hooks/Data/useMetrics';
 import { useSource } from '~/hooks/Data/useSource';
 import type { UseSourceResult } from '~/types/hooks.types';
 import { Spinner } from '../small/Spinner';
+import { useUrlFilters } from '~/hooks/useUrlFilters';
 
 export const DashboardLayout = () => {
   const { data, loading }: UseSourceResult = useSource();
-  const [filters, setFilters] = useState<FiltersType>({});
+  const { filters, setFilters } = useUrlFilters();
   const filteredData: SaleArray = useFilters(data, filters);
   const metrics: Metrics = useMetrics(filteredData);
 
