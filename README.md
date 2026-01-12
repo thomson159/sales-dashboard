@@ -31,6 +31,21 @@ A modern, production-ready template for building full-stack React applications u
 - 🎉 TailwindCSS for styling
 - 📖 [React Router docs](https://reactrouter.com/)
 
+## Routes
+
+- `/` (**Home**)  
+  Displays **table only**.  
+  Shares data with `/charts`.
+
+- `/charts` (**Charts**)  
+  Displays **charts only**.  
+  Shares data with `/`.
+
+- `/all` (**Table + Charts**)  
+  Displays **table and charts together**.  
+  Independent route — **does not share data** with other routes.  
+  Loads its **own JSON data source**.
+
 ## Getting Started
 
 `node >= v22`
