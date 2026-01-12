@@ -1,4 +1,4 @@
-import { NavLink } from 'react-router';
+import { NavLink, useLocation } from 'react-router';
 import { DashboardLayout } from '~/components/Dashboard/DashboardLayout';
 import { slogan } from '~/consts';
 import { ThemeEffect } from '~/store/ThemeEffect';
@@ -15,15 +15,17 @@ export default function SharedLayout() {
 }
 
 const NavbarLinks = () => {
+  const location = useLocation();
+
   const linkClass = ({ isActive }: { isActive: boolean }) =>
     `px-2 py-1 ${isActive && 'text-red-700 font-semibold'}`;
 
   return (
     <>
-      <NavLink to="/" className={linkClass}>
+      <NavLink to={{ pathname: '/', search: location.search }} className={linkClass}>
         Home
       </NavLink>
-      <NavLink to="/charts" className={linkClass}>
+      <NavLink to={{ pathname: '/charts', search: location.search }} className={linkClass}>
         Charts
       </NavLink>
       <NavLink to="/404" className={linkClass}>
