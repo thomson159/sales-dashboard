@@ -22,7 +22,7 @@ export const DashboardLayout = () => {
   return (
     <Container>
       {loading && (
-        <div className="absolute right-0 top-0 mt-4 mr-4">
+        <div className="absolute right-0 top-0 mt-14 mr-4">
           <Spinner />
         </div>
       )}
