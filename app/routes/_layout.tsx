@@ -2,7 +2,7 @@ import { NavLink, useLocation } from 'react-router';
 import { DashboardLayout } from '~/components/Dashboard/DashboardLayout';
 import { slogan } from '~/consts';
 import { ThemeEffect } from '~/store/ThemeEffect';
-import { useThemeStore } from '~/store/useThemeStore';
+import { useThemeStore, type ThemeStore } from '~/store/useThemeStore';
 
 export default function SharedLayout() {
   return (
@@ -18,7 +18,7 @@ const NavbarLinks = () => {
   const location = useLocation();
 
   const linkClass = ({ isActive }: { isActive: boolean }) =>
-    `px-2 py-1 ${isActive && 'text-red-700 font-semibold'}`;
+    `px-2 py-1 ${isActive && 'text-pink-700 font-semibold'}`;
 
   return (
     <>
@@ -39,7 +39,7 @@ const NavbarLinks = () => {
 };
 
 export const ThemeButton = () => {
-  const { theme, toggleTheme } = useThemeStore();
+  const { theme, toggleTheme }: ThemeStore = useThemeStore();
 
   return (
     <button onClick={toggleTheme} className="text-xl  cursor-pointer">
@@ -54,7 +54,7 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="hidden md:grid grid-cols-3 h-16 items-center">
           <h2 className={slogan} style={{ width: 154 }}>
-            Dashboard
+            DB
           </h2>
           <div className="flex justify-center gap-4">
             <NavbarLinks />
@@ -65,7 +65,7 @@ const Navbar = () => {
         </div>
         <div className="md:hidden py-3 space-y-3">
           <div className="flex justify-between items-center">
-            <h2 className={slogan}>Dashboard</h2>
+            <h2 className={slogan}>DB</h2>
             <ThemeButton />
           </div>
           <div className="flex flex-wrap gap-3 text-sm">

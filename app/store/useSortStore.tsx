@@ -1,5 +1,4 @@
 import { create } from 'zustand';
-import { persist } from 'zustand/middleware';
 import type { SortOr, Sort } from '~/types/types';
 
 export interface SortState {
@@ -7,14 +6,7 @@ export interface SortState {
   setSort: (sort?: Sort) => void;
 }
 
-export const useSortStore = create<SortState>()(
-  persist(
-    (set) => ({
-      sort: undefined,
-      setSort: (sort) => set({ sort }),
-    }),
-    {
-      name: 'dashboard-sort',
-    },
-  ),
-);
+export const useSortStore = create<SortState>()((set) => ({
+  sort: undefined,
+  setSort: (sort) => set({ sort }),
+}));
