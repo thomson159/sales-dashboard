@@ -6,9 +6,7 @@ export interface SortState {
   setSort: (sort?: Sort) => void;
 }
 
-export const useSortStore = create<SortState>()(
-  (set) => ({
-    sort: undefined,
-    setSort: (sort) => set({ sort }),
-  }),
-);
+export const useSortStore = create<SortState>()((set) => ({
+  sort: undefined,
+  setSort: (sort) => set({ sort }),
+}));
