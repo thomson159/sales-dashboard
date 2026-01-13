@@ -54,7 +54,7 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="hidden md:grid grid-cols-3 h-16 items-center">
           <h2 className={slogan} style={{ width: 154 }}>
-            Dashboard
+            DB
           </h2>
           <div className="flex justify-center gap-4">
             <NavbarLinks />
@@ -65,7 +65,7 @@ const Navbar = () => {
         </div>
         <div className="md:hidden py-3 space-y-3">
           <div className="flex justify-between items-center">
-            <h2 className={slogan}>Dashboard</h2>
+            <h2 className={slogan}>DB</h2>
             <ThemeButton />
           </div>
           <div className="flex flex-wrap gap-3 text-sm">
