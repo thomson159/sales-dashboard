@@ -11,14 +11,14 @@ import Sort from '../Sort';
 import { Button } from '../small/Button';
 import { useSortStore, type SortState } from '~/store/useSortStore';
 import { useNavigateWithFilters } from '~/hooks/useNavigateWithFilters';
-import { usePageSizeStore } from '~/store/usePageSizeStore';
+import { usePageSizeStore, type PageSizeState } from '~/store/usePageSizeStore';
 
 const Table = lazy(() => import('../Table/Table'));
 
 export const DashboardTable = () => {
   const { data } = useOutletContext<SaleData>();
   const { sort, setSort }: SortState = useSortStore();
-  const { pageSize, setPageSize } = usePageSizeStore();
+  const { pageSize, setPageSize }: PageSizeState = usePageSizeStore();
   const [currentPage, setCurrentPage] = useState<number>(1);
   const navigate = useNavigateWithFilters();
   const sortedData: SaleArray = useSort(data, sort);
