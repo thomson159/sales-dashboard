@@ -2,7 +2,7 @@ import { NavLink, useLocation } from 'react-router';
 import { DashboardLayout } from '~/components/Dashboard/DashboardLayout';
 import { slogan } from '~/consts';
 import { ThemeEffect } from '~/store/ThemeEffect';
-import { useThemeStore } from '~/store/useThemeStore';
+import { useThemeStore, type ThemeStore } from '~/store/useThemeStore';
 
 export default function SharedLayout() {
   return (
@@ -18,7 +18,7 @@ const NavbarLinks = () => {
   const location = useLocation();
 
   const linkClass = ({ isActive }: { isActive: boolean }) =>
-    `px-2 py-1 ${isActive && 'text-red-700 font-semibold'}`;
+    `px-2 py-1 ${isActive && 'text-pink-700 font-semibold'}`;
 
   return (
     <>
@@ -39,7 +39,7 @@ const NavbarLinks = () => {
 };
 
 export const ThemeButton = () => {
-  const { theme, toggleTheme } = useThemeStore();
+  const { theme, toggleTheme }: ThemeStore = useThemeStore();
 
   return (
     <button onClick={toggleTheme} className="text-xl  cursor-pointer">
