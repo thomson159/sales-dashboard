@@ -14,6 +14,5 @@ export default [
     index('routes/home.tsx'),
     route('charts', 'routes/charts.tsx'),
   ]),
-  route('all', 'routes/all.tsx'),
   // route('*', 'routes/notFound.tsx'),
 ] satisfies RouteConfig;

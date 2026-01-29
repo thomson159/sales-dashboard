@@ -40,15 +40,15 @@ export const DashboardHome = () => {
         <Button onClick={() => navigate('/charts')}>Show Charts</Button>
       </div>
       <Sort sort={sort} onChange={handleSort} />
+      <Suspense fallback={<Spinner />}>
+        <Table data={pagedData} />
+      </Suspense>
       <PageSizeFilter pageSize={pageSize} onChange={setPageSize} dataLength={dataLength} />
       <Pagination
         currentPage={currentPage}
         totalPages={totalPages > 1 ? totalPages : 1}
         onChange={setCurrentPage}
       />
-      <Suspense fallback={<Spinner />}>
-        <Table data={pagedData} />
-      </Suspense>
     </>
   );
 };
