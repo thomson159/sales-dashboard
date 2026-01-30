@@ -1,3 +1,17 @@
+## TODO / Improvements
+
+- **Styling refactor**
+  - Different styling approaches were tested, but the best solution would be to stick to a single, consistent one instead of mixing multiple systems.
+  - The project mainly uses **Tailwind CSS** across the entire codebase.
+  - Custom **SCSS** is used only for color management — this approach could be unified or refactored for better consistency.
+
+- **Server-Side Rendering (SSR) for data fetching**
+  - Data fetching from the API should be handled on the server side (SSR) to:
+    - improve performance,
+    - enhance SEO,
+    - provide a better user experience with faster initial load.
+
+
 ## ⚠️ Node.js First-run “Pre-transform” Notice
 
 As of **08.01.2026**, in larger projects using React Router v7 (`react-router`) + Vite, the first run of the dev server (`npm run dev`) may produce temporary errors like:
