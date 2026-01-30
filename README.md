@@ -15,6 +15,8 @@
   - Memoization was experimented with extensively in this project. While it helped optimize certain computations, in some places it became excessive or unnecessary.
 It’s worth reviewing these instances to decide whether some memoization can be removed for cleaner, simpler code and better maintainability.
 
+More: https://github.com/thomson159/sales-dashboard/blob/main/PROJECT_NOTES.md
+
 ## ⚠️ Node.js First-run “Pre-transform” Notice
 
 As of **08.01.2026**, in larger projects using React Router v7 (`react-router`) + Vite, the first run of the dev server (`npm run dev`) may produce temporary errors like:
