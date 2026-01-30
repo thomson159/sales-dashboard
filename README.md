@@ -1,4 +1,4 @@
-## TODO / Improvements
+## ⚠️ TODO / Improvements
 
 - **Styling refactor**
   - Different styling approaches were tested, but the best solution would be to stick to a single, consistent one instead of mixing multiple systems.
