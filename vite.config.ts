@@ -6,6 +6,9 @@ import path from "path";
 import compression from "vite-plugin-compression";
 
 export default defineConfig({
+  optimizeDeps: {
+    exclude: ["tests/*"]
+  },
   plugins: [
     tailwindcss(),
     reactRouter(),
@@ -45,6 +48,13 @@ export default defineConfig({
       output: {
         manualChunks(id) {
           if (id.includes("node_modules")) return "vendor";
+          if (id.includes("Nivo")) return "nivo";
+          if (id.includes("Recharts")) return "recharts";
+          if (id.includes("Table")) return "table";
+          if (id.includes("Filters")) return "filters";
+          if (id.includes("PageSizeFilter")) return "pagesizefilter";
+          if (id.includes("Navbar")) return "navbar";
+          if (id.includes("Sort")) return "sort";
         }
       }
     }
